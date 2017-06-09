@@ -98,41 +98,153 @@
 
     
 
-<main id="content" role="main">
-	<div class="phase-banner">
+    <main id="content" role="main">
+        <div class="phase-banner">
     <p>
         <strong class="phase-tag">Private Beta</strong>
         <span>This is a new service – please send your feedback to <a href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a></span>
     </p>
 </div>
-	<div class="breadcrumbs">
-		<ol>
-			<li> <a href="/">Ethnicity facts and figures</a></li>
-		</ol>
-	</div>
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="/">Ethnicity facts and figures</a></li>
+                <li>
+                    <a href="/education">Education</a>
+                </li>
+            </ol>
+        </div>
 
-	<div class="grid-row">
-		<div class="column-two-thirds">
-			<h1 class="heading-xlarge">
-				Housing and living standards
-			</h1>
-            <p>
-                <p>Government departments and local authorities collect and report the following housing data which includes ethnicity. </p>
-<p>This covers home ownership and private renting, social housing, being homeless and losing your home, housing conditions and standard of living.</p>
-            </p>
-		</div>
-	</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+                <h1 class="heading-large">
+                    This is the fifth page
+                </h1>
 
-	<div class="grid-row">
-        <div class="column-two-thirds">
-            <div class="accordions-container container">
+                <div class="metadata">
+                    <dl>
+                        
+                        
+                        
+                        
+                        
+                    </dl>
+                </div>
+
+
+            </div>
+
+            <div class="column-two-thirds">
+                <p>
+                    The main facts and figures show that:
+                </p>
+                <div class="bullets spaced-out">
+                    <p>
+                        
+                    </p>
+                </div>
+
                 
-			</div>
-		</div>
-	</div>
+                
 
-</main>
+                
 
+                
+
+            </div>
+
+            <div class="column-full">
+                
+
+
+                <div class="accordions-container container">
+                    <div class="accordion">
+                        <div class="column-two-thirds">
+
+                            <div class="accordion__header">
+                                <h2>
+                                    <button>
+                                        Methodology and data type
+                                    </button>
+                                </h2>
+                                <span class="plus-minus-icon"></span>
+                            </div>
+
+                            <div class="accordion__body" style="display: none;">
+                                
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="column-two-thirds">
+
+                            <div class="accordion__header">
+                                <h2>
+                                    <button>
+                                        Publishing details
+                                    </button>
+                                </h2>
+                                <span class="plus-minus-icon"></span>
+                            </div>
+
+                            <div class="accordion__body" style="display: none;">
+                            
+                                <dl>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </dl>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="column-two-thirds">
+
+                            <div class="accordion__header">
+                                <h2>
+                                    <button>
+                                        Download the data
+                                    </button>
+                                </h2>
+                                <span class="plus-minus-icon"></span>
+                            </div>
+
+                            <div class="accordion__body" style="display: none;">
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 
 
 
@@ -181,6 +293,22 @@
 	<script type="text/javascript" src="/static/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="/static/javascripts/all.js"></script>
     
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js"></script>
+    <script type="text/javascript" src="/static/vendor/jquery.dataTables.min.js"></script>
+    <script src="/static/javascripts/rd-graph.js"></script>
+    <script type="text/javascript">
+
+        var dimensions = [];
+
+        $(document).ready(function () {
+            for (d in dimensions) {
+                var chartObject = dimensions[d].chart;
+                console.log(chartObject);
+                drawChart('chart_' + dimensions[d].guid, chartObject);
+            }
+        });
+    </script>
+
 
 
     
