@@ -87,12 +87,7 @@ function barchart(container_id, chartObject) {
           }
         },
         tooltip: barChartTooltip(chartObject),
-        series: chartObject.series,
-        navigation: {
-            buttonOptions: {
-                enabled: false
-          }
-        }
+        series: chartObject.series
     });}
 
 function barChartTooltip(chartObject) {
