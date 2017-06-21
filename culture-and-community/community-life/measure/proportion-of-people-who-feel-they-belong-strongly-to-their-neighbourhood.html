@@ -81,6 +81,10 @@
 			    Ethnicity facts and figures
 		    </a>
             
+            <ul id="proposition-links">
+
+                <li><a href="/background.html">Background</a></li>
+            </ul>
 	    </nav>
 	</div>
 </div>
@@ -637,7 +641,7 @@
       <h3 class="heading-small">Download data</h3>
       <ul class="no-bullets font-size-small">
         <li>
-          <a href="##" data-event="measure-download-graph-image">
+          <a href="##" data-event="measure-download-graph-image" class="download-png" id="download-feeling_of_belonging_to_neighbourhood_by_ethnicity">
             Image of graphs (PNG)
           </a>
         </li>
@@ -896,6 +900,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js"></script>
 <script type="text/javascript" src="/static/vendor/jquery.dataTables.min.js"></script>
 <script src="/static/javascripts/rd-graph.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js"></script>
 <script type="text/javascript">
 
   var dimensions = [{"chart": {"number_format": {"max": "", "min": "0", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [72, 74, 76, 66, 72, 67], "name": "Other"}, {"data": [77, 78, 79, 71, 72, 72], "name": "White"}], "title": {"text": "Percentage of adults who felt they belong to their neighbourhood "}, "type": "line", "xAxis": {"categories": ["2009/10", "2010/11", "2012/13", "2013/14", "2014/15", "2015/16"], "title": {"text": ""}}, "yAxis": {"title": {"text": "%"}}}, "disclosure_control": "", "guid": "feeling_of_belonging_to_neighbourhood_by_ethnicity", "location": "England", "source": "[Community Life Survey (previously Citizenship Survey)](https://www.gov.uk/government/collections/community-life-survey)", "summary": "* in 2009/10, the survey found that 77% of White people felt strongly they belonged to their neighbourhood, compared to 72% of people from ethnic minorities \r\n \r\n* in 2015/16, the survey found that 72% of White people surveyed felt strongly that they belonged to their immediate neighbourhood, compared to 67% of people from ethnic minorities", "suppression_rules": "", "table": {"category": "Ethnicity", "columns": ["%", "Number of respondents"], "data": [{"category": "White", "values": ["77", "7,872", "78", "8,651", "79", "6,202", "71", "4,513", "72", "1,782", "72", "2,653"]}, {"category": "non-white", "values": ["72", "790", "74", "955", "76", "676", "66", "560", "72", "231", "67", "354"]}, {"category": "All", "values": ["76", "8,664", "78", "9,608", "78", "6,886", "70", "5,078", "72", "2,014", "71", "3,012"]}], "group_columns": ["", "2009/10", "2010/11", "2012/13", "2013/14", "2014/15", "2015/16"], "groups": [{"data": [{"category": "White", "values": ["77", "7,872"]}, {"category": "non-white", "values": ["72", "790"]}, {"category": "All", "values": ["76", "8,664"]}], "group": "2009/10"}, {"data": [{"category": "White", "values": ["78", "8,651"]}, {"category": "non-white", "values": ["74", "955"]}, {"category": "All", "values": ["78", "9,608"]}], "group": "2010/11"}, {"data": [{"category": "White", "values": ["79", "6,202"]}, {"category": "non-white", "values": ["76", "676"]}, {"category": "All", "values": ["78", "6,886"]}], "group": "2012/13"}, {"data": [{"category": "White", "values": ["71", "4,513"]}, {"category": "non-white", "values": ["66", "560"]}, {"category": "All", "values": ["70", "5,078"]}], "group": "2013/14"}, {"data": [{"category": "White", "values": ["72", "1,782"]}, {"category": "non-white", "values": ["72", "231"]}, {"category": "All", "values": ["72", "2,014"]}], "group": "2014/15"}, {"data": [{"category": "White", "values": ["72", "2,653"]}, {"category": "non-white", "values": ["67", "354"]}, {"category": "All", "values": ["71", "3,012"]}], "group": "2015/16"}], "title": {"text": "Grouped Table"}, "type": "grouped"}, "time_period": "2009/10 to 2010/11 and 2012/13 to 2015/16", "title": "Sense of neighbourhood belonging by ethnicity", "type_of_statistic": "Official statistic"}];
@@ -937,6 +942,23 @@
         });
 
     
+  
+    $('.download-png').click(function(evt){
+        var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
+            chartId = '#chart_' + dimensionGuid,
+            chart = $(chartId),
+            dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
+
+        var subtitle = 'Location: ' + dimension.location
+                                    + '. Time period: '
+                                    + dimension.time_period
+                                    + '. Source: ' + dimension.source
+                                    + '|Ethnicity Facts and Figures GOV.UK';
+
+        chart.highcharts().options.subtitle.text = subtitle;
+        chart.highcharts().exportChart();
+    });
+
 
   });
 </script>
