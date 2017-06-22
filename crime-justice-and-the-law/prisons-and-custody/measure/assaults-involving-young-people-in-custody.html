@@ -81,6 +81,10 @@
 			    Ethnicity facts and figures
 		    </a>
             
+            <ul id="proposition-links">
+
+                <li><a href="/background.html">Background</a></li>
+            </ul>
 	    </nav>
 	</div>
 </div>
@@ -167,7 +171,7 @@
         <p>
           <ul>
 <li>
-<p>in 2015/16, the rate of assaults by young people from Other ethnic groups in custody was about a third higher than the rate for White young people in custody</p>
+<p>in 2015/16, the rate of assaults by young people from Other ethnic groups in custody was about 1.5 times the rate for White young people in custody</p>
 </li>
 <li>
 <p>there were about 24 assaults per 100 young people from Other ethnic groups in custody per month in 2015/16</p>
@@ -380,7 +384,7 @@
       <h3 class="heading-small">Download data</h3>
       <ul class="no-bullets font-size-small">
         <li>
-          <a href="##" data-event="measure-download-graph-image">
+          <a href="##" data-event="measure-download-graph-image" class="download-png" id="download-assaults_involving_young_people_in_custody_by_ethnicity">
             Image of graphs (PNG)
           </a>
         </li>
@@ -626,6 +630,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js"></script>
 <script type="text/javascript" src="/static/vendor/jquery.dataTables.min.js"></script>
 <script src="/static/javascripts/rd-graph.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js"></script>
 <script type="text/javascript">
 
   var dimensions = [{"chart": {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [24.1, 16.2], "name": "Ethnic Group"}], "title": {"text": "Assaults per 100 young people in custody by ethnicity in 2015/16"}, "type": "bar", "xAxis": {"categories": ["Ethnic minority", "White"], "title": {"text": ""}}, "yAxis": {"title": {"text": ""}}}, "disclosure_control": "", "guid": "assaults_involving_young_people_in_custody_by_ethnicity", "location": "England and Wales", "source": "[Youth Justice Statistics Supplementary Table 8.15](https://www.gov.uk/government/statistics/youth-justice-statistics-2015-to-2016)", "summary": "This data shows that:\r\n \r\n* there were about 24 assaults per 100 ethnic minority young people in custody per month in 2015/16\r\n\r\n* there were about  16 assaults per 100 White young people in custody per month in 2015/16\r\n\r\n", "suppression_rules": "", "table": {"category": "Ethnic Group", "columns": ["Number of incidents per 100 young people in custody per month", "Average population in custody", "Average number of assaults per month"], "data": [{"category": "Ethnic minority", "values": ["24.1", "524", "126.3"]}, {"category": "White", "values": ["16.2", "766.4", "124.3"]}], "title": {"text": "Simple Table"}, "type": "simple"}, "time_period": "2015/16", "title": "Assaults involving young people in custody by ethnicity", "type_of_statistic": "National statistic"}];
@@ -667,6 +672,23 @@
         });
 
     
+  
+    $('.download-png').click(function(evt){
+        var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
+            chartId = '#chart_' + dimensionGuid,
+            chart = $(chartId),
+            dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
+
+        var subtitle = 'Location: ' + dimension.location
+                                    + '. Time period: '
+                                    + dimension.time_period
+                                    + '. Source: ' + dimension.source
+                                    + '|Ethnicity Facts and Figures GOV.UK';
+
+        chart.highcharts().options.subtitle.text = subtitle;
+        chart.highcharts().exportChart();
+    });
+
 
   });
 </script>
