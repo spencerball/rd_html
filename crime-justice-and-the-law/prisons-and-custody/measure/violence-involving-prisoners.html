@@ -81,6 +81,10 @@
 			    Ethnicity facts and figures
 		    </a>
             
+            <ul id="proposition-links">
+
+                <li><a href="/background.html">Background</a></li>
+            </ul>
 	    </nav>
 	</div>
 </div>
@@ -192,7 +196,7 @@
         </summary>
         <div class="panel panel-border-narrow">
           <p>
-            <p>The data counts the number of violent incidents per 1,000, so individual prisoners were in many cases involved in more than one violent incident.</p>
+            <p>The data shows the number of violent incidents per 1,000, so individual prisoners were in many cases involved in more than one violent incident.</p>
 <p>The data doesn’t include assaults on prison staff or visitors.</p>
 <p>Estimates based on a larger number of respondents are generally more reliable. Therefore, the smaller numbers of respondents from ethnic minority backgrounds mean that estimates for these groups are less reliable than estimates for White people.</p>
           </p>
@@ -226,7 +230,7 @@
         </summary>
         <div class="panel panel-border-narrow">
           <p>
-            <p>This data is broken down into the following 5 broad ethnic categories: </p>
+            <p>For this data, the number of incidents recorded (the ‘sample size’) was too small to draw any meaningful conclusions for detailed ethnic categories. Therefore, the data is broken down into the following 5 broad groups:</p>
 <ul>
 <li>
 <p>White </p>
@@ -241,7 +245,7 @@
 <p>Black/African/Caribbean/Black British </p>
 </li>
 <li>
-<p>Other ethnic group</p>
+<p>Chinese and other</p>
 </li>
 </ul>
           </p>
@@ -638,7 +642,7 @@
       <h3 class="heading-small">Download data</h3>
       <ul class="no-bullets font-size-small">
         <li>
-          <a href="##" data-event="measure-download-graph-image">
+          <a href="##" data-event="measure-download-graph-image" class="download-png" id="download-violence_involving_prisoners_in_custody">
             Image of graphs (PNG)
           </a>
         </li>
@@ -899,6 +903,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js"></script>
 <script type="text/javascript" src="/static/vendor/jquery.dataTables.min.js"></script>
 <script src="/static/javascripts/rd-graph.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js"></script>
 <script type="text/javascript">
 
   var dimensions = [{"chart": {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [117.9, 285.3, 163.1, 335.5, 0, 127], "name": "Assailant"}, {"data": [124.9, 266.4, 194.7, 279.3, 0, 125.1], "name": "Fighter"}, {"data": [111.9, 126.3, 130.5, 135.4, 0, 107], "name": "Victim"}], "title": {"text": "Prisoner assailants, victims and fighters by ethnicity in 2015"}, "type": "bar", "xAxis": {"categories": ["Asian or Asian British", "Black or Black British", "Chinese or Other ethnic group ", "Mixed Ethnic Groups", "Not recorded/unknown", "White"], "title": {"text": "Assailants, victims and fighters per 1,000 prisoners"}}, "yAxis": {"title": {"text": ""}}}, "disclosure_control": "", "guid": "violence_involving_prisoners_in_custody", "location": " England and Wales", "source": "[National Offender Management Service (NOMS) annual offender equalities report: 2015 to 2016](https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016)", "summary": "This data shows that:\r\n \r\n* prisoners in the Mixed ethnic group were more likely than any other group to be assailants, victims or fighters in 2015\r\n\r\n* Black prisoners were the second most likely ethnic group to be assailants or fighters in 2015\r\n\r\n* in 2015, Asians were least likely to be assailants or fighters, and White prisoners least likely to be victims\r\n", "suppression_rules": "", "table": {"category": "Ethnic Group", "columns": ["Number of prisoners involved", "Number of incidents per 1000 prisoners"], "data": [{"category": "White", "values": ["8026", "127", "7905", "125.1", "6761", "107"]}, {"category": "Asian or Asian British", "values": ["810", "117.9", "858", "124.9", "769", "111.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3", "2817", "266.4", "1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5", "980", "279.3", "475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1", "191", "194.7", "128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["60", "NA", "50", "NA", "48", "NA"]}], "group_columns": ["", "Assailant", "Fighter", "Victim"], "groups": [{"data": [{"category": "White", "values": ["8026", "127"]}, {"category": "Asian or Asian British", "values": ["810", "117.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1"]}, {"category": "Not recorded/unknown", "values": ["60", "NA"]}], "group": "Assailant"}, {"data": [{"category": "White", "values": ["7905", "125.1"]}, {"category": "Asian or Asian British", "values": ["858", "124.9"]}, {"category": "Black or Black British", "values": ["2817", "266.4"]}, {"category": "Mixed Ethnic Groups", "values": ["980", "279.3"]}, {"category": "Chinese or Other ethnic group ", "values": ["191", "194.7"]}, {"category": "Not recorded/unknown", "values": ["50", "NA"]}], "group": "Fighter"}, {"data": [{"category": "White", "values": ["6761", "107"]}, {"category": "Asian or Asian British", "values": ["769", "111.9"]}, {"category": "Black or Black British", "values": ["1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["48", "NA"]}], "group": "Victim"}], "title": {"text": "Grouped Table"}, "type": "grouped"}, "time_period": "2011 to 2015", "title": "Violence involving prisoners in custody", "type_of_statistic": "National statistic"}];
@@ -940,6 +945,23 @@
         });
 
     
+  
+    $('.download-png').click(function(evt){
+        var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
+            chartId = '#chart_' + dimensionGuid,
+            chart = $(chartId),
+            dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
+
+        var subtitle = 'Location: ' + dimension.location
+                                    + '. Time period: '
+                                    + dimension.time_period
+                                    + '. Source: ' + dimension.source
+                                    + '|Ethnicity Facts and Figures GOV.UK';
+
+        chart.highcharts().options.subtitle.text = subtitle;
+        chart.highcharts().exportChart();
+    });
+
 
   });
 </script>
