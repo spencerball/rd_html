@@ -14,8 +14,16 @@ function drawTable(container_id, tableObject) {
 
 function simpleHtmlTable(container_id, tableObject) {
 
-    var table_html = "<table class='table table-sm'>";
-    table_html = table_html + "<thead><tr><th></th>";
+    var table_html = "";
+    if(tableObject.title && tableObject.title !== '') {
+        table_html = table_html + "<div class='table-title'>" + tableObject.title + "</div>";
+    }
+    if(tableObject.subtitle && tableObject.subtitle !== '') {
+        table_html = table_html + "<div class='table-subtitle'>" + tableObject.subtitle + "</div>";
+    }
+
+    table_html = table_html + "<table class='table table-sm'><thead>";
+    table_html = table_html + "<tr><th></th>";
     _.forEach(tableObject.columns, function(column) {
         table_html = table_html + '<th>' + column + '</th>';
     });
@@ -31,6 +39,11 @@ function simpleHtmlTable(container_id, tableObject) {
         table_html = table_html + "</tr>";
     });
     table_html = table_html + "</tbody></table>";
+
+    if(tableObject.footer && tableObject.footer !== '') {
+        table_html = table_html + "<div class='table-footer'>" + tableObject.footer + "</div>";
+    }
+
     $("#" + container_id).html(table_html);
 
     return true;
@@ -38,10 +51,16 @@ function simpleHtmlTable(container_id, tableObject) {
 
 function groupedHtmlTable(container_id, tableObject) {
 
-    var table_html = "<table class='table table-sm'>";
+    var table_html = "";
+    if(tableObject.header && tableObject.header !== '') {
+        table_html = table_html + "<div class='table-title heading-small'>" + tableObject.header + "</div>";
+    }
+    if(tableObject.subtitle && tableObject.subtitle !== '') {
+        table_html = table_html + "<div class='table-subtitle'>" + tableObject.subtitle + "</div>";
+    }
+    table_html = table_html + "<table class='table table-sm'>";
 
-    var header_html = '<thead>';
-    header_html = header_html + '<tr><td></td>';
+    var header_html = '<thead><tr><td></td>';
     _.forEach(tableObject.groups, function (group) {
         header_html = header_html + multicell(group.group, tableObject.columns.length);
     });
@@ -58,7 +77,9 @@ function groupedHtmlTable(container_id, tableObject) {
 
     table_html = table_html + header_html;
     table_html = table_html + '<tbody>';
-    var rows = _.map(tableObject.groups[0].data, function(item) { return item.category; });
+
+    var items = _.sortBy(tableObject.groups[0].data, function(item) { return item.order; })
+    var rows = _.map(items, function(item) { return item.category; });
     _.forEach(rows, function(row) {
         var row_html = '<tr><th>' + row + '</th>';
         _.forEach(tableObject.groups, function(group) {
@@ -73,10 +94,15 @@ function groupedHtmlTable(container_id, tableObject) {
 
 
     table_html = table_html + "</tbody></table>";
+
+    if(tableObject.footer && tableObject.footer !== '') {
+        table_html = table_html + "<div class='table-footer'>" + tableObject.footer + "</div>";
+    }
     $("#" + container_id).html(table_html);
 
     return true;
 }
+
 function multicell(text, total_cells) {
     html = '<td>' + text + '</td>';
     for(i=1; i<total_cells; i++) {
