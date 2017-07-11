@@ -1,925 +1,829 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <title>GOV.UK - The best place to find government services and information</title>
-
-    <!--[if gt IE 8]><!--><link href="/static/stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet" /><!--<![endif]-->
-    <!--[if IE 6]><link href="/static/stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
-    <!--[if IE 7]><link href="/static/stylesheets/govuk-template-ie7.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
-    <!--[if IE 8]><link href="/static/stylesheets/govuk-template-ie8.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
-    <link href="/static/stylesheets/govuk-template-print.css?0.19.2" media="print" rel="stylesheet" />
-
-    <!--[if IE 8]><link href="/static/stylesheets/fonts-ie8.css?0.19.2" media="all" rel="stylesheet" /><![endif]-->
-    <!--[if gte IE 9]><!--><link href="/static/stylesheets/fonts.css?0.19.2" media="all" rel="stylesheet" /><!--<![endif]-->
-    <!--[if lt IE 9]><script src="/static/javascripts/ie.js?0.19.2"></script><![endif]-->
-
-    <link rel="shortcut icon" href="/static/images/favicon.ico?0.19.2" type="image/x-icon" />
-    <link rel="mask-icon" href="/static/images/gov.uk_logotype_crown.svg?0.19.2" color="#0b0c0c">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/apple-touch-icon-152x152.png?0.19.2">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/apple-touch-icon-120x120.png?0.19.2">
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/apple-touch-icon-76x76.png?0.19.2">
-    <link rel="apple-touch-icon-precomposed" href="/static/images/apple-touch-icon-60x60.png?0.19.2">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="/static/images/opengraph-image.png?0.19.2">
-
-    
-  <meta name="viewport" content="width=100%, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
-  <link rel="stylesheet" type="text/css" href="/static/stylesheets/application.css">
-    
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!--[if gt IE 8]><!-->
+<html lang="en">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   GOV.UK - The best place to find government services and information
+  </title>
+  <!--[if gt IE 8]><!-->
+  <link href="/static/stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet"/>
+  <!--<![endif]-->
+  <!--[if IE 6]><link href="/static/stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+  <!--[if IE 7]><link href="/static/stylesheets/govuk-template-ie7.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+  <!--[if IE 8]><link href="/static/stylesheets/govuk-template-ie8.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+  <link href="/static/stylesheets/govuk-template-print.css?0.19.2" media="print" rel="stylesheet"/>
+  <!--[if IE 8]><link href="/static/stylesheets/fonts-ie8.css?0.19.2" media="all" rel="stylesheet" /><![endif]-->
+  <!--[if gte IE 9]><!-->
+  <link href="/static/stylesheets/fonts.css?0.19.2" media="all" rel="stylesheet"/>
+  <!--<![endif]-->
+  <!--[if lt IE 9]><script src="/static/javascripts/ie.js?0.19.2"></script><![endif]-->
+  <link href="/static/images/favicon.ico?0.19.2" rel="shortcut icon" type="image/x-icon"/>
+  <link color="#0b0c0c" href="/static/images/gov.uk_logotype_crown.svg?0.19.2" rel="mask-icon">
+   <link href="/static/images/apple-touch-icon-152x152.png?0.19.2" rel="apple-touch-icon-precomposed" sizes="152x152">
+    <link href="/static/images/apple-touch-icon-120x120.png?0.19.2" rel="apple-touch-icon-precomposed" sizes="120x120">
+     <link href="/static/images/apple-touch-icon-76x76.png?0.19.2" rel="apple-touch-icon-precomposed" sizes="76x76">
+      <link href="/static/images/apple-touch-icon-60x60.png?0.19.2" rel="apple-touch-icon-precomposed">
+       <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="/static/images/opengraph-image.png?0.19.2" property="og:image">
+         <meta content="width=100%, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" name="viewport"/>
+         <link href="/static/stylesheets/application.css" rel="stylesheet" type="text/css">
+          <script>
+           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
           ga('create', 'UA-100698377-1', 'auto');
           ga('send', 'pageview');
-
-        </script>
-    
-
-  </head>
-
-  <body class="">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
-    
-
-    <div id="skiplink-container">
-      <div>
-        <a href="#content" class="skiplink">Skip to main content</a>
-      </div>
+          </script>
+         </link>
+        </meta>
+       </meta>
+      </link>
+     </link>
+    </link>
+   </link>
+  </link>
+ </head>
+ <body class="">
+  <script>
+   document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+  </script>
+  <div id="skiplink-container">
+   <div>
+    <a class="skiplink" href="#content">
+     Skip to main content
+    </a>
+   </div>
+  </div>
+  <div id="global-cookie-message">
+  </div>
+  <header class="with-proposition" id="global-header" role="banner">
+   <div class="header-wrapper">
+    <div class="header-global">
+     <div class="header-logo">
+      <a class="content" href="https://www.gov.uk" id="logo" title="Go to the GOV.UK homepage">
+       <img alt="" height="32" src="/static/images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36">
+        GOV.UK
+       </img>
+      </a>
+     </div>
     </div>
-
-    <div id="global-cookie-message">
-      
-        
-      
+    <div class="header-proposition">
+     <div class="content">
+      <a class="js-header-toggle menu" href="#proposition-links">
+       Menu
+      </a>
+      <nav id="proposition-menu">
+       <a href="/" id="proposition-name">
+        Ethnicity facts and figures
+       </a>
+       <ul id="proposition-links">
+        <li>
+         <a href="/about-ethnicity.html">
+          About ethnicity
+         </a>
+        </li>
+        <li>
+         <a href="/background.html">
+          Background
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
     </div>
-
-    
-    <header role="banner" id="global-header" class="with-proposition">
-      <div class="header-wrapper">
-        <div class="header-global">
-          <div class="header-logo">
-            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
-              <img src="/static/images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36" height="32" alt=""> GOV.UK
-            </a>
-          </div>
-          
-        </div>
-        
-  
-<div class="header-proposition">
-	<div class="content">  
-		<a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-		<nav id="proposition-menu">  
-		    <a href="/" id="proposition-name">
-			    Ethnicity facts and figures
-		    </a>
-            
-            <ul id="proposition-links">
-                <li><a href="/about-ethnicity.html">About ethnicity</a></li>
-                <li><a href="/background.html">Background</a></li>
-            </ul>
-	    </nav>
-	</div>
-</div>
-  
-
-      </div>
-    </header>
-    
-
-    
-
-    <div id="global-header-bar"></div>
-
-    
-
-    
-
-<main id="content" role="main">
-  <div class="phase-banner">
+   </div>
+  </header>
+  <div id="global-header-bar">
+  </div>
+  <main id="content" role="main">
+   <div class="phase-banner">
     <p>
-        <strong class="phase-tag">Private Beta</strong>
-        <span>This is a new service – please send your feedback to <a href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a></span>
+     <strong class="phase-tag">
+      Private Beta
+     </strong>
+     <span>
+      This is a new service – please send your feedback to
+      <a href="mailto:ethnicity@cabinetoffice.gov.uk">
+       ethnicity@cabinetoffice.gov.uk
+      </a>
+     </span>
     </p>
-</div>
-  <div class="breadcrumbs">
+   </div>
+   <div class="breadcrumbs">
     <ol>
-      <li><a href="/" data-event="breadcrumb-homepage">Ethnicity facts and figures</a></li>
-      <li>
-        <a href="/crime-justice-and-the-law" data-event="breadcrumb-crime-justice-and-the-law">Crime justice and the law</a>
-      </li>
+     <li>
+      <a data-event="breadcrumb-homepage" href="/">
+       Ethnicity facts and figures
+      </a>
+     </li>
+     <li>
+      <a data-event="breadcrumb-crime-justice-and-the-law" href="/crime-justice-and-the-law">
+       Crime justice and the law
+      </a>
+     </li>
     </ol>
-  </div>
-
-  <div class="grid-row">
+   </div>
+   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-large">
-        Violence involving prisoners
-      </h1>
-      <div class="metadata">
-        <dl>
-          
-          <dt>Location:</dt>
-          <dd>
-            England and Wales
-          </dd>
-          
-          
-          <dt>Time period:</dt>
-          <dd>
-            2011 to 2015
-          </dd>
-          
-          
-          <dt>Source:</dt>
-          <dd>
-            <a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016" data-event="metadata-measure-page-source-url">
-              National Offender Management Service (NOMS) Offender Equalities Statistics Bulletin - supplementary table 4.2
-            </a>
-          </dd>
-          
-          
-          <dt>Department:</dt>
-          <dd>
-            Ministry of Justice
-          </dd>
-          
-          
-          <dt>Last updated:</dt>
-          <dd>
-            24 November 2016
-          </dd>
-          
-        </dl>
-      </div>
+     <h1 class="heading-large">
+      Violence involving prisoners
+     </h1>
+     <div class="metadata">
+      <dl>
+       <dt>
+        Location:
+       </dt>
+       <dd>
+        England and Wales
+       </dd>
+       <dt>
+        Time period:
+       </dt>
+       <dd>
+        2011 to 2015
+       </dd>
+       <dt>
+        Source:
+       </dt>
+       <dd>
+        <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">
+         National Offender Management Service (NOMS) Offender Equalities Statistics Bulletin - supplementary table 4.2
+        </a>
+       </dd>
+       <dt>
+        Department:
+       </dt>
+       <dd>
+        Ministry of Justice
+       </dd>
+       <dt>
+        Last updated:
+       </dt>
+       <dd>
+        24 November 2016
+       </dd>
+      </dl>
+     </div>
     </div>
-  </div>
-
-  <div class="grid-row">
+   </div>
+   <div class="grid-row">
     <div class="column-two-thirds">
+     <p>
+      The main facts and figures show that:
+     </p>
+     <div class="bullets spaced-out">
       <p>
-        The main facts and figures show that:
+       <ul>
+        <li>
+         <p>
+          prison violence has recently increased for the entire prison population, with a 33% increase in incidents involving assailants in 2015 compared to 2014
+         </p>
+        </li>
+        <li>
+         <p>
+          between 2011 and 2015, there was an increase in all ethnic groups in violent incidents involving assailants
+         </p>
+        </li>
+        <li>
+         <p>
+          the Chinese or other ethnic group included the fewest number of assailants in 2015, but the largest relative increase, with twice as many assailants as in 2011
+         </p>
+        </li>
+        <li>
+         <p>
+          while Black prisoners accounted for the second largest number of assailants, that ethnic group saw the smallest increase in such incidents from 2011 to 2015
+         </p>
+        </li>
+       </ul>
       </p>
-      <div class="bullets spaced-out">
+     </div>
+     <details class="normalize" data-event="data-reliability">
+      <summary>
+       <span class="summary">
+        The reliability of the data
+       </span>
+      </summary>
+      <div class="panel panel-border-narrow">
+       <p>
         <p>
-          <ul>
-<li>
-<p>prison violence has recently increased for the entire prison population, with a 33% increase in incidents involving assailants in 2015 compared to 2014</p>
-</li>
-<li>
-<p>between 2011 and 2015, there was an increase in all ethnic groups in violent incidents involving assailants </p>
-</li>
-<li>
-<p>the Chinese or other ethnic group included the fewest number of assailants in 2015, but the largest relative increase, with twice as many assailants as in 2011</p>
-</li>
-<li>
-<p>while Black prisoners accounted for the second largest number of assailants, that ethnic group saw the smallest increase in such incidents from 2011 to 2015</p>
-</li>
-</ul>
+         The data shows the number of violent incidents per 1,000, so individual prisoners were in many cases involved in more than one violent incident.
         </p>
+        <p>
+         The data doesn’t include assaults on prison staff or visitors.
+        </p>
+        <p>
+         Estimates based on a larger number of respondents are generally more reliable. Therefore, the smaller numbers of respondents from ethnic minority backgrounds mean that estimates for these groups are less reliable than estimates for White people.
+        </p>
+       </p>
       </div>
-
-
-      
-      <details data-event="data-reliability" class="normalize">
-        <summary>
-          <span class="summary">
-            The reliability of the data
-          </span>
-        </summary>
-        <div class="panel panel-border-narrow">
+     </details>
+     <details class="normalize" data-event="data-measured">
+      <summary>
+       <span class="summary">
+        What the data measures
+       </span>
+      </summary>
+      <div class="panel panel-border-narrow">
+       <p>
+        <p>
+         This data breaks down the number of violent incidents per 1,000 prisoners in England and Wales by ethnicity for each year from 2011 to 2015. There are separate breakdowns for the different roles (assailant, fighter or victim) which the prisoner plays in the violent incident.
+        </p>
+        <p>
+         Assailants are defined as prisoners who attack another prisoner but aren’t attacked back. Victims are prisoners assaulted by another prisoner but who don’t react violently. Fighters are prisoners involved in a violent incident where they and one or more prisoners use violence.
+        </p>
+        <p>
+         The data comes from the Incident Reporting System of the National Offender Management Service (NOMS).
+        </p>
+       </p>
+      </div>
+     </details>
+     <details class="normalize" data-event="categories-chosen">
+      <summary>
+       <span class="summary">
+        Why these ethnicities were chosen
+       </span>
+      </summary>
+      <div class="panel panel-border-narrow">
+       <p>
+        <p>
+         For this data, the number of incidents recorded (the ‘sample size’) was too small to draw any meaningful conclusions for detailed ethnic categories. Therefore, the data is broken down into the following 5 broad groups:
+        </p>
+        <ul>
+         <li>
           <p>
-            <p>The data shows the number of violent incidents per 1,000, so individual prisoners were in many cases involved in more than one violent incident.</p>
-<p>The data doesn’t include assaults on prison staff or visitors.</p>
-<p>Estimates based on a larger number of respondents are generally more reliable. Therefore, the smaller numbers of respondents from ethnic minority backgrounds mean that estimates for these groups are less reliable than estimates for White people.</p>
+           White
           </p>
-        </div>
-      </details>
-      
-
-      
-      <details data-event="data-measured" class="normalize">
-        <summary>
-          <span class="summary">
-            What the data measures
-          </span>
-        </summary>
-        <div class="panel panel-border-narrow">
+         </li>
+         <li>
           <p>
-            <p>This data breaks down the number of violent incidents per 1,000 prisoners in England and Wales by ethnicity for each year from 2011 to 2015. There are separate breakdowns for the different roles (assailant, fighter or victim) which the prisoner plays in the violent incident.</p>
-<p>Assailants are defined as prisoners who attack another prisoner but aren’t attacked back. Victims are prisoners assaulted by another prisoner but who don’t react violently. Fighters are prisoners involved in a violent incident where they and one or more prisoners use violence.</p>
-<p>The data comes from the Incident Reporting System of the National Offender Management Service (NOMS).</p>
+           Mixed/Multiple ethnic groups
           </p>
-        </div>
-      </details>
-      
-
-      
-      <details data-event="categories-chosen" class="normalize">
-        <summary>
-          <span class="summary">
-            Why these ethnicities were chosen
-          </span>
-        </summary>
-        <div class="panel panel-border-narrow">
+         </li>
+         <li>
           <p>
-            <p>For this data, the number of incidents recorded (the ‘sample size’) was too small to draw any meaningful conclusions for detailed ethnic categories. Therefore, the data is broken down into the following 5 broad groups:</p>
-<ul>
-<li>
-<p>White </p>
-</li>
-<li>
-<p>Mixed/Multiple ethnic groups </p>
-</li>
-<li>
-<p>Asian/Asian British</p>
-</li>
-<li>
-<p>Black/African/Caribbean/Black British </p>
-</li>
-<li>
-<p>Chinese and other</p>
-</li>
-</ul>
+           Asian/Asian British
           </p>
-        </div>
-      </details>
-      
+         </li>
+         <li>
+          <p>
+           Black/African/Caribbean/Black British
+          </p>
+         </li>
+         <li>
+          <p>
+           Chinese and other
+          </p>
+         </li>
+        </ul>
+       </p>
+      </div>
+     </details>
     </div>
-  </div>
-
-  <div class="grid-row">
-    
-    
+   </div>
+   <div class="grid-row">
     <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Violence involving prisoners in custody</h2>
-
-      <div class="metadata">
-        <dl>
-          
-          <dt>Location:</dt>
-          <dd>
-             England and Wales
-          </dd>
-          
-          
-          <dt>Time period:</dt>
-          <dd>
-            2011 to 2015
-          </dd>
-          
-          
-          <dt>Source:</dt>
-          <dd>
-            <p><a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">National Offender Management Service (NOMS) annual offender equalities report: 2015 to 2016</a></p>
-          </dd>
-          
-        </dl>
-      </div>
-    </div>
-
-    <div class="column-full" style="">
-      <div class="rd_chart" id="chart_6efa67e228ca677d83e3d89ba7047253c619db8e"></div>
-      
-        
-        <details data-event="view-table" class="normalize" >
-          <summary>
-            <span class="summary">View the numbers in a table</span>
-          </summary>
-          <div class="panel panel-border-narrow">
-            
-          
-
-            
-            
-            <table columns='2' class="table grouped">
-              <thead>
-                
-                
-                <tr>
-                  
-                  
-                  <td style="width:14.285714285714286%">
-                  
-                  </td>
-                  
-                  
-                  <td style="width:28.571428571428573%" colspan="2" class="line">
-                  
-                  Assailant</td>
-                  
-                  
-                  <td style="width:28.571428571428573%" colspan="2" class="line">
-                  
-                  Fighter</td>
-                  
-                  
-                  <td style="width:28.571428571428573%" colspan="2" class="">
-                  
-                  Victim</td>
-                  
-                </tr>
-                
-                <tr>
-                  <td style="width:100.0%"><button>Ethnic Group</button></td>
-                  
-                  
-                  
-                  
-                  
-                  
-                    <td style="width:50.0%"><button>Number of prisoners involved</button></td>
-                  
-                    <td style="width:50.0%"><button>Number of incidents per 1000 prisoners</button></td>
-                  
-                  
-                  
-                  
-                  
-                    <td style="width:50.0%"><button>Number of prisoners involved</button></td>
-                  
-                    <td style="width:50.0%"><button>Number of incidents per 1000 prisoners</button></td>
-                  
-                  
-                  
-                  
-                  
-                    <td style="width:50.0%"><button>Number of prisoners involved</button></td>
-                  
-                    <td style="width:50.0%"><button>Number of incidents per 1000 prisoners</button></td>
-                  
-                  
-                  
-                  
-                </tr>
-              </thead>
-              <tbody>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>White</b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      8026
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      127
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      7905
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      125.1
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      6761
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      107
-                    </td>
-                    
-                  
-                </tr>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>Asian or Asian British</b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      810
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      117.9
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      858
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      124.9
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      769
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      111.9
-                    </td>
-                    
-                  
-                </tr>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>Black or Black British</b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      3017
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      285.3
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      2817
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      266.4
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      1335
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      126.3
-                    </td>
-                    
-                  
-                </tr>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>Mixed Ethnic Groups</b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      1177
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      335.5
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      980
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      279.3
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      475
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      135.4
-                    </td>
-                    
-                  
-                </tr>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>Chinese or Other ethnic group </b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      160
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      163.1
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      191
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      194.7
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      128
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      130.5
-                    </td>
-                    
-                  
-                </tr>
-                
-                <tr>
-                  
-                    
-                    <th style="width:14.285714285714286%">
-                      <b>Not recorded/unknown</b>
-                    </th>
-                    <td style="width:14.285714285714286%">
-                      60
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      NA
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      50
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      NA
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      48
-                    </td>
-                    
-                  
-                    
-                    <td style="width:14.285714285714286%">
-                      NA
-                    </td>
-                    
-                  
-                </tr>
-                
-              </tbody>
-            </table>
-            
-
-        
-          </div>
-        </details>
-        
-
-      
-    </div>
-    
-      <div class="column-two-thirds">
-        <h3 class="heading-small">Summary</h3>
+     <h2 class="heading-medium">
+      Violence involving prisoners in custody
+     </h2>
+     <div class="metadata">
+      <dl>
+       <dt>
+        Location:
+       </dt>
+       <dd>
+        England and Wales
+       </dd>
+       <dt>
+        Time period:
+       </dt>
+       <dd>
+        2011 to 2015
+       </dd>
+       <dt>
+        Source:
+       </dt>
+       <dd>
         <p>
-          <p>This data shows that:</p>
-<ul>
-<li>
-<p>prisoners in the Mixed ethnic group were more likely than any other group to be assailants, victims or fighters in 2015</p>
-</li>
-<li>
-<p>Black prisoners were the second most likely ethnic group to be assailants or fighters in 2015</p>
-</li>
-<li>
-<p>in 2015, Asians were least likely to be assailants or fighters, and White prisoners least likely to be victims</p>
-</li>
-</ul>
+         <a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">
+          National Offender Management Service (NOMS) annual offender equalities report: 2015 to 2016
+         </a>
         </p>
-      </div>
-    
-    <div class="column-one-third" style="">
-      <h3 class="heading-small">Download data</h3>
-      <ul class="no-bullets font-size-small">
-        <li>
-          <a href="##" data-event="measure-download-graph-image" class="download-png" id="download-6efa67e228ca677d83e3d89ba7047253c619db8e">
-            Image of graphs (PNG)
-          </a>
-        </li>
-        <li>
-          <a href="##" data-event="measure-download-csv">
-            Source data (CSV)
-          </a>
-        </li>
-        <li>
-          <a href="##" data-event="measure-download-odf">
-            Source data – Open document format (ODF)
-          </a>
-        </li>
-        <li>
-          <a href="##" data-event="measure-download-xls">
-            Source data – Microsoft Excel (XLS)
-          </a>
-        </li>
-      </ul>
+       </dd>
+      </dl>
+     </div>
     </div>
-    
-    
-  </div>
-
-  <div class="grid-row">
-    <div class="accordions-container container">
-      <div class="accordion">
-        <div class="column-two-thirds">
-
-          <div data-event="methodology" class="accordion__header">
-            <h2>
-              <button>
-                Methodology and data type
-              </button>
-            </h2>
-            <span class="plus-minus-icon"></span>
-          </div>
-
-          <div class="accordion__body" style="display: none;">
-
-            
-            <h3 class="heading-small">
-              Purpose Of Data Source
-            </h3>
-            <p>
-              <p>Admin data used for internal management information</p>
-            </p>
-            
-
-            
-            <h3 class="heading-small">
-              Methodology
-            </h3>
-            <p>
-              <p>Rates by ethnicity have been taken from the NOMS Equalities Statistics bulletin. Numbers of incidents have been taken from the Ministry of Justice’s Safety in Custody statistics bulletin, which covers a longer time period.</p>
-<p>To calculate the prisoner population typically, a 12-month average was used where this data was accessible. As this data was not accessible for the prisoner population by age or by ethnicity, quarterly data was used to calculate the prisoner population. </p>
-<p>Race is based on self-reporting by prisoners and has not been independently validated. It is based on recorded ethnicity within the prison administrative system. About 95% of prisoners report their ethnicity for each year within the time series.</p>
-<p>Admin data sources reported as recorded. Information is provided by prisons, signed off locally. Substantial scrutiny of the data is undertaken by Data Wardens, however as with all large administrative data sources, some inherent inaccuracy may exist.</p>
-            </p>
-            
-
-            
-            <h3 class="heading-small">
-              Data type
-            </h3>
-            <p>
-              Admin data
-            </p>
-            
-
-            
-
-            
-            <h3 class="heading-small">
-              Suppression rules
-            </h3>
-            <p>
-              <p>Values of 2 or fewer are suppressed in relation to individuals (not incidents, where no disclosure applies).</p>
-            </p>
-            
-
-            
-
-            
-            <h3 class="heading-small">
-              Estimation
-            </h3>
-            <p>
-              <p>Rates per 1,000 to 1 decimal place</p>
-            </p>
-            
-
-            
-
-            
-            <h3 class="heading-small">
-              Further technical information
-            </h3>
-            <p>
-              <p><a href="https://www.gov.uk/government/collections/safety-in-custody-statistics">GOV.UK Safety in custody statistics</a></p>
-            </p>
-            
-
-          </div>
-
-        </div>
+    <div class="column-full" style="">
+     <div class="rd_chart" id="chart_6efa67e228ca677d83e3d89ba7047253c619db8e">
+     </div>
+     <details class="normalize" data-event="view-table">
+      <summary>
+       <span class="summary">
+        View the numbers in a table
+       </span>
+      </summary>
+      <div class="panel panel-border-narrow">
+       <table class="table grouped" columns="2">
+        <thead>
+         <tr>
+          <td style="width:14.285714285714286%">
+          </td>
+          <td class="line" colspan="2" style="width:28.571428571428573%">
+           Assailant
+          </td>
+          <td class="line" colspan="2" style="width:28.571428571428573%">
+           Fighter
+          </td>
+          <td class="" colspan="2" style="width:28.571428571428573%">
+           Victim
+          </td>
+         </tr>
+         <tr>
+          <td style="width:100.0%">
+           <button>
+            Ethnic Group
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of prisoners involved
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of incidents per 1000 prisoners
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of prisoners involved
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of incidents per 1000 prisoners
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of prisoners involved
+           </button>
+          </td>
+          <td style="width:50.0%">
+           <button>
+            Number of incidents per 1000 prisoners
+           </button>
+          </td>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            White
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           8026
+          </td>
+          <td style="width:14.285714285714286%">
+           127
+          </td>
+          <td style="width:14.285714285714286%">
+           7905
+          </td>
+          <td style="width:14.285714285714286%">
+           125.1
+          </td>
+          <td style="width:14.285714285714286%">
+           6761
+          </td>
+          <td style="width:14.285714285714286%">
+           107
+          </td>
+         </tr>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            Asian or Asian British
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           810
+          </td>
+          <td style="width:14.285714285714286%">
+           117.9
+          </td>
+          <td style="width:14.285714285714286%">
+           858
+          </td>
+          <td style="width:14.285714285714286%">
+           124.9
+          </td>
+          <td style="width:14.285714285714286%">
+           769
+          </td>
+          <td style="width:14.285714285714286%">
+           111.9
+          </td>
+         </tr>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            Black or Black British
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           3017
+          </td>
+          <td style="width:14.285714285714286%">
+           285.3
+          </td>
+          <td style="width:14.285714285714286%">
+           2817
+          </td>
+          <td style="width:14.285714285714286%">
+           266.4
+          </td>
+          <td style="width:14.285714285714286%">
+           1335
+          </td>
+          <td style="width:14.285714285714286%">
+           126.3
+          </td>
+         </tr>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            Mixed Ethnic Groups
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           1177
+          </td>
+          <td style="width:14.285714285714286%">
+           335.5
+          </td>
+          <td style="width:14.285714285714286%">
+           980
+          </td>
+          <td style="width:14.285714285714286%">
+           279.3
+          </td>
+          <td style="width:14.285714285714286%">
+           475
+          </td>
+          <td style="width:14.285714285714286%">
+           135.4
+          </td>
+         </tr>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            Chinese or Other ethnic group
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           160
+          </td>
+          <td style="width:14.285714285714286%">
+           163.1
+          </td>
+          <td style="width:14.285714285714286%">
+           191
+          </td>
+          <td style="width:14.285714285714286%">
+           194.7
+          </td>
+          <td style="width:14.285714285714286%">
+           128
+          </td>
+          <td style="width:14.285714285714286%">
+           130.5
+          </td>
+         </tr>
+         <tr>
+          <th style="width:14.285714285714286%">
+           <b>
+            Not recorded/unknown
+           </b>
+          </th>
+          <td style="width:14.285714285714286%">
+           60
+          </td>
+          <td style="width:14.285714285714286%">
+           NA
+          </td>
+          <td style="width:14.285714285714286%">
+           50
+          </td>
+          <td style="width:14.285714285714286%">
+           NA
+          </td>
+          <td style="width:14.285714285714286%">
+           48
+          </td>
+          <td style="width:14.285714285714286%">
+           NA
+          </td>
+         </tr>
+        </tbody>
+       </table>
       </div>
-
-      <div class="accordion">
-        <div class="column-two-thirds">
-
-          <div data-event="publishing-details" class="accordion__header">
-            <h2>
-              <button>
-                Publishing details
-              </button>
-            </h2>
-            <span class="plus-minus-icon"></span>
-          </div>
-
-          <div class="accordion__body" style="display: none;">
-            <dl>
-              
-              <dt class="meta-heading">Source:</dt>
-              <dd>
-                <p>
-                  <a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016" data-event="accordion-measure-source-url">
-                    National Offender Management Service (NOMS) Offender Equalities Statistics Bulletin - supplementary table 4.2
-                  </a>
-                </p>
-              </dd>
-              
-              
-              <dt class="meta-heading">Department:</dt>
-              <dd>
-                <p>Ministry of Justice</p>
-              </dd>
-              
-              
-              <dt class="meta-heading">First published:</dt>
-              <dd>
-                <p>
-                  24 November 2016
-                </p>
-              </dd>
-              
-              
-              <dt class="meta-heading">Last updated:</dt>
-              <dd>
-                <p>
-                  24 November 2016
-                </p>
-              </dd>
-              
-              
-              <dt class="meta-heading">Next update:</dt>
-              <dd>
-                <p>
-                  30 November 2017
-                </p>
-              </dd>
-              
-              
-              <dt class="meta-heading">Frequency:</dt>
-              <dd>
-                <p>
-                  Annual
-                </p>
-              </dd>
-              
-              
-              <dt class="meta-heading">Related publications:</dt>
-              <dd>
-                <p>
-                  <p><a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">NOMS annual offender equalities report: 2015 to 2016</a></p>
-                </p>
-              </dd>
-              
-              
-            </dl>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="accordion">
-        <div class="column-two-thirds">
-
-          <div data-event="download-data" class="accordion__header">
-            <h2>
-              <button>
-                Download the data
-              </button>
-            </h2>
-            <span class="plus-minus-icon"></span>
-          </div>
-
-          <div class="accordion__body" style="display: none;">
-            
-          </div>
-
-        </div>
-      </div>
+     </details>
     </div>
-  </div>
-</main>
-
-
-
-
-
-    <footer class="group js-footer" id="footer" role="contentinfo">
-
-      <div class="footer-wrapper">
-        
-  <div class='footer-categories grid-row'>
-  <div class='column-one-third'>
-      <h2>Contact</h2>
+    <div class="column-two-thirds">
+     <h3 class="heading-small">
+      Summary
+     </h3>
+     <p>
+      <p>
+       This data shows that:
+      </p>
       <ul>
-          <li>
-              <a href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a>
-          </li>
-          
+       <li>
+        <p>
+         prisoners in the Mixed ethnic group were more likely than any other group to be assailants, victims or fighters in 2015
+        </p>
+       </li>
+       <li>
+        <p>
+         Black prisoners were the second most likely ethnic group to be assailants or fighters in 2015
+        </p>
+       </li>
+       <li>
+        <p>
+         in 2015, Asians were least likely to be assailants or fighters, and White prisoners least likely to be victims
+        </p>
+       </li>
       </ul>
-  </div>
-</div>
-
-
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-            
-
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-              
-                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-              
-            </div>
-          </div>
-
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">&copy; Crown copyright</a>
-          </div>
-        </div>
+     </p>
+    </div>
+    <div class="column-one-third" style="">
+     <h3 class="heading-small">
+      Download data
+     </h3>
+     <ul class="no-bullets font-size-small">
+      <li>
+       <a class="download-png" data-event="measure-download-graph-image" href="##" id="download-6efa67e228ca677d83e3d89ba7047253c619db8e">
+        Image of graphs (PNG)
+       </a>
+      </li>
+      <li>
+       <a data-event="measure-download-csv" href="/topic_crime-justice-and-the-law/subtopic_/measure/MOJ012/dimension/6efa67e228ca677d83e3d89ba7047253c619db8e/downloads/6efa67e228ca677d83e3d89ba7047253c619db8e.csv">
+        Source data (CSV)
+       </a>
+      </li>
+      <li>
+       <a data-event="measure-download-odf" href="##">
+        Source data – Open document format (ODF)
+       </a>
+      </li>
+      <li>
+       <a data-event="measure-download-xls" href="##">
+        Source data – Microsoft Excel (XLS)
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="grid-row">
+    <div class="accordions-container container">
+     <div class="accordion">
+      <div class="column-two-thirds">
+       <div class="accordion__header" data-event="methodology">
+        <h2>
+         <button>
+          Methodology and data type
+         </button>
+        </h2>
+        <span class="plus-minus-icon">
+        </span>
+       </div>
+       <div class="accordion__body" style="display: none;">
+        <h3 class="heading-small">
+         Purpose Of Data Source
+        </h3>
+        <p>
+         <p>
+          Admin data used for internal management information
+         </p>
+        </p>
+        <h3 class="heading-small">
+         Methodology
+        </h3>
+        <p>
+         <p>
+          Rates by ethnicity have been taken from the NOMS Equalities Statistics bulletin. Numbers of incidents have been taken from the Ministry of Justice’s Safety in Custody statistics bulletin, which covers a longer time period.
+         </p>
+         <p>
+          To calculate the prisoner population typically, a 12-month average was used where this data was accessible. As this data was not accessible for the prisoner population by age or by ethnicity, quarterly data was used to calculate the prisoner population.
+         </p>
+         <p>
+          Race is based on self-reporting by prisoners and has not been independently validated. It is based on recorded ethnicity within the prison administrative system. About 95% of prisoners report their ethnicity for each year within the time series.
+         </p>
+         <p>
+          Admin data sources reported as recorded. Information is provided by prisons, signed off locally. Substantial scrutiny of the data is undertaken by Data Wardens, however as with all large administrative data sources, some inherent inaccuracy may exist.
+         </p>
+        </p>
+        <h3 class="heading-small">
+         Data type
+        </h3>
+        <p>
+         Admin data
+        </p>
+        <h3 class="heading-small">
+         Suppression rules
+        </h3>
+        <p>
+         <p>
+          Values of 2 or fewer are suppressed in relation to individuals (not incidents, where no disclosure applies).
+         </p>
+        </p>
+        <h3 class="heading-small">
+         Estimation
+        </h3>
+        <p>
+         <p>
+          Rates per 1,000 to 1 decimal place
+         </p>
+        </p>
+        <h3 class="heading-small">
+         Further technical information
+        </h3>
+        <p>
+         <p>
+          <a href="https://www.gov.uk/government/collections/safety-in-custody-statistics">
+           GOV.UK Safety in custody statistics
+          </a>
+         </p>
+        </p>
+       </div>
       </div>
-    </footer>
-
-    <div id="global-app-error" class="app-error hidden"></div>
-
-    <script src="/static/javascripts/govuk-template.js?0.19.2"></script>
-
-    
-	<script type="text/javascript" src="/static/vendor/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/javascripts/all.js"></script>
-    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js"></script>
-<script type="text/javascript" src="/static/vendor/jquery.dataTables.min.js"></script>
-<script src="/static/javascripts/rd-graph.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js"></script>
-<script type="text/javascript">
-
-  var dimensions = [{"chart": {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [117.9, 285.3, 163.1, 335.5, 0, 127], "name": "Assailant"}, {"data": [124.9, 266.4, 194.7, 279.3, 0, 125.1], "name": "Fighter"}, {"data": [111.9, 126.3, 130.5, 135.4, 0, 107], "name": "Victim"}], "title": {"text": "Prisoner assailants, victims and fighters by ethnicity in 2015"}, "type": "bar", "xAxis": {"categories": ["Asian or Asian British", "Black or Black British", "Chinese or Other ethnic group ", "Mixed Ethnic Groups", "Not recorded/unknown", "White"], "title": {"text": "Assailants, victims and fighters per 1,000 prisoners"}}, "yAxis": {"title": {"text": ""}}}, "chart_source_data": {"chartFormat": {"chart_title": "Prisoner assailants, victims and fighters by ethnicity in 2015", "number_format": "none", "number_format_max": "", "number_format_min": "", "number_format_prefix": "", "number_format_suffix": "", "x_axis_label": "Assailants, victims and fighters per 1,000 prisoners", "y_axis_label": ""}, "chartOptions": {"component_bar_column": "Involvement Type", "component_component_column": "[None]", "line_series_column": "Involvement Type", "primary_column": "Ethnic Group", "secondary_column": "Involvement Type", "x_axis_column": "Involvement Type"}, "data": [["Involvement Type", "Year", "Ethnic Group", "Value"], ["Assailant", "2015", "White", "127"], ["Assailant", "2015", "Asian or Asian British", "117.9"], ["Assailant", "2015", "Black or Black British", "285.3"], ["Assailant", "2015", "Mixed Ethnic Groups", "335.5"], ["Assailant", "2015", "Chinese or Other ethnic group ", "163.1"], ["Assailant", "2015", "Not recorded/unknown", "NA"], ["Fighter", "2015", "White", "125.1"], ["Fighter", "2015", "Asian or Asian British", "124.9"], ["Fighter", "2015", "Black or Black British", "266.4"], ["Fighter", "2015", "Mixed Ethnic Groups", "279.3"], ["Fighter", "2015", "Chinese or Other ethnic group ", "194.7"], ["Fighter", "2015", "Not recorded/unknown", "NA"], ["Victim", "2015", "White", "107"], ["Victim", "2015", "Asian or Asian British", "111.9"], ["Victim", "2015", "Black or Black British", "126.3"], ["Victim", "2015", "Mixed Ethnic Groups", "135.4"], ["Victim", "2015", "Chinese or Other ethnic group ", "130.5"], ["Victim", "2015", "Not recorded/unknown", "NA"]], "type": "bar_chart"}, "disclosure_control": "", "guid": "6efa67e228ca677d83e3d89ba7047253c619db8e", "location": " England and Wales", "measure": "MOJ012", "source": "[National Offender Management Service (NOMS) annual offender equalities report: 2015 to 2016](https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016)", "summary": "This data shows that:\r\n \r\n* prisoners in the Mixed ethnic group were more likely than any other group to be assailants, victims or fighters in 2015\r\n\r\n* Black prisoners were the second most likely ethnic group to be assailants or fighters in 2015\r\n\r\n* in 2015, Asians were least likely to be assailants or fighters, and White prisoners least likely to be victims\r\n", "suppression_rules": "", "table": {"category": "Ethnic Group", "columns": ["Number of prisoners involved", "Number of incidents per 1000 prisoners"], "data": [{"category": "White", "values": ["8026", "127", "7905", "125.1", "6761", "107"]}, {"category": "Asian or Asian British", "values": ["810", "117.9", "858", "124.9", "769", "111.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3", "2817", "266.4", "1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5", "980", "279.3", "475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1", "191", "194.7", "128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["60", "NA", "50", "NA", "48", "NA"]}], "group_columns": ["", "Assailant", "Fighter", "Victim"], "groups": [{"data": [{"category": "White", "values": ["8026", "127"]}, {"category": "Asian or Asian British", "values": ["810", "117.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1"]}, {"category": "Not recorded/unknown", "values": ["60", "NA"]}], "group": "Assailant"}, {"data": [{"category": "White", "values": ["7905", "125.1"]}, {"category": "Asian or Asian British", "values": ["858", "124.9"]}, {"category": "Black or Black British", "values": ["2817", "266.4"]}, {"category": "Mixed Ethnic Groups", "values": ["980", "279.3"]}, {"category": "Chinese or Other ethnic group ", "values": ["191", "194.7"]}, {"category": "Not recorded/unknown", "values": ["50", "NA"]}], "group": "Fighter"}, {"data": [{"category": "White", "values": ["6761", "107"]}, {"category": "Asian or Asian British", "values": ["769", "111.9"]}, {"category": "Black or Black British", "values": ["1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["48", "NA"]}], "group": "Victim"}], "title": {"text": "Grouped Table"}, "type": "grouped"}, "table_source_data": {"data": [["Involvement Type", "Year", "Ethnic Group", "Number of People", "Prisoner assailants, victims and fighters per 1,000 Prisoners"], ["Assailant", "2015", "White", "8026", "127"], ["Assailant", "2015", "Asian or Asian British", "810", "117.9"], ["Assailant", "2015", "Black or Black British", "3017", "285.3"], ["Assailant", "2015", "Mixed Ethnic Groups", "1177", "335.5"], ["Assailant", "2015", "Chinese or Other ethnic group ", "160", "163.1"], ["Assailant", "2015", "Not recorded/unknown", "60", "NA"], ["Fighter", "2015", "White", "7905", "125.1"], ["Fighter", "2015", "Asian or Asian British", "858", "124.9"], ["Fighter", "2015", "Black or Black British", "2817", "266.4"], ["Fighter", "2015", "Mixed Ethnic Groups", "980", "279.3"], ["Fighter", "2015", "Chinese or Other ethnic group ", "191", "194.7"], ["Fighter", "2015", "Not recorded/unknown", "50", "NA"], ["Victim", "2015", "White", "6761", "107"], ["Victim", "2015", "Asian or Asian British", "769", "111.9"], ["Victim", "2015", "Black or Black British", "1335", "126.3"], ["Victim", "2015", "Mixed Ethnic Groups", "475", "135.4"], ["Victim", "2015", "Chinese or Other ethnic group ", "128", "130.5"], ["Victim", "2015", "Not recorded/unknown", "48", "NA"]], "tableOptions": {"table_category_column": "Ethnic Group", "table_column_1": "Number of People", "table_column_1_name": "Number of prisoners involved", "table_column_2": "Prisoner assailants, victims and fighters per 1,000 Prisoners", "table_column_2_name": "Number of incidents per 1000 prisoners", "table_column_3": "none", "table_column_3_name": "Victims", "table_column_4": "none", "table_column_4_name": "", "table_column_5": "none", "table_column_5_name": "", "table_group_column": "Involvement Type"}}, "time_period": "2011 to 2015", "title": "Violence involving prisoners in custody", "type_of_statistic": "National statistic"}];
+     </div>
+     <div class="accordion">
+      <div class="column-two-thirds">
+       <div class="accordion__header" data-event="publishing-details">
+        <h2>
+         <button>
+          Publishing details
+         </button>
+        </h2>
+        <span class="plus-minus-icon">
+        </span>
+       </div>
+       <div class="accordion__body" style="display: none;">
+        <dl>
+         <dt class="meta-heading">
+          Source:
+         </dt>
+         <dd>
+          <p>
+           <a data-event="accordion-measure-source-url" href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">
+            National Offender Management Service (NOMS) Offender Equalities Statistics Bulletin - supplementary table 4.2
+           </a>
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          Department:
+         </dt>
+         <dd>
+          <p>
+           Ministry of Justice
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          First published:
+         </dt>
+         <dd>
+          <p>
+           24 November 2016
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          Last updated:
+         </dt>
+         <dd>
+          <p>
+           24 November 2016
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          Next update:
+         </dt>
+         <dd>
+          <p>
+           30 November 2017
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          Frequency:
+         </dt>
+         <dd>
+          <p>
+           Annual
+          </p>
+         </dd>
+         <dt class="meta-heading">
+          Related publications:
+         </dt>
+         <dd>
+          <p>
+           <p>
+            <a href="https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016">
+             NOMS annual offender equalities report: 2015 to 2016
+            </a>
+           </p>
+          </p>
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+     <div class="accordion">
+      <div class="column-two-thirds">
+       <div class="accordion__header" data-event="download-data">
+        <h2>
+         <button>
+          Download the data
+         </button>
+        </h2>
+        <span class="plus-minus-icon">
+        </span>
+       </div>
+       <div class="accordion__body" style="display: none;">
+        <button class="js--print print-btn">
+         Print this page
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="group js-footer" id="footer" role="contentinfo">
+   <div class="footer-wrapper">
+    <div class="footer-categories grid-row">
+     <div class="column-one-third">
+      <h2>
+       Contact
+      </h2>
+      <ul>
+       <li>
+        <a href="mailto:ethnicity@cabinetoffice.gov.uk">
+         ethnicity@cabinetoffice.gov.uk
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-meta">
+     <div class="footer-meta-inner">
+      <div class="open-government-licence">
+       <p class="logo">
+        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">
+         Open Government Licence
+        </a>
+       </p>
+       <p>
+        All content is available under the
+        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">
+         Open Government Licence v3.0
+        </a>
+        , except where otherwise stated
+       </p>
+      </div>
+     </div>
+     <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">
+       © Crown copyright
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <div class="app-error hidden" id="global-app-error">
+  </div>
+  <script src="/static/javascripts/govuk-template.js?0.19.2">
+  </script>
+  <script src="/static/vendor/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="/static/javascripts/all.js" type="text/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js" type="text/javascript">
+  </script>
+  <script src="/static/vendor/jquery.dataTables.min.js" type="text/javascript">
+  </script>
+  <script src="/static/javascripts/rd-graph.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js">
+  </script>
+  <script type="text/javascript">
+   var dimensions = [{"chart": {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [117.9, 285.3, 163.1, 335.5, 0, 127], "name": "Assailant"}, {"data": [124.9, 266.4, 194.7, 279.3, 0, 125.1], "name": "Fighter"}, {"data": [111.9, 126.3, 130.5, 135.4, 0, 107], "name": "Victim"}], "title": {"text": "Prisoner assailants, victims and fighters by ethnicity in 2015"}, "type": "bar", "xAxis": {"categories": ["Asian or Asian British", "Black or Black British", "Chinese or Other ethnic group ", "Mixed Ethnic Groups", "Not recorded/unknown", "White"], "title": {"text": "Assailants, victims and fighters per 1,000 prisoners"}}, "yAxis": {"title": {"text": ""}}}, "chart_source_data": {"chartFormat": {"chart_title": "Prisoner assailants, victims and fighters by ethnicity in 2015", "number_format": "none", "number_format_max": "", "number_format_min": "", "number_format_prefix": "", "number_format_suffix": "", "x_axis_label": "Assailants, victims and fighters per 1,000 prisoners", "y_axis_label": ""}, "chartOptions": {"component_bar_column": "Involvement Type", "component_component_column": "[None]", "line_series_column": "Involvement Type", "primary_column": "Ethnic Group", "secondary_column": "Involvement Type", "x_axis_column": "Involvement Type"}, "data": [["Involvement Type", "Year", "Ethnic Group", "Value"], ["Assailant", "2015", "White", "127"], ["Assailant", "2015", "Asian or Asian British", "117.9"], ["Assailant", "2015", "Black or Black British", "285.3"], ["Assailant", "2015", "Mixed Ethnic Groups", "335.5"], ["Assailant", "2015", "Chinese or Other ethnic group ", "163.1"], ["Assailant", "2015", "Not recorded/unknown", "NA"], ["Fighter", "2015", "White", "125.1"], ["Fighter", "2015", "Asian or Asian British", "124.9"], ["Fighter", "2015", "Black or Black British", "266.4"], ["Fighter", "2015", "Mixed Ethnic Groups", "279.3"], ["Fighter", "2015", "Chinese or Other ethnic group ", "194.7"], ["Fighter", "2015", "Not recorded/unknown", "NA"], ["Victim", "2015", "White", "107"], ["Victim", "2015", "Asian or Asian British", "111.9"], ["Victim", "2015", "Black or Black British", "126.3"], ["Victim", "2015", "Mixed Ethnic Groups", "135.4"], ["Victim", "2015", "Chinese or Other ethnic group ", "130.5"], ["Victim", "2015", "Not recorded/unknown", "NA"]], "type": "bar_chart"}, "disclosure_control": "", "guid": "6efa67e228ca677d83e3d89ba7047253c619db8e", "location": " England and Wales", "measure": "MOJ012", "source": "[National Offender Management Service (NOMS) annual offender equalities report: 2015 to 2016](https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016)", "summary": "This data shows that:\r\n \r\n* prisoners in the Mixed ethnic group were more likely than any other group to be assailants, victims or fighters in 2015\r\n\r\n* Black prisoners were the second most likely ethnic group to be assailants or fighters in 2015\r\n\r\n* in 2015, Asians were least likely to be assailants or fighters, and White prisoners least likely to be victims\r\n", "suppression_rules": "", "table": {"category": "Ethnic Group", "columns": ["Number of prisoners involved", "Number of incidents per 1000 prisoners"], "data": [{"category": "White", "values": ["8026", "127", "7905", "125.1", "6761", "107"]}, {"category": "Asian or Asian British", "values": ["810", "117.9", "858", "124.9", "769", "111.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3", "2817", "266.4", "1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5", "980", "279.3", "475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1", "191", "194.7", "128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["60", "NA", "50", "NA", "48", "NA"]}], "group_columns": ["", "Assailant", "Fighter", "Victim"], "groups": [{"data": [{"category": "White", "values": ["8026", "127"]}, {"category": "Asian or Asian British", "values": ["810", "117.9"]}, {"category": "Black or Black British", "values": ["3017", "285.3"]}, {"category": "Mixed Ethnic Groups", "values": ["1177", "335.5"]}, {"category": "Chinese or Other ethnic group ", "values": ["160", "163.1"]}, {"category": "Not recorded/unknown", "values": ["60", "NA"]}], "group": "Assailant"}, {"data": [{"category": "White", "values": ["7905", "125.1"]}, {"category": "Asian or Asian British", "values": ["858", "124.9"]}, {"category": "Black or Black British", "values": ["2817", "266.4"]}, {"category": "Mixed Ethnic Groups", "values": ["980", "279.3"]}, {"category": "Chinese or Other ethnic group ", "values": ["191", "194.7"]}, {"category": "Not recorded/unknown", "values": ["50", "NA"]}], "group": "Fighter"}, {"data": [{"category": "White", "values": ["6761", "107"]}, {"category": "Asian or Asian British", "values": ["769", "111.9"]}, {"category": "Black or Black British", "values": ["1335", "126.3"]}, {"category": "Mixed Ethnic Groups", "values": ["475", "135.4"]}, {"category": "Chinese or Other ethnic group ", "values": ["128", "130.5"]}, {"category": "Not recorded/unknown", "values": ["48", "NA"]}], "group": "Victim"}], "title": {"text": "Grouped Table"}, "type": "grouped"}, "table_source_data": {"data": [["Involvement Type", "Year", "Ethnic Group", "Number of People", "Prisoner assailants, victims and fighters per 1,000 Prisoners"], ["Assailant", "2015", "White", "8026", "127"], ["Assailant", "2015", "Asian or Asian British", "810", "117.9"], ["Assailant", "2015", "Black or Black British", "3017", "285.3"], ["Assailant", "2015", "Mixed Ethnic Groups", "1177", "335.5"], ["Assailant", "2015", "Chinese or Other ethnic group ", "160", "163.1"], ["Assailant", "2015", "Not recorded/unknown", "60", "NA"], ["Fighter", "2015", "White", "7905", "125.1"], ["Fighter", "2015", "Asian or Asian British", "858", "124.9"], ["Fighter", "2015", "Black or Black British", "2817", "266.4"], ["Fighter", "2015", "Mixed Ethnic Groups", "980", "279.3"], ["Fighter", "2015", "Chinese or Other ethnic group ", "191", "194.7"], ["Fighter", "2015", "Not recorded/unknown", "50", "NA"], ["Victim", "2015", "White", "6761", "107"], ["Victim", "2015", "Asian or Asian British", "769", "111.9"], ["Victim", "2015", "Black or Black British", "1335", "126.3"], ["Victim", "2015", "Mixed Ethnic Groups", "475", "135.4"], ["Victim", "2015", "Chinese or Other ethnic group ", "128", "130.5"], ["Victim", "2015", "Not recorded/unknown", "48", "NA"]], "tableOptions": {"table_category_column": "Ethnic Group", "table_column_1": "Number of People", "table_column_1_name": "Number of prisoners involved", "table_column_2": "Prisoner assailants, victims and fighters per 1,000 Prisoners", "table_column_2_name": "Number of incidents per 1000 prisoners", "table_column_3": "none", "table_column_3_name": "Victims", "table_column_4": "none", "table_column_4_name": "", "table_column_5": "none", "table_column_5_name": "", "table_group_column": "Involvement Type"}}, "time_period": "2011 to 2015", "title": "Violence involving prisoners in custody", "type_of_statistic": "National statistic"}];
 
   $(document).ready(function () {
     for (d in dimensions) {
@@ -976,11 +880,9 @@
 
 
   });
-</script>
-
-
-
-    
-    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
-  </body>
+  </script>
+  <script>
+   if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');
+  </script>
+ </body>
 </html>
