@@ -1,0 +1,13 @@
+"Title","Representation of ethnic groups in apprenticeships"
+"Location","England"
+"Time period","2008/09 to 2015/16"
+"Data source","Apprenticeship participation and number of apprenticeship achievements and starts"
+"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+
+"Ethnicity","% of population from this ethnicity","% of apprenticeships from this ethnicity"
+"White","84.6","88.0"
+"Black","3.7","3.5"
+"Asian","8.2","4.3"
+"Mixed","2.6","2.1"
+"Other","1.1","0.7"
+"Unknown ethnicity","0.0","1.4"

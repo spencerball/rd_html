@@ -1,0 +1,13 @@
+"Title","Representation of government-funded learners in further education by ethnicity"
+"Location","England"
+"Time period","2002/03 to 2015/16"
+"Data source","Further education and skills "
+"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+
+"Ethnic","% of population from this ethnicity","% of learners from this ethnicity"
+"White","84.6","78.2"
+"Black","3.7","6.3"
+"Asian","8.2","8.3"
+"Mixed","2.6","2.9"
+"Other","1.1","2.1"
+"Unknown ethnicity","0.0","2.2"
