@@ -1,0 +1,13 @@
+"Title","Cigarette smoking among 15 year olds by ethnicity"
+"Location","England"
+"Time period","2014/15"
+"Data source","Public Health Outcomes Framework / What About YOUth (WAY) survey"
+"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+
+"Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","unweighted sample size"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","All","All ethnicity","E92000001","ONS geography code","8.2","%","8.3","8.1","116646"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Asian","Other","E92000001","ONS geography code","2.6","%","2.9","2.3","9495"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Black","Other","E92000001","ONS geography code","2.4","%","2.8","2.0","4876"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Mixed","Other","E92000001","ONS geography code","9.0","%","9.8","8.2","3721"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Other","Other","E92000001","ONS geography code","2.9","%","4.1","1.7","554"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","White","Other","E92000001","ONS geography code","9.2","%","9.4","9.0","86530"

@@ -328,6 +328,11 @@
          Data collected before 2011 has been reclassified to fit the 5 main 2011 Census categories to enable comparisons to be made over time. Arab, and Irish or Gypsy traveller, classifications were not available in the 2001 Census, so these breakdowns are not provided in the 2002/03 to 2010/11 data.
         </p>
        </p>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
       </div>
      </details>
     </div>
@@ -1888,13 +1893,28 @@
         var subtitle = 'Location: ' + dimension.location
                                     + '. Time period: '
                                     + dimension.time_period
-                                    + '. Source: ' + dimension.source
+                                    + '. Source: ' + getSourceText(dimension.source)
                                     + '|Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();
     });
 
+
+    function getSourceText(source){
+        var regex = /\[(.*?)\]\(.*?\)/;
+        if(regex.test(source)){
+            var match = regex.exec(source);
+            if(match.length == 2) {
+               return match[1];
+            }
+            else {
+                return source;
+            }
+        } else {
+            return source;
+        }
+    };
 
   });
   </script>

@@ -254,6 +254,11 @@ White ethnic groups (including White British and White ethnic minorities) compar
          The small sample size for the Community Life Survey means that is it only possible to provide a breakdown for these two broad ethnic categories. There may be differences between ethnic minorities, but it is not possible to explore this with the sample size currently available.
         </p>
        </p>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
       </div>
      </details>
     </div>
@@ -852,13 +857,28 @@ White ethnic groups (including White British and White ethnic minorities) compar
         var subtitle = 'Location: ' + dimension.location
                                     + '. Time period: '
                                     + dimension.time_period
-                                    + '. Source: ' + dimension.source
+                                    + '. Source: ' + getSourceText(dimension.source)
                                     + '|Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();
     });
 
+
+    function getSourceText(source){
+        var regex = /\[(.*?)\]\(.*?\)/;
+        if(regex.test(source)){
+            var match = regex.exec(source);
+            if(match.length == 2) {
+               return match[1];
+            }
+            else {
+                return source;
+            }
+        } else {
+            return source;
+        }
+    };
 
   });
   </script>

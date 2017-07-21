@@ -370,6 +370,11 @@
 White and Other, that is, White ethnic groups (including White British and White ethnic minorities) compared with all other ethnic minorities
         </p>
        </p>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
       </div>
      </details>
     </div>
@@ -2168,13 +2173,28 @@ White and Other, that is, White ethnic groups (including White British and White
         var subtitle = 'Location: ' + dimension.location
                                     + '. Time period: '
                                     + dimension.time_period
-                                    + '. Source: ' + dimension.source
+                                    + '. Source: ' + getSourceText(dimension.source)
                                     + '|Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();
     });
 
+
+    function getSourceText(source){
+        var regex = /\[(.*?)\]\(.*?\)/;
+        if(regex.test(source)){
+            var match = regex.exec(source);
+            if(match.length == 2) {
+               return match[1];
+            }
+            else {
+                return source;
+            }
+        } else {
+            return source;
+        }
+    };
 
   });
   </script>
