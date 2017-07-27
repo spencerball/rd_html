@@ -39,6 +39,13 @@
           ga('create', 'UA-100698377-1', 'auto');
           ga('send', 'pageview');
   </script>
+  <!--[if lte IE 8 ]>
+    <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
+  <![endif]-->
+  <script src="/static/vendor/details.polyfill.js" type="text/javascript">
+  </script>
+  <link href="./percentage-of-income-spent-on-rent-for-new-social-lettings.json" rel="alternate" title="Percentage of income spent on rent for new lettings of social housing" type="application/json">
+  </link>
  </head>
  <body class="">
   <script>
@@ -169,25 +176,23 @@
       The main facts and figures show that:
      </p>
      <div class="bullets spaced-out">
-      <p>
-       <ul>
-        <li>
-         <p>
-          in 2015/16, 1.6 million households in England rented from a local authority and 2.3 million households rented from a private registered provider (usually a housing association)
-         </p>
-        </li>
-        <li>
-         <p>
-          in 2015/16, there were 374,612 new social housing lettings, with ethnicity known for 355,898 of those
-         </p>
-        </li>
-        <li>
-         <p>
-          the percentage of income spent on rent for new social housing lettings is similar across all ethnic groups, ranging from 34% (Black Caribbean households) to 43% (Pakistani and White Other households)
-         </p>
-        </li>
-       </ul>
-      </p>
+      <ul>
+       <li>
+        <p>
+         in 2015/16, 1.6 million households in England rented from a local authority and 2.3 million households rented from a private registered provider (usually a housing association)
+        </p>
+       </li>
+       <li>
+        <p>
+         in 2015/16, there were 374,612 new social housing lettings, with ethnicity known for 355,898 of those
+        </p>
+       </li>
+       <li>
+        <p>
+         the percentage of income spent on rent for new social housing lettings is similar across all ethnic groups, ranging from 34% (Black Caribbean households) to 43% (Pakistani and White Other households)
+        </p>
+       </li>
+      </ul>
      </div>
      <details class="normalize" data-event="data-reliability">
       <summary>
@@ -197,6 +202,26 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        These figures are based on the Continuous Recording of Lettings and Sales in Social Housing (CORE). CORE is a complete census of new social housing lettings.
+       </p>
+       <p>
+        The way the data is collected means there should be no sampling errors in the final dataset. However, there may be some inaccuracy due to missing responses or reporting errors when the data was entered.
+       </p>
+       <p>
+        Tenants can refuse to give information on their ethnicity. The data used here excludes any records where ethnicity was refused or where information on ethnicity is missing. This means that figures for new lettings may be different from other published figures on social housing.
+       </p>
+       <p>
+        Social housing is provided by local authorities and private registered providers (mainly housing associations).
+       </p>
+       <p>
+        Household income used in these figures does not take account of the size or membership of households, which means that we can’t make statements about whether some ethnic groups are poorer compared to others.
+       </p>
+       <p>
+        For example, 2 households may have the same number of people, but in one household there are several dependent children, while in the other, everyone is employed. In this data, the amount of rent as a percentage of household income has not been adjusted to reflect these differences.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          These figures are based on the Continuous Recording of Lettings and Sales in Social Housing (CORE). CORE is a complete census of new social housing lettings.
         </p>
@@ -215,8 +240,8 @@
         <p>
          For example, 2 households may have the same number of people, but in one household there are several dependent children, while in the other, everyone is employed. In this data, the amount of rent as a percentage of household income has not been adjusted to reflect these differences.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="data-measured">
       <summary>
@@ -226,6 +251,34 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        This data measures the amount of rent paid for social housing lettings as a percentage of income, including benefits.
+       </p>
+       <p>
+        Social housing is let to tenants by local authorities or private registered providers (mainly housing associations).
+       </p>
+       <p>
+        The figures come from the Continuous Recording of Lettings and Sales in Social Housing (CORE) in 2015/16, which records:
+       </p>
+       <ul>
+        <li>
+         social housing lettings
+        </li>
+        <li>
+         affordable housing lettings
+        </li>
+        <li>
+         sales by private registered providers
+        </li>
+       </ul>
+       <p>
+        The CORE data used here relates to new, permanent general lettings of social housing. It doesn’t include other types of letting, except temporary lettings where a household moves into supported housing.
+       </p>
+       <p>
+        The information relates to households. A household is one person or a group of people (not necessarily related) who have the accommodation as their only or main residence. If it is a group, they must share cooking facilities and also share a living room, sitting room or dining area.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          This data measures the amount of rent paid for social housing lettings as a percentage of income, including benefits.
         </p>
@@ -252,8 +305,8 @@
         <p>
          The information relates to households. A household is one person or a group of people (not necessarily related) who have the accommodation as their only or main residence. If it is a group, they must share cooking facilities and also share a living room, sitting room or dining area.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="categories-chosen">
       <summary>
@@ -263,6 +316,95 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        This data uses the standardised ethnic groups based on the 2011 census.
+       </p>
+       <p>
+        White:
+       </p>
+       <ul>
+        <li>
+         English/Welsh/Scottish/Northern Irish/British
+        </li>
+        <li>
+         Irish
+        </li>
+        <li>
+         Gypsy, Traveller or Irish Traveller
+        </li>
+        <li>
+         Any other White background
+        </li>
+       </ul>
+       <p>
+        Mixed/Multiple ethnic groups:
+       </p>
+       <ul>
+        <li>
+         White and Black Caribbean
+        </li>
+        <li>
+         White and Black African
+        </li>
+        <li>
+         White and Asian
+        </li>
+        <li>
+         Any other Mixed/Multiple ethnic background
+        </li>
+       </ul>
+       <p>
+        Asian/Asian British:
+       </p>
+       <ul>
+        <li>
+         Indian
+        </li>
+        <li>
+         Pakistani
+        </li>
+        <li>
+         Bangladeshi
+        </li>
+        <li>
+         Chinese
+        </li>
+        <li>
+         Any other Asian background
+        </li>
+       </ul>
+       <p>
+        Black/African/Caribbean/Black British:
+       </p>
+       <ul>
+        <li>
+         African
+        </li>
+        <li>
+         Caribbean
+        </li>
+        <li>
+         Any other Black/African/Caribbean background
+        </li>
+       </ul>
+       <p>
+        Other ethnic group:
+       </p>
+       <ul>
+        <li>
+         Arab
+        </li>
+        <li>
+         Any other ethnic group
+        </li>
+       </ul>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
+      </div>
+      <noscript>
+       <div class="section-expandable-region" id="ethnicity-definition">
         <p>
          This data uses the standardised ethnic groups based on the 2011 census.
         </p>
@@ -345,13 +487,8 @@
           Any other ethnic group
          </li>
         </ul>
-       </p>
-       <p>
-        <a href="/ethnic-groups-and-data-collected.html">
-         Ethnic groups and how data on ethnicity is collected
-        </a>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
     </div>
    </div>
@@ -394,14 +531,14 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <h3 class="heading-small">
         Percentage of income spent on rent
        </h3>
        <table class="table cropped" columns="">
         <thead>
          <tr>
-          <td style="width:50.0%">
+          <td class="first" style="width:100.0%">
            <button>
             Ethnicity
            </button>
@@ -415,7 +552,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Asian/Asian British: Bangladeshi" style="width:50.0%">
            <b>
             Asian/Asian British: Bangladeshi
            </b>
@@ -425,7 +562,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Asian/Asian British: Indian" style="width:50.0%">
            <b>
             Asian/Asian British: Indian
            </b>
@@ -435,7 +572,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Asian/Asian British: Other" style="width:50.0%">
            <b>
             Asian/Asian British: Other
            </b>
@@ -445,7 +582,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Asian/Asian British: Pakistani" style="width:50.0%">
            <b>
             Asian/Asian British: Pakistani
            </b>
@@ -455,7 +592,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Black, African, Caribbean or Black British: African" style="width:50.0%">
            <b>
             Black, African, Caribbean or Black British: African
            </b>
@@ -465,7 +602,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Black, African, Caribbean or Black British: Caribbean" style="width:50.0%">
            <b>
             Black, African, Caribbean or Black British: Caribbean
            </b>
@@ -475,7 +612,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Black, African, Caribbean or Black British: Other" style="width:50.0%">
            <b>
             Black, African, Caribbean or Black British: Other
            </b>
@@ -485,7 +622,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Mixed: Other" style="width:50.0%">
            <b>
             Mixed: Other
            </b>
@@ -495,7 +632,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Mixed: White &amp; Asian" style="width:50.0%">
            <b>
             Mixed: White &amp; Asian
            </b>
@@ -505,7 +642,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Mixed: White &amp; Black African" style="width:50.0%">
            <b>
             Mixed: White &amp; Black African
            </b>
@@ -515,7 +652,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Mixed: White &amp; Black Caribbean" style="width:50.0%">
            <b>
             Mixed: White &amp; Black Caribbean
            </b>
@@ -525,7 +662,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Other Ethnic group: Arab" style="width:50.0%">
            <b>
             Other Ethnic group: Arab
            </b>
@@ -535,7 +672,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Other Ethnic group: Chinese" style="width:50.0%">
            <b>
             Other Ethnic group: Chinese
            </b>
@@ -545,7 +682,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="Other Ethnic group: Other" style="width:50.0%">
            <b>
             Other Ethnic group: Other
            </b>
@@ -555,7 +692,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="White: British" style="width:50.0%">
            <b>
             White: British
            </b>
@@ -565,7 +702,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="White: Gypsy, Irish Traveller" style="width:50.0%">
            <b>
             White: Gypsy, Irish Traveller
            </b>
@@ -575,7 +712,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="White: Irish" style="width:50.0%">
            <b>
             White: Irish
            </b>
@@ -585,7 +722,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:50.0%">
+          <th data-order="White: Other" style="width:50.0%">
            <b>
             White: Other
            </b>
@@ -604,27 +741,25 @@
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         the percentage of income spent on rent for new social housing lettings is similar across all ethnic groups, ranging from 34% to 43%
-        </p>
-       </li>
-       <li>
-        <p>
-         Black Caribbean households spend the highest percentage of their income on rent for new social housing lettings (43%)
-        </p>
-       </li>
-       <li>
-        <p>
-         Pakistani and Any Other White households spend the lowest percentage of their income on rent for new social housing lettings (34%)
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        the percentage of income spent on rent for new social housing lettings is similar across all ethnic groups, ranging from 34% to 43%
+       </p>
+      </li>
+      <li>
+       <p>
+        Black Caribbean households spend the highest percentage of their income on rent for new social housing lettings (43%)
+       </p>
+      </li>
+      <li>
+       <p>
+        Pakistani and Any Other White households spend the lowest percentage of their income on rent for new social housing lettings (34%)
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -691,7 +826,7 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <h3 class="heading-small">
         Percentage of income spent on rent
        </h3>
@@ -729,52 +864,52 @@
           </td>
          </tr>
          <tr>
-          <td style="width:50.0%">
+          <td class="first" style="width:10.0%">
            <button>
             Ethnicity
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:10.0%">
            <button>
             %
            </button>
@@ -783,7 +918,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White: British" style="width:10.0%">
            <b>
             White: British
            </b>
@@ -817,7 +952,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White: Irish" style="width:10.0%">
            <b>
             White: Irish
            </b>
@@ -851,7 +986,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White: Other" style="width:10.0%">
            <b>
             White: Other
            </b>
@@ -885,7 +1020,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White &amp; Black Caribbean" style="width:10.0%">
            <b>
             White &amp; Black Caribbean
            </b>
@@ -919,7 +1054,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White &amp; Black African" style="width:10.0%">
            <b>
             White &amp; Black African
            </b>
@@ -953,7 +1088,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White &amp; Asian" style="width:10.0%">
            <b>
             White &amp; Asian
            </b>
@@ -987,7 +1122,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Mixed: Other" style="width:10.0%">
            <b>
             Mixed: Other
            </b>
@@ -1021,7 +1156,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Indian" style="width:10.0%">
            <b>
             Indian
            </b>
@@ -1055,7 +1190,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Pakistani" style="width:10.0%">
            <b>
             Pakistani
            </b>
@@ -1089,7 +1224,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Bangladeshi" style="width:10.0%">
            <b>
             Bangladeshi
            </b>
@@ -1123,7 +1258,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Asian: Other" style="width:10.0%">
            <b>
             Asian: Other
            </b>
@@ -1157,7 +1292,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Black Caribbean" style="width:10.0%">
            <b>
             Black Caribbean
            </b>
@@ -1191,7 +1326,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Black African" style="width:10.0%">
            <b>
             Black African
            </b>
@@ -1225,7 +1360,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Black: Other" style="width:10.0%">
            <b>
             Black: Other
            </b>
@@ -1259,7 +1394,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Chinese" style="width:10.0%">
            <b>
             Chinese
            </b>
@@ -1293,7 +1428,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Other" style="width:10.0%">
            <b>
             Other
            </b>
@@ -1327,7 +1462,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="White: Gypsy, Irish Traveller" style="width:10.0%">
            <b>
             White: Gypsy, Irish Traveller
            </b>
@@ -1361,7 +1496,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:10.0%">
+          <th data-order="Arab" style="width:10.0%">
            <b>
             Arab
            </b>
@@ -1404,27 +1539,25 @@
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         the percentage of income spent on rent for new social housing lettings in London is the highest in England for all ethnic groups, ranging from 42% for Pakistani households to 48% for Arab households
-        </p>
-       </li>
-       <li>
-        <p>
-         the next largest percentage of income spent on rent for new social housing lettings is in the East of England and the South East, ranging from 34% and 35% respectively for White Other households, to 45% for Arab households
-        </p>
-       </li>
-       <li>
-        <p>
-         the smallest proportion of income spent on rent for new social housing lettings is in Yorkshire and the Humber, ranging from 29% for Chinese households to 39% for Mixed White and Asian households
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        the percentage of income spent on rent for new social housing lettings in London is the highest in England for all ethnic groups, ranging from 42% for Pakistani households to 48% for Arab households
+       </p>
+      </li>
+      <li>
+       <p>
+        the next largest percentage of income spent on rent for new social housing lettings is in the East of England and the South East, ranging from 34% and 35% respectively for White Other households, to 45% for Arab households
+       </p>
+      </li>
+      <li>
+       <p>
+        the smallest proportion of income spent on rent for new social housing lettings is in Yorkshire and the Humber, ranging from 29% for Chinese households to 39% for Mixed White and Asian households
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -1472,35 +1605,31 @@
          Purpose Of Data Source
         </h3>
         <p>
-         <p>
-          CORE provides valuable information about new social housing lettings, sales, tenants and buyers across England.
+         CORE provides valuable information about new social housing lettings, sales, tenants and buyers across England.
 This national information is used by government bodies and organisations to inform social housing funding, regulatory and housing policy decisions.
-         </p>
         </p>
         <h3 class="heading-small">
          Methodology
         </h3>
         <p>
-         <p>
-          The three main types of housing tenure in England are owner occupiers, private renters and social renters. This data refers to new lettings to social renters only. The data is based on the data collected from providers via the on-line COntinuous REcording of Lettings and Sales in Social Housing in England (CORE) system. CORE was first set up in 1989 and initially only required private registered providers (PRPs) to submit social housing lettings and sales information to support the government’s regulatory function. CORE’s remit expanded in 2004 to include local authority information.
-         </p>
-         <p>
-          Some questions on the CORE questionnaire are not compulsory. In particular, data on household characteristics (age, sex, economic status, ethnicity and nationality) may not be available to the housing officer or may be refused by the tenant.
-         </p>
-         <p>
-          Imputation: unimputed ethnicity data has been used for the national and regional level analysis.
-         </p>
-         <p>
-          Weights: data is weighted at the national level analysis, not at the regional level analysis.
+         The three main types of housing tenure in England are owner occupiers, private renters and social renters. This data refers to new lettings to social renters only. The data is based on the data collected from providers via the on-line COntinuous REcording of Lettings and Sales in Social Housing in England (CORE) system. CORE was first set up in 1989 and initially only required private registered providers (PRPs) to submit social housing lettings and sales information to support the government’s regulatory function. CORE’s remit expanded in 2004 to include local authority information.
+        </p>
+        <p>
+         Some questions on the CORE questionnaire are not compulsory. In particular, data on household characteristics (age, sex, economic status, ethnicity and nationality) may not be available to the housing officer or may be refused by the tenant.
+        </p>
+        <p>
+         Imputation: unimputed ethnicity data has been used for the national and regional level analysis.
+        </p>
+        <p>
+         Weights: data is weighted at the national level analysis, not at the regional level analysis.
 Weights are calculated for groups of similar local authorities, where these groups are defined by the ONS UK area classifications, and they are based on the comparison with data from another DCLG source on social housing data (Local Authority Housing Statistics).
-         </p>
-         <p>
-          The
-          <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/583478/CORE_Quality_Report_2015-16_revised_130117.pdf">
-           Quality Report
-          </a>
-          has further information on the weighting and imputation methodologies.
-         </p>
+        </p>
+        <p>
+         The
+         <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/583478/CORE_Quality_Report_2015-16_revised_130117.pdf">
+          Quality Report
+         </a>
+         has further information on the weighting and imputation methodologies.
         </p>
         <h3 class="heading-small">
          Data type
@@ -1518,32 +1647,28 @@ Weights are calculated for groups of similar local authorities, where these grou
          Suppression rules
         </h3>
         <p>
-         <p>
-          Data presented here as counts and their related percentages have been suppressed if counts are either 1 or 2, mainly to avoid possible risk of disclosure. This is consistent with the way we maintain all the confidentiality of CORE data.
-         </p>
-         <p>
-          CORE records information anonymously and absolute confidentiality on tenants’ circumstances is maintained. Access to record level information is only available via a licence agreement and the data is released via the UK Data Archive’s UK Data Service and the Office for National Statistics Virtual Microdata Lab. This allows users to access record level data via different layers of protection to meet different user needs.
-         </p>
-         <p>
-          Three licences are available and each has different disclosure controls, access and use restrictions. The End User Licence is for access to datasets that are not private information as defined by the Code of Practice for Official Statistics. Special Licence and Secure Access are for access to micro-data with ‘private’ information as defined by the Code of Practice for Official Statistics. Further detail can be found on
-          <a href="https://www.gov.uk/government/collections/rents-lettings-and-tenancies">
-           CORE disclosure practices
-          </a>
-         </p>
-         <p>
-          For further information on licencing and the process for accessing CORE record level data, see the
-          <a href="http://ukdataservice.ac.uk/get-data/how-to-access">
-           UK Data Service website
-          </a>
-         </p>
+         Data presented here as counts and their related percentages have been suppressed if counts are either 1 or 2, mainly to avoid possible risk of disclosure. This is consistent with the way we maintain all the confidentiality of CORE data.
+        </p>
+        <p>
+         CORE records information anonymously and absolute confidentiality on tenants’ circumstances is maintained. Access to record level information is only available via a licence agreement and the data is released via the UK Data Archive’s UK Data Service and the Office for National Statistics Virtual Microdata Lab. This allows users to access record level data via different layers of protection to meet different user needs.
+        </p>
+        <p>
+         Three licences are available and each has different disclosure controls, access and use restrictions. The End User Licence is for access to datasets that are not private information as defined by the Code of Practice for Official Statistics. Special Licence and Secure Access are for access to micro-data with ‘private’ information as defined by the Code of Practice for Official Statistics. Further detail can be found on
+         <a href="https://www.gov.uk/government/collections/rents-lettings-and-tenancies">
+          CORE disclosure practices
+         </a>
+        </p>
+        <p>
+         For further information on licencing and the process for accessing CORE record level data, see the
+         <a href="http://ukdataservice.ac.uk/get-data/how-to-access">
+          UK Data Service website
+         </a>
         </p>
         <h3 class="heading-small">
          Estimation
         </h3>
         <p>
-         <p>
-          Data on rates has been rounded to 2 decimal places.
-         </p>
+         Data on rates has been rounded to 2 decimal places.
         </p>
        </div>
       </div>
@@ -1616,14 +1741,12 @@ Weights are calculated for groups of similar local authorities, where these grou
          </dt>
          <dd>
           <p>
-           <p>
-            <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/604891/Social_housing_lettings_in_England_2015-16_revised_032217.pdf">
-             The related National Statistics release which provides information on other key information from CORE
-            </a>
-           </p>
-           <p>
-            The record level data which has been used to produce this analysis can be accessed via the UK Data Archive after a licence application.
-           </p>
+           <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/604891/Social_housing_lettings_in_England_2015-16_revised_032217.pdf">
+            The related National Statistics release which provides information on other key information from CORE
+           </a>
+          </p>
+          <p>
+           The record level data which has been used to produce this analysis can be accessed via the UK Data Archive after a licence application.
           </p>
          </dd>
         </dl>
@@ -1642,6 +1765,9 @@ Weights are calculated for groups of similar local authorities, where these grou
         </span>
        </div>
        <div class="accordion__body downloads" style="display: none;">
+        <a href="./percentage-of-income-spent-on-rent-for-new-social-lettings.json">
+         View this page as JSON
+        </a>
         <button class="js--print print-btn">
          Print this page
         </button>
@@ -1697,6 +1823,8 @@ Weights are calculated for groups of similar local authorities, where these grou
   <script src="/static/javascripts/govuk-template.js?0.19.2">
   </script>
   <script src="/static/vendor/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="/static/vendor/bowser.js" type="text/javascript">
   </script>
   <script src="/static/javascripts/all.js" type="text/javascript">
   </script>

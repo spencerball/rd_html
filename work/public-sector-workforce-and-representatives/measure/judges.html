@@ -39,6 +39,13 @@
           ga('create', 'UA-100698377-1', 'auto');
           ga('send', 'pageview');
   </script>
+  <!--[if lte IE 8 ]>
+    <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
+  <![endif]-->
+  <script src="/static/vendor/details.polyfill.js" type="text/javascript">
+  </script>
+  <link href="./judges.json" rel="alternate" title="Judges and non-legal members of courts and tribunals in the workforce" type="application/json">
+  </link>
  </head>
  <body class="">
   <script>
@@ -169,35 +176,33 @@
       The main facts and figures show that:
      </p>
      <div class="bullets spaced-out">
-      <p>
-       <ul>
-        <li>
-         <p>
-          as at April 2016, the ethnicity of about 16% of judges in courts is not known
-         </p>
-        </li>
-        <li>
-         <p>
-          6% of judges in courts who did state their ethnicity in April 2016 were from an ethnic minority group, roughly the same as one year earlier
-         </p>
-        </li>
-        <li>
-         <p>
-          observations on ethnicity of judges in courts based on this data should be treated with caution because of the large number of judges who didn’t state their ethnicity
-         </p>
-        </li>
-        <li>
-         <p>
-          as at April 2016, the ethnicity of about 7% of tribunal judges and non-legal members of the judiciary is unknown
-         </p>
-        </li>
-        <li>
-         <p>
-          14% of tribunal judges and non-legal members of the judiciary who did state their ethnicity in April 2016 were from an ethnic minority group, roughly the same as one year earlier
-         </p>
-        </li>
-       </ul>
-      </p>
+      <ul>
+       <li>
+        <p>
+         as at April 2016, the ethnicity of about 16% of judges in courts is not known
+        </p>
+       </li>
+       <li>
+        <p>
+         6% of judges in courts who did state their ethnicity in April 2016 were from an ethnic minority group, roughly the same as one year earlier
+        </p>
+       </li>
+       <li>
+        <p>
+         observations on ethnicity of judges in courts based on this data should be treated with caution because of the large number of judges who didn’t state their ethnicity
+        </p>
+       </li>
+       <li>
+        <p>
+         as at April 2016, the ethnicity of about 7% of tribunal judges and non-legal members of the judiciary is unknown
+        </p>
+       </li>
+       <li>
+        <p>
+         14% of tribunal judges and non-legal members of the judiciary who did state their ethnicity in April 2016 were from an ethnic minority group, roughly the same as one year earlier
+        </p>
+       </li>
+      </ul>
      </div>
      <details class="normalize" data-event="data-reliability">
       <summary>
@@ -207,6 +212,17 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        Judges and non-legal members of the judiciary are asked to record their ethnicity on a voluntary basis, and not all do so.
+       </p>
+       <p>
+        This adds a degree of uncertainty to the breakdowns by ethnicity. For judges in court, this uncertainty is relatively high because ethnicity is unknown for 16% of them. For tribunal judges and non-legal members of the judiciary there is a lesser degree of uncertainty with the breakdown because of the higher number reporting their ethnicity.
+       </p>
+       <p>
+        The source of the data is a new electronic human resources system for the judiciary that contains data migrated from a number of existing systems, some of which has yet to be validated.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          Judges and non-legal members of the judiciary are asked to record their ethnicity on a voluntary basis, and not all do so.
         </p>
@@ -216,8 +232,8 @@
         <p>
          The source of the data is a new electronic human resources system for the judiciary that contains data migrated from a number of existing systems, some of which has yet to be validated.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="data-measured">
       <summary>
@@ -227,14 +243,22 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        The data breaks down the number of judges in courts in England and Wales by ethnicity. It does the same for judges and non-legal members of the judiciary in tribunals in England and Wales and in employment tribunals in Scotland.
+       </p>
+       <p>
+        The data includes judges and non-legal members of the judiciary in tribunals administered by HM Courts &amp; Tribunals Service (HMCTS) as well as those in Wales that aren’t administered by HMCTS.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          The data breaks down the number of judges in courts in England and Wales by ethnicity. It does the same for judges and non-legal members of the judiciary in tribunals in England and Wales and in employment tribunals in Scotland.
         </p>
         <p>
          The data includes judges and non-legal members of the judiciary in tribunals administered by HM Courts &amp; Tribunals Service (HMCTS) as well as those in Wales that aren’t administered by HMCTS.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="categories-chosen">
       <summary>
@@ -244,6 +268,43 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        Judges are asked to place themselves within the following 5 broad ethnic categories:
+       </p>
+       <ul>
+        <li>
+         <p>
+          White
+         </p>
+        </li>
+        <li>
+         <p>
+          Mixed/Multiple ethnic groups
+         </p>
+        </li>
+        <li>
+         <p>
+          Asian / Asian British/Chinese
+         </p>
+        </li>
+        <li>
+         <p>
+          Black/African/Caribbean/Black British
+         </p>
+        </li>
+        <li>
+         <p>
+          Other ethnic group
+         </p>
+        </li>
+       </ul>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
+      </div>
+      <noscript>
+       <div class="section-expandable-region" id="ethnicity-definition">
         <p>
          Judges are asked to place themselves within the following 5 broad ethnic categories:
         </p>
@@ -274,13 +335,8 @@
           </p>
          </li>
         </ul>
-       </p>
-       <p>
-        <a href="/ethnic-groups-and-data-collected.html">
-         Ethnic groups and how data on ethnicity is collected
-        </a>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
     </div>
    </div>
@@ -325,7 +381,7 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <table class="table grouped extra-wide" columns="1">
         <thead>
          <tr>
@@ -351,37 +407,37 @@
           </td>
          </tr>
          <tr>
-          <td style="width:100.0%">
+          <td class="first" style="width:14.285714285714286%">
            <button>
             Court/Tribunal
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:14.285714285714286%">
            <button>
             Count
            </button>
@@ -390,7 +446,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="1" style="width:14.285714285714286%">
            <b>
             Court
            </b>
@@ -415,7 +471,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="2" style="width:14.285714285714286%">
            <b>
             Tribunal
            </b>
@@ -449,27 +505,25 @@
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         the proportion of judges and members of tribunals from an ethnic minority is twice that of judges in courts
-        </p>
-       </li>
-       <li>
-        <p>
-         the largest ethnic minority  group is Asian; this group make up 6.3% of judges in courts, and judges and members of tribunals
-        </p>
-       </li>
-       <li>
-        <p>
-         there are no known ethnic minority heads of division, judge advocate, deputy judge advocates, Lord Justices of Appeal, masters, registrars, cost judges or district judges
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        the proportion of judges and members of tribunals from an ethnic minority is twice that of judges in courts
+       </p>
+      </li>
+      <li>
+       <p>
+        the largest ethnic minority  group is Asian; this group make up 6.3% of judges in courts, and judges and members of tribunals
+       </p>
+      </li>
+      <li>
+       <p>
+        there are no known ethnic minority heads of division, judge advocate, deputy judge advocates, Lord Justices of Appeal, masters, registrars, cost judges or district judges
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -517,17 +571,13 @@
          Purpose Of Data Source
         </h3>
         <p>
-         <p>
-          Admin data used for internal management information
-         </p>
+         Admin data used for internal management information
         </p>
         <h3 class="heading-small">
          Methodology
         </h3>
         <p>
-         <p>
-          As with all large administrative data sources, some inherent inaccuracy may exist.
-         </p>
+         As with all large administrative data sources, some inherent inaccuracy may exist.
         </p>
         <h3 class="heading-small">
          Data type
@@ -539,25 +589,19 @@
          Suppression rules
         </h3>
         <p>
-         <p>
-          None
-         </p>
+         None
         </p>
         <h3 class="heading-small">
          Estimation
         </h3>
         <p>
-         <p>
-          None
-         </p>
+         None
         </p>
         <h3 class="heading-small">
          Further technical information
         </h3>
         <p>
-         <p>
-          Data are derived from the staff admin system, representing held data as at the point when extracts were taken.
-         </p>
+         Data are derived from the staff admin system, representing held data as at the point when extracts were taken.
         </p>
        </div>
       </div>
@@ -630,9 +674,7 @@
          </dt>
          <dd>
           <p>
-           <p>
-            https://www.judiciary.gov.uk/publications/judicial-statistics-2016/
-           </p>
+           https://www.judiciary.gov.uk/publications/judicial-statistics-2016/
           </p>
          </dd>
         </dl>
@@ -651,6 +693,9 @@
         </span>
        </div>
        <div class="accordion__body downloads" style="display: none;">
+        <a href="./judges.json">
+         View this page as JSON
+        </a>
         <button class="js--print print-btn">
          Print this page
         </button>
@@ -706,6 +751,8 @@
   <script src="/static/javascripts/govuk-template.js?0.19.2">
   </script>
   <script src="/static/vendor/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="/static/vendor/bowser.js" type="text/javascript">
   </script>
   <script src="/static/javascripts/all.js" type="text/javascript">
   </script>

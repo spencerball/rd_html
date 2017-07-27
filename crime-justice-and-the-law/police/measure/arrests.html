@@ -39,6 +39,13 @@
           ga('create', 'UA-100698377-1', 'auto');
           ga('send', 'pageview');
   </script>
+  <!--[if lte IE 8 ]>
+    <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
+  <![endif]-->
+  <script src="/static/vendor/details.polyfill.js" type="text/javascript">
+  </script>
+  <link href="./arrests.json" rel="alternate" title="Number of arrests" type="application/json">
+  </link>
  </head>
  <body class="">
   <script>
@@ -169,35 +176,33 @@
       The main facts and figures show that:
      </p>
      <div class="bullets spaced-out">
-      <p>
-       <ul>
-        <li>
-         <p>
-          a total of 896,209 arrests were carried out in 2016, a fall of 5% on the previous year
-         </p>
-        </li>
-        <li>
-         <p>
-          Black people were over 3 times more likely to be arrested than White people
-         </p>
-        </li>
-        <li>
-         <p>
-          ethnic minority groups in general were over one and a half times more likely to be arrested than White people
-         </p>
-        </li>
-        <li>
-         <p>
-          Black women are 2.3 times more likely to be arrested than White women
-         </p>
-        </li>
-        <li>
-         <p>
-          wide variations in the rates of arrest of ethnic minorities around the UK in part reflect the different ethnic makeup of different areas
-         </p>
-        </li>
-       </ul>
-      </p>
+      <ul>
+       <li>
+        <p>
+         a total of 896,209 arrests were carried out in 2016, a fall of 5% on the previous year
+        </p>
+       </li>
+       <li>
+        <p>
+         Black people were over 3 times more likely to be arrested than White people
+        </p>
+       </li>
+       <li>
+        <p>
+         ethnic minority groups in general were over one and a half times more likely to be arrested than White people
+        </p>
+       </li>
+       <li>
+        <p>
+         Black women are 2.3 times more likely to be arrested than White women
+        </p>
+       </li>
+       <li>
+        <p>
+         wide variations in the rates of arrest of ethnic minorities around the UK in part reflect the different ethnic makeup of different areas
+        </p>
+       </li>
+      </ul>
      </div>
      <details class="normalize" data-event="data-reliability">
       <summary>
@@ -207,6 +212,26 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        When looking at arrest rates by area, it’s important to note that a person arrested in a particular area will not necessarily live in that area. Estimates of total population in a particular area are based on permanent residents of that area (not visitors), so figures that compare the total population with the number of arrests should be treated with caution.
+       </p>
+       <p>
+        Where the person’s ethnicity was not identified, or unknown, these cases have been classed as 'unreported' and are not counted in the figures for proportion of arrests by ethnicity.
+       </p>
+       <p>
+        After a change in their collection process, Cambridgeshire were unable to provide detailed 16+1 ethnicity data for 2015/16, and Humberside could not provide detailed 16+1 data for 2014/15.
+       </p>
+       <p>
+        Some forces (Norfolk, Nottinghamshire, Suffolk and Wiltshire) were unable to provide complete data for 2015/16 due to the changes in the data collection process.
+       </p>
+       <p>
+        Arrests broken down by the 5 broad ethnic categories for these forces are therefore estimates, and data for the more detailed 16 ethnic categories (see Ethnicity definitions) is not available.
+       </p>
+       <p>
+        Due to the small number of people living in the City of London compared to the numbers who visit, the area has been excluded from the analysis.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          When looking at arrest rates by area, it’s important to note that a person arrested in a particular area will not necessarily live in that area. Estimates of total population in a particular area are based on permanent residents of that area (not visitors), so figures that compare the total population with the number of arrests should be treated with caution.
         </p>
@@ -225,8 +250,8 @@
         <p>
          Due to the small number of people living in the City of London compared to the numbers who visit, the area has been excluded from the analysis.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="data-measured">
       <summary>
@@ -236,6 +261,20 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        This data measures the number of people arrested for notifiable offences (offences for which the police must inform the Home Office by completing a crime report form).
+       </p>
+       <p>
+        Data is sourced from the 43 police forces in England and Wales.
+       </p>
+       <p>
+        The data relates to the 'arrest rate' for the UK's different ethnic groups in different areas. It compares the number of people arrested from a particular ethnic group with the total number of people from that ethnic group living in the area.
+       </p>
+       <p>
+        Population by ethnicity is taken from the 2011 Census population.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          This data measures the number of people arrested for notifiable offences (offences for which the police must inform the Home Office by completing a crime report form).
         </p>
@@ -248,8 +287,8 @@
         <p>
          Population by ethnicity is taken from the 2011 Census population.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="categories-chosen">
       <summary>
@@ -259,6 +298,135 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        While the population estimates in this data are based on the results of the 2011 census, the ethnic categories used are those listed in the 2001 census. This is because these ethnic categories are easier to compare with the categories used when recording arrests.
+       </p>
+       <p>
+        The 16 categories listed in the 2001 census are broadly the same as those used in the 2011 census, with the following exceptions:
+       </p>
+       <ul>
+        <li>
+         the 2001 census categorised Chinese people within 'Other ethnic group'.
+        </li>
+        <li>
+         the 2001 census did not list Gypsy and Irish Travellers or Arab people.
+        </li>
+       </ul>
+       <p>
+        The 2001 categories are therefore as follows:
+       </p>
+       <p>
+        White:
+       </p>
+       <ul>
+        <li>
+         <p>
+          English/ Welsh/ Scottish/ Northern Irish/ British
+         </p>
+        </li>
+        <li>
+         <p>
+          Irish
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other White background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Mixed/Multiple ethnic groups:
+       </p>
+       <ul>
+        <li>
+         <p>
+          White and Black Caribbean
+         </p>
+        </li>
+        <li>
+         <p>
+          White and Black African
+         </p>
+        </li>
+        <li>
+         <p>
+          White and Asian
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Mixed/Multiple ethnic background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Asian/Asian British:
+       </p>
+       <ul>
+        <li>
+         <p>
+          Indian
+         </p>
+        </li>
+        <li>
+         <p>
+          Pakistani
+         </p>
+        </li>
+        <li>
+         <p>
+          Bangladeshi
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Asian background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Black/ African/ Caribbean/ Black British:
+       </p>
+       <ul>
+        <li>
+         <p>
+          African
+         </p>
+        </li>
+        <li>
+         <p>
+          Caribbean
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Black/ African/ Caribbean background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Other ethnic group:
+       </p>
+       <ul>
+        <li>
+         <p>
+          Chinese
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other ethnic group
+         </p>
+        </li>
+       </ul>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
+      </div>
+      <noscript>
+       <div class="section-expandable-region" id="ethnicity-definition">
         <p>
          While the population estimates in this data are based on the results of the 2011 census, the ethnic categories used are those listed in the 2001 census. This is because these ethnic categories are easier to compare with the categories used when recording arrests.
         </p>
@@ -381,13 +549,8 @@
           </p>
          </li>
         </ul>
-       </p>
-       <p>
-        <a href="/ethnic-groups-and-data-collected.html">
-         Ethnic groups and how data on ethnicity is collected
-        </a>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
     </div>
    </div>
@@ -430,44 +593,44 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <h3 class="heading-small">
         Number of arrests by ethnicity, in England and Wales, 2014/15 - 2015/16
        </h3>
        <table class="table grouped" columns="2">
         <thead>
          <tr>
-          <td style="width:20.0%">
+          <td style="width:16.666666666666668%">
           </td>
-          <td class="line" colspan="2" style="width:40.0%">
+          <td class="line" colspan="2" style="width:33.333333333333336%">
            2014/15
           </td>
-          <td class="" colspan="2" style="width:40.0%">
+          <td class="" colspan="2" style="width:33.333333333333336%">
            2015/16
           </td>
          </tr>
          <tr>
-          <td style="width:33.333333333333336%">
+          <td class="first" style="width:16.666666666666668%">
            <button>
             Ethnicity
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:16.666666666666668%">
            <button>
             Value
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:16.666666666666668%">
            <button>
             Number of arrests
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:16.666666666666668%">
            <button>
             Value
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:16.666666666666668%">
            <button>
             Number of arrests
            </button>
@@ -476,7 +639,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="All" style="width:20.0%">
            <b>
             All
            </b>
@@ -495,7 +658,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="Asian" style="width:20.0%">
            <b>
             Asian
            </b>
@@ -514,7 +677,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="Black" style="width:20.0%">
            <b>
             Black
            </b>
@@ -533,7 +696,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="Mixed" style="width:20.0%">
            <b>
             Mixed
            </b>
@@ -552,7 +715,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="Other" style="width:20.0%">
            <b>
             Other
            </b>
@@ -571,7 +734,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="Unreported" style="width:20.0%">
            <b>
             Unreported
            </b>
@@ -590,7 +753,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:20.0%">
+          <th data-order="White" style="width:20.0%">
            <b>
             White
            </b>
@@ -618,27 +781,25 @@
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         there were 50,550 fewer arrests in 2015/16 compared to the previous year, a fall of 5%
-        </p>
-       </li>
-       <li>
-        <p>
-         rates of arrest have fallen for all groups except for those in the Chinese or Other ethnic group; however, for White people they have fallen by 10%, and for ethnic minorities they have fallen by 1%
-        </p>
-       </li>
-       <li>
-        <p>
-         in 2016, 78% of those arrested were White, 10% Black or Black British and 7% Asian or Asian British
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        there were 50,550 fewer arrests in 2015/16 compared to the previous year, a fall of 5%
+       </p>
+      </li>
+      <li>
+       <p>
+        rates of arrest have fallen for all groups except for those in the Chinese or Other ethnic group; however, for White people they have fallen by 10%, and for ethnic minorities they have fallen by 1%
+       </p>
+      </li>
+      <li>
+       <p>
+        in 2016, 78% of those arrested were White, 10% Black or Black British and 7% Asian or Asian British
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -699,2032 +860,2023 @@
     <div class="column-full" style="">
      <div class="rd_chart" id="chart_e7431dbf640cadb7374803f612fc90ddd494ab39">
      </div>
-     <details class="normalize" data-event="view-table" open="">
-      <summary>
-       <span class="summary">
-        View the numbers in a table
-       </span>
-      </summary>
-      <div class="panel panel-border-narrow">
-       <h3 class="heading-small">
-        Number of arrests by ethnicity and police force area, 2015/16
-       </h3>
-       <table class="table cropped grouped extra-wide" columns="2">
-        <thead>
-         <tr>
-          <td style="width:7.6923076923076925%">
-          </td>
-          <td class="line" colspan="2" style="width:15.384615384615385%">
+     <div class="panel-border-narrow">
+      <h3 class="heading-small">
+       Number of arrests by ethnicity and police force area, 2015/16
+      </h3>
+      <table class="table cropped grouped extra-wide" columns="2">
+       <thead>
+        <tr>
+         <td style="width:7.142857142857143%">
+         </td>
+         <td class="line" colspan="2" style="width:14.285714285714286%">
+          All
+         </td>
+         <td class="line" colspan="2" style="width:14.285714285714286%">
+          Asian
+         </td>
+         <td class="line" colspan="2" style="width:14.285714285714286%">
+          Black
+         </td>
+         <td class="line" colspan="2" style="width:14.285714285714286%">
+          Mixed
+         </td>
+         <td class="line" colspan="2" style="width:14.285714285714286%">
+          Other
+         </td>
+         <td class="" colspan="2" style="width:14.285714285714286%">
+          White
+         </td>
+        </tr>
+        <tr>
+         <td class="first" style="width:7.142857142857143%">
+          <button>
+           Geography
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Arrests per 1,000
+          </button>
+         </td>
+         <td style="width:7.142857142857143%">
+          <button>
+           Number of arrests
+          </button>
+         </td>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <th data-order="All" style="width:7.6923076923076925%">
+          <b>
            All
-          </td>
-          <td class="line" colspan="2" style="width:15.384615384615385%">
-           Asian
-          </td>
-          <td class="line" colspan="2" style="width:15.384615384615385%">
-           Black
-          </td>
-          <td class="line" colspan="2" style="width:15.384615384615385%">
-           Mixed
-          </td>
-          <td class="line" colspan="2" style="width:15.384615384615385%">
-           Other
-          </td>
-          <td class="" colspan="2" style="width:15.384615384615385%">
-           White
-          </td>
-         </tr>
-         <tr>
-          <td style="width:33.333333333333336%">
-           <button>
-            Geography
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Arrests per 1,000
-           </button>
-          </td>
-          <td style="width:50.0%">
-           <button>
-            Number of arrests
-           </button>
-          </td>
-         </tr>
-        </thead>
-        <tbody>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            All
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           15.98
-          </td>
-          <td style="width:7.6923076923076925%">
-           896,209
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.62
-          </td>
-          <td style="width:7.6923076923076925%">
-           59,665
-          </td>
-          <td style="width:7.6923076923076925%">
-           44.39
-          </td>
-          <td style="width:7.6923076923076925%">
-           82,789
-          </td>
-          <td style="width:7.6923076923076925%">
-           23.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           29,146
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,443
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.75
-          </td>
-          <td style="width:7.6923076923076925%">
-           663,059
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Avon &amp; Somerset
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           15.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           24,918
-          </td>
-          <td style="width:7.6923076923076925%">
-           16.57
-          </td>
-          <td style="width:7.6923076923076925%">
-           547
-          </td>
-          <td style="width:7.6923076923076925%">
-           56.17
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,737
-          </td>
-          <td style="width:7.6923076923076925%">
-           30.59
-          </td>
-          <td style="width:7.6923076923076925%">
-           865
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.88
-          </td>
-          <td style="width:7.6923076923076925%">
-           152
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.25
-          </td>
-          <td style="width:7.6923076923076925%">
-           21,261
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Bedfordshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           15.91
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,783
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,439
-          </td>
-          <td style="width:7.6923076923076925%">
-           36.13
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,074
-          </td>
-          <td style="width:7.6923076923076925%">
-           26.77
-          </td>
-          <td style="width:7.6923076923076925%">
-           494
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.97
-          </td>
-          <td style="width:7.6923076923076925%">
-           131
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.77
-          </td>
-          <td style="width:7.6923076923076925%">
-           6,565
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Cambridgeshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.49
-          </td>
-          <td style="width:7.6923076923076925%">
-           10,854
-          </td>
-          <td style="width:7.6923076923076925%">
-           20.39
-          </td>
-          <td style="width:7.6923076923076925%">
-           806
-          </td>
-          <td style="width:7.6923076923076925%">
-           83.74
-          </td>
-          <td style="width:7.6923076923076925%">
-           852
-          </td>
-          <td style="width:7.6923076923076925%">
-           -
-          </td>
-          <td style="width:7.6923076923076925%">
-           -
-          </td>
-          <td style="width:7.6923076923076925%">
-           38.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           485
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.87
-          </td>
-          <td style="width:7.6923076923076925%">
-           8,622
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Cheshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.64
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,021
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           193
-          </td>
-          <td style="width:7.6923076923076925%">
-           69.24
-          </td>
-          <td style="width:7.6923076923076925%">
-           226
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.99
-          </td>
-          <td style="width:7.6923076923076925%">
-           125
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.87
-          </td>
-          <td style="width:7.6923076923076925%">
-           83
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.31
-          </td>
-          <td style="width:7.6923076923076925%">
-           13,258
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Cleveland
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           25.69
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,316
-          </td>
-          <td style="width:7.6923076923076925%">
-           22.04
-          </td>
-          <td style="width:7.6923076923076925%">
-           384
-          </td>
-          <td style="width:7.6923076923076925%">
-           70.03
-          </td>
-          <td style="width:7.6923076923076925%">
-           221
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.62
-          </td>
-          <td style="width:7.6923076923076925%">
-           90
-          </td>
-          <td style="width:7.6923076923076925%">
-           28.42
-          </td>
-          <td style="width:7.6923076923076925%">
-           126
-          </td>
-          <td style="width:7.6923076923076925%">
-           25.61
-          </td>
-          <td style="width:7.6923076923076925%">
-           13,484
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Cumbria
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.82
-          </td>
-          <td style="width:7.6923076923076925%">
-           6,907
-          </td>
-          <td style="width:7.6923076923076925%">
-           20.25
-          </td>
-          <td style="width:7.6923076923076925%">
-           59
-          </td>
-          <td style="width:7.6923076923076925%">
-           79.45
-          </td>
-          <td style="width:7.6923076923076925%">
-           46
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.18
-          </td>
-          <td style="width:7.6923076923076925%">
-           28
-          </td>
-          <td style="width:7.6923076923076925%">
-           16.82
-          </td>
-          <td style="width:7.6923076923076925%">
-           27
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.62
-          </td>
-          <td style="width:7.6923076923076925%">
-           6,704
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Derbyshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           15.05
-          </td>
-          <td style="width:7.6923076923076925%">
-           15,323
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.68
-          </td>
-          <td style="width:7.6923076923076925%">
-           652
-          </td>
-          <td style="width:7.6923076923076925%">
-           28.74
-          </td>
-          <td style="width:7.6923076923076925%">
-           290
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.10
-          </td>
-          <td style="width:7.6923076923076925%">
-           188
-          </td>
-          <td style="width:7.6923076923076925%">
-           32.69
-          </td>
-          <td style="width:7.6923076923076925%">
-           238
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.67
-          </td>
-          <td style="width:7.6923076923076925%">
-           13,936
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Devon &amp; Cornwall
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           9.27
-          </td>
-          <td style="width:7.6923076923076925%">
-           15,459
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.79
-          </td>
-          <td style="width:7.6923076923076925%">
-           173
-          </td>
-          <td style="width:7.6923076923076925%">
-           75.74
-          </td>
-          <td style="width:7.6923076923076925%">
-           311
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.61
-          </td>
-          <td style="width:7.6923076923076925%">
-           213
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.30
-          </td>
-          <td style="width:7.6923076923076925%">
-           107
-          </td>
-          <td style="width:7.6923076923076925%">
-           8.95
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,559
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Dorset
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.87
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,067
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           169
-          </td>
-          <td style="width:7.6923076923076925%">
-           127.81
-          </td>
-          <td style="width:7.6923076923076925%">
-           410
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.04
-          </td>
-          <td style="width:7.6923076923076925%">
-           181
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.85
-          </td>
-          <td style="width:7.6923076923076925%">
-           113
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.55
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,685
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Durham
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           18.17
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,245
-          </td>
-          <td style="width:7.6923076923076925%">
-           32.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           167
-          </td>
-          <td style="width:7.6923076923076925%">
-           46.31
-          </td>
-          <td style="width:7.6923076923076925%">
-           49
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.10
-          </td>
-          <td style="width:7.6923076923076925%">
-           81
-          </td>
-          <td style="width:7.6923076923076925%">
-           26.40
-          </td>
-          <td style="width:7.6923076923076925%">
-           80
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.87
-          </td>
-          <td style="width:7.6923076923076925%">
-           10,818
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Dyfed-Powys
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           10.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,561
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.76
-          </td>
-          <td style="width:7.6923076923076925%">
-           46
-          </td>
-          <td style="width:7.6923076923076925%">
-           70.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           60
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.20
-          </td>
-          <td style="width:7.6923076923076925%">
-           30
-          </td>
-          <td style="width:7.6923076923076925%">
-           7.47
-          </td>
-          <td style="width:7.6923076923076925%">
-           15
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.64
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,370
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Essex
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.11
-          </td>
-          <td style="width:7.6923076923076925%">
-           24,342
-          </td>
-          <td style="width:7.6923076923076925%">
-           7.60
-          </td>
-          <td style="width:7.6923076923076925%">
-           296
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           647
-          </td>
-          <td style="width:7.6923076923076925%">
-           8.47
-          </td>
-          <td style="width:7.6923076923076925%">
-           234
-          </td>
-          <td style="width:7.6923076923076925%">
-           5.98
-          </td>
-          <td style="width:7.6923076923076925%">
-           92
-          </td>
-          <td style="width:7.6923076923076925%">
-           4.92
-          </td>
-          <td style="width:7.6923076923076925%">
-           7,912
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Gloucestershire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           8.94
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,339
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.74
-          </td>
-          <td style="width:7.6923076923076925%">
-           134
-          </td>
-          <td style="width:7.6923076923076925%">
-           56.89
-          </td>
-          <td style="width:7.6923076923076925%">
-           293
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.47
-          </td>
-          <td style="width:7.6923076923076925%">
-           134
-          </td>
-          <td style="width:7.6923076923076925%">
-           29.29
-          </td>
-          <td style="width:7.6923076923076925%">
-           88
-          </td>
-          <td style="width:7.6923076923076925%">
-           7.95
-          </td>
-          <td style="width:7.6923076923076925%">
-           4,527
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Greater Manchester
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.57
-          </td>
-          <td style="width:7.6923076923076925%">
-           39,075
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.97
-          </td>
-          <td style="width:7.6923076923076925%">
-           3,437
-          </td>
-          <td style="width:7.6923076923076925%">
-           31.11
-          </td>
-          <td style="width:7.6923076923076925%">
-           2,305
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.48
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,304
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.67
-          </td>
-          <td style="width:7.6923076923076925%">
-           571
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.46
-          </td>
-          <td style="width:7.6923076923076925%">
-           30,260
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Gwent
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.24
-          </td>
-          <td style="width:7.6923076923076925%">
-           8,214
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.95
-          </td>
-          <td style="width:7.6923076923076925%">
-           201
-          </td>
-          <td style="width:7.6923076923076925%">
-           45.53
-          </td>
-          <td style="width:7.6923076923076925%">
-           145
-          </td>
-          <td style="width:7.6923076923076925%">
-           22.53
-          </td>
-          <td style="width:7.6923076923076925%">
-           125
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.01
-          </td>
-          <td style="width:7.6923076923076925%">
-           75
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.61
-          </td>
-          <td style="width:7.6923076923076925%">
-           7,547
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Hampshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           12.24
-          </td>
-          <td style="width:7.6923076923076925%">
-           23,227
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.56
-          </td>
-          <td style="width:7.6923076923076925%">
-           548
-          </td>
-          <td style="width:7.6923076923076925%">
-           63.51
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,108
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.89
-          </td>
-          <td style="width:7.6923076923076925%">
-           553
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.23
-          </td>
-          <td style="width:7.6923076923076925%">
-           193
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.18
-          </td>
-          <td style="width:7.6923076923076925%">
-           19,796
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Hertfordshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           17.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           19,622
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.46
-          </td>
-          <td style="width:7.6923076923076925%">
-           991
-          </td>
-          <td style="width:7.6923076923076925%">
-           49.49
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,554
-          </td>
-          <td style="width:7.6923076923076925%">
-           31.20
-          </td>
-          <td style="width:7.6923076923076925%">
-           858
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.53
-          </td>
-          <td style="width:7.6923076923076925%">
-           226
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.16
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,821
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Humberside
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           11.44
-          </td>
-          <td style="width:7.6923076923076925%">
-           10,502
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.91
-          </td>
-          <td style="width:7.6923076923076925%">
-           133
-          </td>
-          <td style="width:7.6923076923076925%">
-           31.56
-          </td>
-          <td style="width:7.6923076923076925%">
-           142
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.17
-          </td>
-          <td style="width:7.6923076923076925%">
-           116
-          </td>
-          <td style="width:7.6923076923076925%">
-           4.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           36
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.34
-          </td>
-          <td style="width:7.6923076923076925%">
-           10,041
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Kent
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.14
-          </td>
-          <td style="width:7.6923076923076925%">
-           22,695
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.83
-          </td>
-          <td style="width:7.6923076923076925%">
-           695
-          </td>
-          <td style="width:7.6923076923076925%">
-           63.38
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,450
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.63
-          </td>
-          <td style="width:7.6923076923076925%">
-           481
-          </td>
-          <td style="width:7.6923076923076925%">
-           41.00
-          </td>
-          <td style="width:7.6923076923076925%">
-           641
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.18
-          </td>
-          <td style="width:7.6923076923076925%">
-           17,975
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Lancashire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           15.54
-          </td>
-          <td style="width:7.6923076923076925%">
-           22,699
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.48
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,249
-          </td>
-          <td style="width:7.6923076923076925%">
-           42.03
-          </td>
-          <td style="width:7.6923076923076925%">
-           226
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.40
-          </td>
-          <td style="width:7.6923076923076925%">
-           300
-          </td>
-          <td style="width:7.6923076923076925%">
-           4.23
-          </td>
-          <td style="width:7.6923076923076925%">
-           44
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.43
-          </td>
-          <td style="width:7.6923076923076925%">
-           20,374
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Leicestershire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           9.68
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,853
-          </td>
-          <td style="width:7.6923076923076925%">
-           7.61
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,185
-          </td>
-          <td style="width:7.6923076923076925%">
-           34.89
-          </td>
-          <td style="width:7.6923076923076925%">
-           859
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.72
-          </td>
-          <td style="width:7.6923076923076925%">
-           302
-          </td>
-          <td style="width:7.6923076923076925%">
-           4.45
-          </td>
-          <td style="width:7.6923076923076925%">
-           85
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           7,254
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Lincolnshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           12.85
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,173
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.03
-          </td>
-          <td style="width:7.6923076923076925%">
-           95
-          </td>
-          <td style="width:7.6923076923076925%">
-           48.03
-          </td>
-          <td style="width:7.6923076923076925%">
-           123
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.12
-          </td>
-          <td style="width:7.6923076923076925%">
-           75
-          </td>
-          <td style="width:7.6923076923076925%">
-           27.83
-          </td>
-          <td style="width:7.6923076923076925%">
-           79
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.99
-          </td>
-          <td style="width:7.6923076923076925%">
-           8,350
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            London, City of
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,775
-          </td>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           224
-          </td>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           327
-          </td>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           94
-          </td>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           41
-          </td>
-          <td style="width:7.6923076923076925%">
-           N/A
-          </td>
-          <td style="width:7.6923076923076925%">
-           931
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Merseyside
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           20.52
-          </td>
-          <td style="width:7.6923076923076925%">
-           28,339
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.56
-          </td>
-          <td style="width:7.6923076923076925%">
-           331
-          </td>
-          <td style="width:7.6923076923076925%">
-           52.84
-          </td>
-          <td style="width:7.6923076923076925%">
-           769
-          </td>
-          <td style="width:7.6923076923076925%">
-           24.00
-          </td>
-          <td style="width:7.6923076923076925%">
-           503
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.61
-          </td>
-          <td style="width:7.6923076923076925%">
-           336
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.89
-          </td>
-          <td style="width:7.6923076923076925%">
-           25,966
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Metropolitan Police
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           23.29
-          </td>
-          <td style="width:7.6923076923076925%">
-           190,195
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.13
-          </td>
-          <td style="width:7.6923076923076925%">
-           25,141
-          </td>
-          <td style="width:7.6923076923076925%">
-           45.89
-          </td>
-          <td style="width:7.6923076923076925%">
-           49,948
-          </td>
-          <td style="width:7.6923076923076925%">
-           28.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,575
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.64
-          </td>
-          <td style="width:7.6923076923076925%">
-           7,143
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.54
-          </td>
-          <td style="width:7.6923076923076925%">
-           90,494
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Norfolk
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           16.64
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,272
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.93
-          </td>
-          <td style="width:7.6923076923076925%">
-           117
-          </td>
-          <td style="width:7.6923076923076925%">
-           72.90
-          </td>
-          <td style="width:7.6923076923076925%">
-           336
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.65
-          </td>
-          <td style="width:7.6923076923076925%">
-           187
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.51
-          </td>
-          <td style="width:7.6923076923076925%">
-           57
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.37
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,415
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            North Wales
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           21.87
-          </td>
-          <td style="width:7.6923076923076925%">
-           15,045
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.68
-          </td>
-          <td style="width:7.6923076923076925%">
-           74
-          </td>
-          <td style="width:7.6923076923076925%">
-           91.52
-          </td>
-          <td style="width:7.6923076923076925%">
-           137
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           45
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.16
-          </td>
-          <td style="width:7.6923076923076925%">
-           63
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.79
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,616
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            North Yorkshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,677
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.30
-          </td>
-          <td style="width:7.6923076923076925%">
-           112
-          </td>
-          <td style="width:7.6923076923076925%">
-           26.81
-          </td>
-          <td style="width:7.6923076923076925%">
-           97
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.13
-          </td>
-          <td style="width:7.6923076923076925%">
-           83
-          </td>
-          <td style="width:7.6923076923076925%">
-           8.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           54
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.55
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,652
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Northamptonshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           14.46
-          </td>
-          <td style="width:7.6923076923076925%">
-           10,004
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.84
-          </td>
-          <td style="width:7.6923076923076925%">
-           290
-          </td>
-          <td style="width:7.6923076923076925%">
-           46.50
-          </td>
-          <td style="width:7.6923076923076925%">
-           787
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.86
-          </td>
-          <td style="width:7.6923076923076925%">
-           310
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.10
-          </td>
-          <td style="width:7.6923076923076925%">
-           55
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.43
-          </td>
-          <td style="width:7.6923076923076925%">
-           8,496
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Northumbria
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           19.20
-          </td>
-          <td style="width:7.6923076923076925%">
-           27,276
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.95
-          </td>
-          <td style="width:7.6923076923076925%">
-           678
-          </td>
-          <td style="width:7.6923076923076925%">
-           46.52
-          </td>
-          <td style="width:7.6923076923076925%">
-           419
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.38
-          </td>
-          <td style="width:7.6923076923076925%">
-           179
-          </td>
-          <td style="width:7.6923076923076925%">
-           4.36
-          </td>
-          <td style="width:7.6923076923076925%">
-           78
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.13
-          </td>
-          <td style="width:7.6923076923076925%">
-           25,700
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Nottinghamshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           21.92
-          </td>
-          <td style="width:7.6923076923076925%">
-           23,927
-          </td>
-          <td style="width:7.6923076923076925%">
-           23.50
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,134
-          </td>
-          <td style="width:7.6923076923076925%">
-           59.70
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,629
-          </td>
-          <td style="width:7.6923076923076925%">
-           37.41
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,159
-          </td>
-          <td style="width:7.6923076923076925%">
-           16.29
-          </td>
-          <td style="width:7.6923076923076925%">
-           252
-          </td>
-          <td style="width:7.6923076923076925%">
-           20.08
-          </td>
-          <td style="width:7.6923076923076925%">
-           19,471
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            South Wales
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           20.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           26,701
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.94
-          </td>
-          <td style="width:7.6923076923076925%">
-           535
-          </td>
-          <td style="width:7.6923076923076925%">
-           55.35
-          </td>
-          <td style="width:7.6923076923076925%">
-           705
-          </td>
-          <td style="width:7.6923076923076925%">
-           23.81
-          </td>
-          <td style="width:7.6923076923076925%">
-           423
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.17
-          </td>
-          <td style="width:7.6923076923076925%">
-           211
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.67
-          </td>
-          <td style="width:7.6923076923076925%">
-           23,575
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            South Yorkshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           12.19
-          </td>
-          <td style="width:7.6923076923076925%">
-           16,372
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.36
-          </td>
-          <td style="width:7.6923076923076925%">
-           785
-          </td>
-          <td style="width:7.6923076923076925%">
-           32.62
-          </td>
-          <td style="width:7.6923076923076925%">
-           840
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.50
-          </td>
-          <td style="width:7.6923076923076925%">
-           239
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.54
-          </td>
-          <td style="width:7.6923076923076925%">
-           236
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.65
-          </td>
-          <td style="width:7.6923076923076925%">
-           14,187
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Staffordshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.75
-          </td>
-          <td style="width:7.6923076923076925%">
-           15,090
-          </td>
-          <td style="width:7.6923076923076925%">
-           24.27
-          </td>
-          <td style="width:7.6923076923076925%">
-           853
-          </td>
-          <td style="width:7.6923076923076925%">
-           50.99
-          </td>
-          <td style="width:7.6923076923076925%">
-           436
-          </td>
-          <td style="width:7.6923076923076925%">
-           27.95
-          </td>
-          <td style="width:7.6923076923076925%">
-           394
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.44
-          </td>
-          <td style="width:7.6923076923076925%">
-           136
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.77
-          </td>
-          <td style="width:7.6923076923076925%">
-           13,187
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Suffolk
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.52
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,845
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.21
-          </td>
-          <td style="width:7.6923076923076925%">
-           112
-          </td>
-          <td style="width:7.6923076923076925%">
-           53.40
-          </td>
-          <td style="width:7.6923076923076925%">
-           366
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.32
-          </td>
-          <td style="width:7.6923076923076925%">
-           241
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.92
-          </td>
-          <td style="width:7.6923076923076925%">
-           51
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.29
-          </td>
-          <td style="width:7.6923076923076925%">
-           6,441
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Surrey
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           9.92
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,233
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.79
-          </td>
-          <td style="width:7.6923076923076925%">
-           637
-          </td>
-          <td style="width:7.6923076923076925%">
-           53.10
-          </td>
-          <td style="width:7.6923076923076925%">
-           660
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.94
-          </td>
-          <td style="width:7.6923076923076925%">
-           352
-          </td>
-          <td style="width:7.6923076923076925%">
-           8.08
-          </td>
-          <td style="width:7.6923076923076925%">
-           151
-          </td>
-          <td style="width:7.6923076923076925%">
-           8.90
-          </td>
-          <td style="width:7.6923076923076925%">
-           9,111
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Sussex
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           12.93
-          </td>
-          <td style="width:7.6923076923076925%">
-           20,785
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.21
-          </td>
-          <td style="width:7.6923076923076925%">
-           499
-          </td>
-          <td style="width:7.6923076923076925%">
-           82.34
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,173
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.94
-          </td>
-          <td style="width:7.6923076923076925%">
-           599
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           242
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.05
-          </td>
-          <td style="width:7.6923076923076925%">
-           16,641
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Thames Valley
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           16.66
-          </td>
-          <td style="width:7.6923076923076925%">
-           37,809
-          </td>
-          <td style="width:7.6923076923076925%">
-           18.28
-          </td>
-          <td style="width:7.6923076923076925%">
-           3,519
-          </td>
-          <td style="width:7.6923076923076925%">
-           45.50
-          </td>
-          <td style="width:7.6923076923076925%">
-           3,140
-          </td>
-          <td style="width:7.6923076923076925%">
-           34.47
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,930
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.06
-          </td>
-          <td style="width:7.6923076923076925%">
-           393
-          </td>
-          <td style="width:7.6923076923076925%">
-           13.88
-          </td>
-          <td style="width:7.6923076923076925%">
-           26,642
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Warwickshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           9.80
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,345
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.51
-          </td>
-          <td style="width:7.6923076923076925%">
-           239
-          </td>
-          <td style="width:7.6923076923076925%">
-           52.44
-          </td>
-          <td style="width:7.6923076923076925%">
-           233
-          </td>
-          <td style="width:7.6923076923076925%">
-           20.63
-          </td>
-          <td style="width:7.6923076923076925%">
-           164
-          </td>
-          <td style="width:7.6923076923076925%">
-           14.42
-          </td>
-          <td style="width:7.6923076923076925%">
-           67
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.06
-          </td>
-          <td style="width:7.6923076923076925%">
-           4,583
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            West Mercia
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           10.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           12,935
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.97
-          </td>
-          <td style="width:7.6923076923076925%">
-           477
-          </td>
-          <td style="width:7.6923076923076925%">
-           81.39
-          </td>
-          <td style="width:7.6923076923076925%">
-           412
-          </td>
-          <td style="width:7.6923076923076925%">
-           19.46
-          </td>
-          <td style="width:7.6923076923076925%">
-           262
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.37
-          </td>
-          <td style="width:7.6923076923076925%">
-           70
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.91
-          </td>
-          <td style="width:7.6923076923076925%">
-           11,664
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            West Midlands
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           13.58
-          </td>
-          <td style="width:7.6923076923076925%">
-           37,170
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.32
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,094
-          </td>
-          <td style="width:7.6923076923076925%">
-           26.40
-          </td>
-          <td style="width:7.6923076923076925%">
-           4,332
-          </td>
-          <td style="width:7.6923076923076925%">
-           22.27
-          </td>
-          <td style="width:7.6923076923076925%">
-           2,142
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.37
-          </td>
-          <td style="width:7.6923076923076925%">
-           722
-          </td>
-          <td style="width:7.6923076923076925%">
-           12.54
-          </td>
-          <td style="width:7.6923076923076925%">
-           24,075
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            West Yorkshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           17.62
-          </td>
-          <td style="width:7.6923076923076925%">
-           39,223
-          </td>
-          <td style="width:7.6923076923076925%">
-           17.90
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,026
-          </td>
-          <td style="width:7.6923076923076925%">
-           33.20
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,543
-          </td>
-          <td style="width:7.6923076923076925%">
-           26.56
-          </td>
-          <td style="width:7.6923076923076925%">
-           1,278
-          </td>
-          <td style="width:7.6923076923076925%">
-           11.63
-          </td>
-          <td style="width:7.6923076923076925%">
-           359
-          </td>
-          <td style="width:7.6923076923076925%">
-           15.99
-          </td>
-          <td style="width:7.6923076923076925%">
-           29,103
-          </td>
-         </tr>
-         <tr>
-          <th style="width:7.6923076923076925%">
-           <b>
-            Wiltshire
-           </b>
-          </th>
-          <td style="width:7.6923076923076925%">
-           10.29
-          </td>
-          <td style="width:7.6923076923076925%">
-           6,996
-          </td>
-          <td style="width:7.6923076923076925%">
-           10.88
-          </td>
-          <td style="width:7.6923076923076925%">
-           189
-          </td>
-          <td style="width:7.6923076923076925%">
-           61.09
-          </td>
-          <td style="width:7.6923076923076925%">
-           372
-          </td>
-          <td style="width:7.6923076923076925%">
-           21.44
-          </td>
-          <td style="width:7.6923076923076925%">
-           210
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.74
-          </td>
-          <td style="width:7.6923076923076925%">
-           39
-          </td>
-          <td style="width:7.6923076923076925%">
-           9.32
-          </td>
-          <td style="width:7.6923076923076925%">
-           5,990
-          </td>
-         </tr>
-        </tbody>
-       </table>
-      </div>
-     </details>
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          15.98
+         </td>
+         <td style="width:7.6923076923076925%">
+          896,209
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.62
+         </td>
+         <td style="width:7.6923076923076925%">
+          59,665
+         </td>
+         <td style="width:7.6923076923076925%">
+          44.39
+         </td>
+         <td style="width:7.6923076923076925%">
+          82,789
+         </td>
+         <td style="width:7.6923076923076925%">
+          23.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          29,146
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,443
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.75
+         </td>
+         <td style="width:7.6923076923076925%">
+          663,059
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Avon &amp; Somerset" style="width:7.6923076923076925%">
+          <b>
+           Avon &amp; Somerset
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          15.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          24,918
+         </td>
+         <td style="width:7.6923076923076925%">
+          16.57
+         </td>
+         <td style="width:7.6923076923076925%">
+          547
+         </td>
+         <td style="width:7.6923076923076925%">
+          56.17
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,737
+         </td>
+         <td style="width:7.6923076923076925%">
+          30.59
+         </td>
+         <td style="width:7.6923076923076925%">
+          865
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.88
+         </td>
+         <td style="width:7.6923076923076925%">
+          152
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.25
+         </td>
+         <td style="width:7.6923076923076925%">
+          21,261
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Bedfordshire" style="width:7.6923076923076925%">
+          <b>
+           Bedfordshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          15.91
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,783
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,439
+         </td>
+         <td style="width:7.6923076923076925%">
+          36.13
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,074
+         </td>
+         <td style="width:7.6923076923076925%">
+          26.77
+         </td>
+         <td style="width:7.6923076923076925%">
+          494
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.97
+         </td>
+         <td style="width:7.6923076923076925%">
+          131
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.77
+         </td>
+         <td style="width:7.6923076923076925%">
+          6,565
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Cambridgeshire" style="width:7.6923076923076925%">
+          <b>
+           Cambridgeshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.49
+         </td>
+         <td style="width:7.6923076923076925%">
+          10,854
+         </td>
+         <td style="width:7.6923076923076925%">
+          20.39
+         </td>
+         <td style="width:7.6923076923076925%">
+          806
+         </td>
+         <td style="width:7.6923076923076925%">
+          83.74
+         </td>
+         <td style="width:7.6923076923076925%">
+          852
+         </td>
+         <td style="width:7.6923076923076925%">
+          -
+         </td>
+         <td style="width:7.6923076923076925%">
+          -
+         </td>
+         <td style="width:7.6923076923076925%">
+          38.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          485
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.87
+         </td>
+         <td style="width:7.6923076923076925%">
+          8,622
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Cheshire" style="width:7.6923076923076925%">
+          <b>
+           Cheshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.64
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,021
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          193
+         </td>
+         <td style="width:7.6923076923076925%">
+          69.24
+         </td>
+         <td style="width:7.6923076923076925%">
+          226
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.99
+         </td>
+         <td style="width:7.6923076923076925%">
+          125
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.87
+         </td>
+         <td style="width:7.6923076923076925%">
+          83
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.31
+         </td>
+         <td style="width:7.6923076923076925%">
+          13,258
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Cleveland" style="width:7.6923076923076925%">
+          <b>
+           Cleveland
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          25.69
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,316
+         </td>
+         <td style="width:7.6923076923076925%">
+          22.04
+         </td>
+         <td style="width:7.6923076923076925%">
+          384
+         </td>
+         <td style="width:7.6923076923076925%">
+          70.03
+         </td>
+         <td style="width:7.6923076923076925%">
+          221
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.62
+         </td>
+         <td style="width:7.6923076923076925%">
+          90
+         </td>
+         <td style="width:7.6923076923076925%">
+          28.42
+         </td>
+         <td style="width:7.6923076923076925%">
+          126
+         </td>
+         <td style="width:7.6923076923076925%">
+          25.61
+         </td>
+         <td style="width:7.6923076923076925%">
+          13,484
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Cumbria" style="width:7.6923076923076925%">
+          <b>
+           Cumbria
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.82
+         </td>
+         <td style="width:7.6923076923076925%">
+          6,907
+         </td>
+         <td style="width:7.6923076923076925%">
+          20.25
+         </td>
+         <td style="width:7.6923076923076925%">
+          59
+         </td>
+         <td style="width:7.6923076923076925%">
+          79.45
+         </td>
+         <td style="width:7.6923076923076925%">
+          46
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.18
+         </td>
+         <td style="width:7.6923076923076925%">
+          28
+         </td>
+         <td style="width:7.6923076923076925%">
+          16.82
+         </td>
+         <td style="width:7.6923076923076925%">
+          27
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.62
+         </td>
+         <td style="width:7.6923076923076925%">
+          6,704
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Derbyshire" style="width:7.6923076923076925%">
+          <b>
+           Derbyshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          15.05
+         </td>
+         <td style="width:7.6923076923076925%">
+          15,323
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.68
+         </td>
+         <td style="width:7.6923076923076925%">
+          652
+         </td>
+         <td style="width:7.6923076923076925%">
+          28.74
+         </td>
+         <td style="width:7.6923076923076925%">
+          290
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.10
+         </td>
+         <td style="width:7.6923076923076925%">
+          188
+         </td>
+         <td style="width:7.6923076923076925%">
+          32.69
+         </td>
+         <td style="width:7.6923076923076925%">
+          238
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.67
+         </td>
+         <td style="width:7.6923076923076925%">
+          13,936
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Devon &amp; Cornwall" style="width:7.6923076923076925%">
+          <b>
+           Devon &amp; Cornwall
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          9.27
+         </td>
+         <td style="width:7.6923076923076925%">
+          15,459
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.79
+         </td>
+         <td style="width:7.6923076923076925%">
+          173
+         </td>
+         <td style="width:7.6923076923076925%">
+          75.74
+         </td>
+         <td style="width:7.6923076923076925%">
+          311
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.61
+         </td>
+         <td style="width:7.6923076923076925%">
+          213
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.30
+         </td>
+         <td style="width:7.6923076923076925%">
+          107
+         </td>
+         <td style="width:7.6923076923076925%">
+          8.95
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,559
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Dorset" style="width:7.6923076923076925%">
+          <b>
+           Dorset
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.87
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,067
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          169
+         </td>
+         <td style="width:7.6923076923076925%">
+          127.81
+         </td>
+         <td style="width:7.6923076923076925%">
+          410
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.04
+         </td>
+         <td style="width:7.6923076923076925%">
+          181
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.85
+         </td>
+         <td style="width:7.6923076923076925%">
+          113
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.55
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,685
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Durham" style="width:7.6923076923076925%">
+          <b>
+           Durham
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          18.17
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,245
+         </td>
+         <td style="width:7.6923076923076925%">
+          32.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          167
+         </td>
+         <td style="width:7.6923076923076925%">
+          46.31
+         </td>
+         <td style="width:7.6923076923076925%">
+          49
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.10
+         </td>
+         <td style="width:7.6923076923076925%">
+          81
+         </td>
+         <td style="width:7.6923076923076925%">
+          26.40
+         </td>
+         <td style="width:7.6923076923076925%">
+          80
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.87
+         </td>
+         <td style="width:7.6923076923076925%">
+          10,818
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Dyfed-Powys" style="width:7.6923076923076925%">
+          <b>
+           Dyfed-Powys
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          10.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,561
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.76
+         </td>
+         <td style="width:7.6923076923076925%">
+          46
+         </td>
+         <td style="width:7.6923076923076925%">
+          70.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          60
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.20
+         </td>
+         <td style="width:7.6923076923076925%">
+          30
+         </td>
+         <td style="width:7.6923076923076925%">
+          7.47
+         </td>
+         <td style="width:7.6923076923076925%">
+          15
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.64
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,370
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Essex" style="width:7.6923076923076925%">
+          <b>
+           Essex
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.11
+         </td>
+         <td style="width:7.6923076923076925%">
+          24,342
+         </td>
+         <td style="width:7.6923076923076925%">
+          7.60
+         </td>
+         <td style="width:7.6923076923076925%">
+          296
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          647
+         </td>
+         <td style="width:7.6923076923076925%">
+          8.47
+         </td>
+         <td style="width:7.6923076923076925%">
+          234
+         </td>
+         <td style="width:7.6923076923076925%">
+          5.98
+         </td>
+         <td style="width:7.6923076923076925%">
+          92
+         </td>
+         <td style="width:7.6923076923076925%">
+          4.92
+         </td>
+         <td style="width:7.6923076923076925%">
+          7,912
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Gloucestershire" style="width:7.6923076923076925%">
+          <b>
+           Gloucestershire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          8.94
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,339
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.74
+         </td>
+         <td style="width:7.6923076923076925%">
+          134
+         </td>
+         <td style="width:7.6923076923076925%">
+          56.89
+         </td>
+         <td style="width:7.6923076923076925%">
+          293
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.47
+         </td>
+         <td style="width:7.6923076923076925%">
+          134
+         </td>
+         <td style="width:7.6923076923076925%">
+          29.29
+         </td>
+         <td style="width:7.6923076923076925%">
+          88
+         </td>
+         <td style="width:7.6923076923076925%">
+          7.95
+         </td>
+         <td style="width:7.6923076923076925%">
+          4,527
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Greater Manchester" style="width:7.6923076923076925%">
+          <b>
+           Greater Manchester
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.57
+         </td>
+         <td style="width:7.6923076923076925%">
+          39,075
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.97
+         </td>
+         <td style="width:7.6923076923076925%">
+          3,437
+         </td>
+         <td style="width:7.6923076923076925%">
+          31.11
+         </td>
+         <td style="width:7.6923076923076925%">
+          2,305
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.48
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,304
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.67
+         </td>
+         <td style="width:7.6923076923076925%">
+          571
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.46
+         </td>
+         <td style="width:7.6923076923076925%">
+          30,260
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Gwent" style="width:7.6923076923076925%">
+          <b>
+           Gwent
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.24
+         </td>
+         <td style="width:7.6923076923076925%">
+          8,214
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.95
+         </td>
+         <td style="width:7.6923076923076925%">
+          201
+         </td>
+         <td style="width:7.6923076923076925%">
+          45.53
+         </td>
+         <td style="width:7.6923076923076925%">
+          145
+         </td>
+         <td style="width:7.6923076923076925%">
+          22.53
+         </td>
+         <td style="width:7.6923076923076925%">
+          125
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.01
+         </td>
+         <td style="width:7.6923076923076925%">
+          75
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.61
+         </td>
+         <td style="width:7.6923076923076925%">
+          7,547
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Hampshire" style="width:7.6923076923076925%">
+          <b>
+           Hampshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          12.24
+         </td>
+         <td style="width:7.6923076923076925%">
+          23,227
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.56
+         </td>
+         <td style="width:7.6923076923076925%">
+          548
+         </td>
+         <td style="width:7.6923076923076925%">
+          63.51
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,108
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.89
+         </td>
+         <td style="width:7.6923076923076925%">
+          553
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.23
+         </td>
+         <td style="width:7.6923076923076925%">
+          193
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.18
+         </td>
+         <td style="width:7.6923076923076925%">
+          19,796
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Hertfordshire" style="width:7.6923076923076925%">
+          <b>
+           Hertfordshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          17.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          19,622
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.46
+         </td>
+         <td style="width:7.6923076923076925%">
+          991
+         </td>
+         <td style="width:7.6923076923076925%">
+          49.49
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,554
+         </td>
+         <td style="width:7.6923076923076925%">
+          31.20
+         </td>
+         <td style="width:7.6923076923076925%">
+          858
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.53
+         </td>
+         <td style="width:7.6923076923076925%">
+          226
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.16
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,821
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Humberside" style="width:7.6923076923076925%">
+          <b>
+           Humberside
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          11.44
+         </td>
+         <td style="width:7.6923076923076925%">
+          10,502
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.91
+         </td>
+         <td style="width:7.6923076923076925%">
+          133
+         </td>
+         <td style="width:7.6923076923076925%">
+          31.56
+         </td>
+         <td style="width:7.6923076923076925%">
+          142
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.17
+         </td>
+         <td style="width:7.6923076923076925%">
+          116
+         </td>
+         <td style="width:7.6923076923076925%">
+          4.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          36
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.34
+         </td>
+         <td style="width:7.6923076923076925%">
+          10,041
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Kent" style="width:7.6923076923076925%">
+          <b>
+           Kent
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.14
+         </td>
+         <td style="width:7.6923076923076925%">
+          22,695
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.83
+         </td>
+         <td style="width:7.6923076923076925%">
+          695
+         </td>
+         <td style="width:7.6923076923076925%">
+          63.38
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,450
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.63
+         </td>
+         <td style="width:7.6923076923076925%">
+          481
+         </td>
+         <td style="width:7.6923076923076925%">
+          41.00
+         </td>
+         <td style="width:7.6923076923076925%">
+          641
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.18
+         </td>
+         <td style="width:7.6923076923076925%">
+          17,975
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Lancashire" style="width:7.6923076923076925%">
+          <b>
+           Lancashire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          15.54
+         </td>
+         <td style="width:7.6923076923076925%">
+          22,699
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.48
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,249
+         </td>
+         <td style="width:7.6923076923076925%">
+          42.03
+         </td>
+         <td style="width:7.6923076923076925%">
+          226
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.40
+         </td>
+         <td style="width:7.6923076923076925%">
+          300
+         </td>
+         <td style="width:7.6923076923076925%">
+          4.23
+         </td>
+         <td style="width:7.6923076923076925%">
+          44
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.43
+         </td>
+         <td style="width:7.6923076923076925%">
+          20,374
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Leicestershire" style="width:7.6923076923076925%">
+          <b>
+           Leicestershire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          9.68
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,853
+         </td>
+         <td style="width:7.6923076923076925%">
+          7.61
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,185
+         </td>
+         <td style="width:7.6923076923076925%">
+          34.89
+         </td>
+         <td style="width:7.6923076923076925%">
+          859
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.72
+         </td>
+         <td style="width:7.6923076923076925%">
+          302
+         </td>
+         <td style="width:7.6923076923076925%">
+          4.45
+         </td>
+         <td style="width:7.6923076923076925%">
+          85
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          7,254
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Lincolnshire" style="width:7.6923076923076925%">
+          <b>
+           Lincolnshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          12.85
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,173
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.03
+         </td>
+         <td style="width:7.6923076923076925%">
+          95
+         </td>
+         <td style="width:7.6923076923076925%">
+          48.03
+         </td>
+         <td style="width:7.6923076923076925%">
+          123
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.12
+         </td>
+         <td style="width:7.6923076923076925%">
+          75
+         </td>
+         <td style="width:7.6923076923076925%">
+          27.83
+         </td>
+         <td style="width:7.6923076923076925%">
+          79
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.99
+         </td>
+         <td style="width:7.6923076923076925%">
+          8,350
+         </td>
+        </tr>
+        <tr>
+         <th data-order="London, City of" style="width:7.6923076923076925%">
+          <b>
+           London, City of
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,775
+         </td>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          224
+         </td>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          327
+         </td>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          94
+         </td>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          41
+         </td>
+         <td style="width:7.6923076923076925%">
+          N/A
+         </td>
+         <td style="width:7.6923076923076925%">
+          931
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Merseyside" style="width:7.6923076923076925%">
+          <b>
+           Merseyside
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          20.52
+         </td>
+         <td style="width:7.6923076923076925%">
+          28,339
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.56
+         </td>
+         <td style="width:7.6923076923076925%">
+          331
+         </td>
+         <td style="width:7.6923076923076925%">
+          52.84
+         </td>
+         <td style="width:7.6923076923076925%">
+          769
+         </td>
+         <td style="width:7.6923076923076925%">
+          24.00
+         </td>
+         <td style="width:7.6923076923076925%">
+          503
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.61
+         </td>
+         <td style="width:7.6923076923076925%">
+          336
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.89
+         </td>
+         <td style="width:7.6923076923076925%">
+          25,966
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Metropolitan Police" style="width:7.6923076923076925%">
+          <b>
+           Metropolitan Police
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          23.29
+         </td>
+         <td style="width:7.6923076923076925%">
+          190,195
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.13
+         </td>
+         <td style="width:7.6923076923076925%">
+          25,141
+         </td>
+         <td style="width:7.6923076923076925%">
+          45.89
+         </td>
+         <td style="width:7.6923076923076925%">
+          49,948
+         </td>
+         <td style="width:7.6923076923076925%">
+          28.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,575
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.64
+         </td>
+         <td style="width:7.6923076923076925%">
+          7,143
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.54
+         </td>
+         <td style="width:7.6923076923076925%">
+          90,494
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Norfolk" style="width:7.6923076923076925%">
+          <b>
+           Norfolk
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          16.64
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,272
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.93
+         </td>
+         <td style="width:7.6923076923076925%">
+          117
+         </td>
+         <td style="width:7.6923076923076925%">
+          72.90
+         </td>
+         <td style="width:7.6923076923076925%">
+          336
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.65
+         </td>
+         <td style="width:7.6923076923076925%">
+          187
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.51
+         </td>
+         <td style="width:7.6923076923076925%">
+          57
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.37
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,415
+         </td>
+        </tr>
+        <tr>
+         <th data-order="North Wales" style="width:7.6923076923076925%">
+          <b>
+           North Wales
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          21.87
+         </td>
+         <td style="width:7.6923076923076925%">
+          15,045
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.68
+         </td>
+         <td style="width:7.6923076923076925%">
+          74
+         </td>
+         <td style="width:7.6923076923076925%">
+          91.52
+         </td>
+         <td style="width:7.6923076923076925%">
+          137
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          45
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.16
+         </td>
+         <td style="width:7.6923076923076925%">
+          63
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.79
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,616
+         </td>
+        </tr>
+        <tr>
+         <th data-order="North Yorkshire" style="width:7.6923076923076925%">
+          <b>
+           North Yorkshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,677
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.30
+         </td>
+         <td style="width:7.6923076923076925%">
+          112
+         </td>
+         <td style="width:7.6923076923076925%">
+          26.81
+         </td>
+         <td style="width:7.6923076923076925%">
+          97
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.13
+         </td>
+         <td style="width:7.6923076923076925%">
+          83
+         </td>
+         <td style="width:7.6923076923076925%">
+          8.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          54
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.55
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,652
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Northamptonshire" style="width:7.6923076923076925%">
+          <b>
+           Northamptonshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          14.46
+         </td>
+         <td style="width:7.6923076923076925%">
+          10,004
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.84
+         </td>
+         <td style="width:7.6923076923076925%">
+          290
+         </td>
+         <td style="width:7.6923076923076925%">
+          46.50
+         </td>
+         <td style="width:7.6923076923076925%">
+          787
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.86
+         </td>
+         <td style="width:7.6923076923076925%">
+          310
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.10
+         </td>
+         <td style="width:7.6923076923076925%">
+          55
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.43
+         </td>
+         <td style="width:7.6923076923076925%">
+          8,496
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Northumbria" style="width:7.6923076923076925%">
+          <b>
+           Northumbria
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          19.20
+         </td>
+         <td style="width:7.6923076923076925%">
+          27,276
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.95
+         </td>
+         <td style="width:7.6923076923076925%">
+          678
+         </td>
+         <td style="width:7.6923076923076925%">
+          46.52
+         </td>
+         <td style="width:7.6923076923076925%">
+          419
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.38
+         </td>
+         <td style="width:7.6923076923076925%">
+          179
+         </td>
+         <td style="width:7.6923076923076925%">
+          4.36
+         </td>
+         <td style="width:7.6923076923076925%">
+          78
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.13
+         </td>
+         <td style="width:7.6923076923076925%">
+          25,700
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Nottinghamshire" style="width:7.6923076923076925%">
+          <b>
+           Nottinghamshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          21.92
+         </td>
+         <td style="width:7.6923076923076925%">
+          23,927
+         </td>
+         <td style="width:7.6923076923076925%">
+          23.50
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,134
+         </td>
+         <td style="width:7.6923076923076925%">
+          59.70
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,629
+         </td>
+         <td style="width:7.6923076923076925%">
+          37.41
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,159
+         </td>
+         <td style="width:7.6923076923076925%">
+          16.29
+         </td>
+         <td style="width:7.6923076923076925%">
+          252
+         </td>
+         <td style="width:7.6923076923076925%">
+          20.08
+         </td>
+         <td style="width:7.6923076923076925%">
+          19,471
+         </td>
+        </tr>
+        <tr>
+         <th data-order="South Wales" style="width:7.6923076923076925%">
+          <b>
+           South Wales
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          20.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          26,701
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.94
+         </td>
+         <td style="width:7.6923076923076925%">
+          535
+         </td>
+         <td style="width:7.6923076923076925%">
+          55.35
+         </td>
+         <td style="width:7.6923076923076925%">
+          705
+         </td>
+         <td style="width:7.6923076923076925%">
+          23.81
+         </td>
+         <td style="width:7.6923076923076925%">
+          423
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.17
+         </td>
+         <td style="width:7.6923076923076925%">
+          211
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.67
+         </td>
+         <td style="width:7.6923076923076925%">
+          23,575
+         </td>
+        </tr>
+        <tr>
+         <th data-order="South Yorkshire" style="width:7.6923076923076925%">
+          <b>
+           South Yorkshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          12.19
+         </td>
+         <td style="width:7.6923076923076925%">
+          16,372
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.36
+         </td>
+         <td style="width:7.6923076923076925%">
+          785
+         </td>
+         <td style="width:7.6923076923076925%">
+          32.62
+         </td>
+         <td style="width:7.6923076923076925%">
+          840
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.50
+         </td>
+         <td style="width:7.6923076923076925%">
+          239
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.54
+         </td>
+         <td style="width:7.6923076923076925%">
+          236
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.65
+         </td>
+         <td style="width:7.6923076923076925%">
+          14,187
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Staffordshire" style="width:7.6923076923076925%">
+          <b>
+           Staffordshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.75
+         </td>
+         <td style="width:7.6923076923076925%">
+          15,090
+         </td>
+         <td style="width:7.6923076923076925%">
+          24.27
+         </td>
+         <td style="width:7.6923076923076925%">
+          853
+         </td>
+         <td style="width:7.6923076923076925%">
+          50.99
+         </td>
+         <td style="width:7.6923076923076925%">
+          436
+         </td>
+         <td style="width:7.6923076923076925%">
+          27.95
+         </td>
+         <td style="width:7.6923076923076925%">
+          394
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.44
+         </td>
+         <td style="width:7.6923076923076925%">
+          136
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.77
+         </td>
+         <td style="width:7.6923076923076925%">
+          13,187
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Suffolk" style="width:7.6923076923076925%">
+          <b>
+           Suffolk
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.52
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,845
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.21
+         </td>
+         <td style="width:7.6923076923076925%">
+          112
+         </td>
+         <td style="width:7.6923076923076925%">
+          53.40
+         </td>
+         <td style="width:7.6923076923076925%">
+          366
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.32
+         </td>
+         <td style="width:7.6923076923076925%">
+          241
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.92
+         </td>
+         <td style="width:7.6923076923076925%">
+          51
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.29
+         </td>
+         <td style="width:7.6923076923076925%">
+          6,441
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Surrey" style="width:7.6923076923076925%">
+          <b>
+           Surrey
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          9.92
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,233
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.79
+         </td>
+         <td style="width:7.6923076923076925%">
+          637
+         </td>
+         <td style="width:7.6923076923076925%">
+          53.10
+         </td>
+         <td style="width:7.6923076923076925%">
+          660
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.94
+         </td>
+         <td style="width:7.6923076923076925%">
+          352
+         </td>
+         <td style="width:7.6923076923076925%">
+          8.08
+         </td>
+         <td style="width:7.6923076923076925%">
+          151
+         </td>
+         <td style="width:7.6923076923076925%">
+          8.90
+         </td>
+         <td style="width:7.6923076923076925%">
+          9,111
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Sussex" style="width:7.6923076923076925%">
+          <b>
+           Sussex
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          12.93
+         </td>
+         <td style="width:7.6923076923076925%">
+          20,785
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.21
+         </td>
+         <td style="width:7.6923076923076925%">
+          499
+         </td>
+         <td style="width:7.6923076923076925%">
+          82.34
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,173
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.94
+         </td>
+         <td style="width:7.6923076923076925%">
+          599
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          242
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.05
+         </td>
+         <td style="width:7.6923076923076925%">
+          16,641
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Thames Valley" style="width:7.6923076923076925%">
+          <b>
+           Thames Valley
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          16.66
+         </td>
+         <td style="width:7.6923076923076925%">
+          37,809
+         </td>
+         <td style="width:7.6923076923076925%">
+          18.28
+         </td>
+         <td style="width:7.6923076923076925%">
+          3,519
+         </td>
+         <td style="width:7.6923076923076925%">
+          45.50
+         </td>
+         <td style="width:7.6923076923076925%">
+          3,140
+         </td>
+         <td style="width:7.6923076923076925%">
+          34.47
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,930
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.06
+         </td>
+         <td style="width:7.6923076923076925%">
+          393
+         </td>
+         <td style="width:7.6923076923076925%">
+          13.88
+         </td>
+         <td style="width:7.6923076923076925%">
+          26,642
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Warwickshire" style="width:7.6923076923076925%">
+          <b>
+           Warwickshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          9.80
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,345
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.51
+         </td>
+         <td style="width:7.6923076923076925%">
+          239
+         </td>
+         <td style="width:7.6923076923076925%">
+          52.44
+         </td>
+         <td style="width:7.6923076923076925%">
+          233
+         </td>
+         <td style="width:7.6923076923076925%">
+          20.63
+         </td>
+         <td style="width:7.6923076923076925%">
+          164
+         </td>
+         <td style="width:7.6923076923076925%">
+          14.42
+         </td>
+         <td style="width:7.6923076923076925%">
+          67
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.06
+         </td>
+         <td style="width:7.6923076923076925%">
+          4,583
+         </td>
+        </tr>
+        <tr>
+         <th data-order="West Mercia" style="width:7.6923076923076925%">
+          <b>
+           West Mercia
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          10.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          12,935
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.97
+         </td>
+         <td style="width:7.6923076923076925%">
+          477
+         </td>
+         <td style="width:7.6923076923076925%">
+          81.39
+         </td>
+         <td style="width:7.6923076923076925%">
+          412
+         </td>
+         <td style="width:7.6923076923076925%">
+          19.46
+         </td>
+         <td style="width:7.6923076923076925%">
+          262
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.37
+         </td>
+         <td style="width:7.6923076923076925%">
+          70
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.91
+         </td>
+         <td style="width:7.6923076923076925%">
+          11,664
+         </td>
+        </tr>
+        <tr>
+         <th data-order="West Midlands" style="width:7.6923076923076925%">
+          <b>
+           West Midlands
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          13.58
+         </td>
+         <td style="width:7.6923076923076925%">
+          37,170
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.32
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,094
+         </td>
+         <td style="width:7.6923076923076925%">
+          26.40
+         </td>
+         <td style="width:7.6923076923076925%">
+          4,332
+         </td>
+         <td style="width:7.6923076923076925%">
+          22.27
+         </td>
+         <td style="width:7.6923076923076925%">
+          2,142
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.37
+         </td>
+         <td style="width:7.6923076923076925%">
+          722
+         </td>
+         <td style="width:7.6923076923076925%">
+          12.54
+         </td>
+         <td style="width:7.6923076923076925%">
+          24,075
+         </td>
+        </tr>
+        <tr>
+         <th data-order="West Yorkshire" style="width:7.6923076923076925%">
+          <b>
+           West Yorkshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          17.62
+         </td>
+         <td style="width:7.6923076923076925%">
+          39,223
+         </td>
+         <td style="width:7.6923076923076925%">
+          17.90
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,026
+         </td>
+         <td style="width:7.6923076923076925%">
+          33.20
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,543
+         </td>
+         <td style="width:7.6923076923076925%">
+          26.56
+         </td>
+         <td style="width:7.6923076923076925%">
+          1,278
+         </td>
+         <td style="width:7.6923076923076925%">
+          11.63
+         </td>
+         <td style="width:7.6923076923076925%">
+          359
+         </td>
+         <td style="width:7.6923076923076925%">
+          15.99
+         </td>
+         <td style="width:7.6923076923076925%">
+          29,103
+         </td>
+        </tr>
+        <tr>
+         <th data-order="Wiltshire" style="width:7.6923076923076925%">
+          <b>
+           Wiltshire
+          </b>
+         </th>
+         <td style="width:7.6923076923076925%">
+          10.29
+         </td>
+         <td style="width:7.6923076923076925%">
+          6,996
+         </td>
+         <td style="width:7.6923076923076925%">
+          10.88
+         </td>
+         <td style="width:7.6923076923076925%">
+          189
+         </td>
+         <td style="width:7.6923076923076925%">
+          61.09
+         </td>
+         <td style="width:7.6923076923076925%">
+          372
+         </td>
+         <td style="width:7.6923076923076925%">
+          21.44
+         </td>
+         <td style="width:7.6923076923076925%">
+          210
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.74
+         </td>
+         <td style="width:7.6923076923076925%">
+          39
+         </td>
+         <td style="width:7.6923076923076925%">
+          9.32
+         </td>
+         <td style="width:7.6923076923076925%">
+          5,990
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
     </div>
     <div class="column-two-thirds">
      <h3 class="heading-small">
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         in North Wales, 2% of people arrested were from an ethnic minority background (the lowest rate)
-        </p>
-       </li>
-       <li>
-        <p>
-         in London, 51% of people arrested were from an ethnic minority background (the highest rate)
-        </p>
-       </li>
-       <li>
-        <p>
-         differences in the rate of ethnic minority arrests around the UK are likely, in part, to reflect the different ethnic makeup of those areas (with many more people from an ethnic minority living in London than in Wales, for example)
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        in North Wales, 2% of people arrested were from an ethnic minority background (the lowest rate)
+       </p>
+      </li>
+      <li>
+       <p>
+        in London, 51% of people arrested were from an ethnic minority background (the highest rate)
+       </p>
+      </li>
+      <li>
+       <p>
+        differences in the rate of ethnic minority arrests around the UK are likely, in part, to reflect the different ethnic makeup of those areas (with many more people from an ethnic minority living in London than in Wales, for example)
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -2791,57 +2943,57 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <h3 class="heading-small">
         Arrests per 1,000 by ethnicity and gender, in England and Wales, 2015/16
        </h3>
        <table class="table grouped" columns="2">
         <thead>
          <tr>
-          <td style="width:14.285714285714286%">
+          <td style="width:12.5%">
           </td>
-          <td class="line" colspan="2" style="width:28.571428571428573%">
+          <td class="line" colspan="2" style="width:25.0%">
            All
           </td>
-          <td class="line" colspan="2" style="width:28.571428571428573%">
+          <td class="line" colspan="2" style="width:25.0%">
            Female
           </td>
-          <td class="" colspan="2" style="width:28.571428571428573%">
+          <td class="" colspan="2" style="width:25.0%">
            Male
           </td>
          </tr>
          <tr>
-          <td style="width:33.333333333333336%">
+          <td class="first" style="width:12.5%">
            <button>
             Ethnicity
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Rate per 1,000
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Number of arrests
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Rate per 1,000
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Number of arrests
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Rate per 1,000
            </button>
           </td>
-          <td style="width:50.0%">
+          <td style="width:12.5%">
            <button>
             Number of arrests
            </button>
@@ -2850,7 +3002,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="All" style="width:14.285714285714286%">
            <b>
             All
            </b>
@@ -2875,7 +3027,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="Asian" style="width:14.285714285714286%">
            <b>
             Asian
            </b>
@@ -2900,7 +3052,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="Black" style="width:14.285714285714286%">
            <b>
             Black
            </b>
@@ -2925,7 +3077,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="Mixed" style="width:14.285714285714286%">
            <b>
             Mixed
            </b>
@@ -2950,7 +3102,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="Other" style="width:14.285714285714286%">
            <b>
             Other
            </b>
@@ -2975,7 +3127,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="Unreported" style="width:14.285714285714286%">
            <b>
             Unreported
            </b>
@@ -3000,7 +3152,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:14.285714285714286%">
+          <th data-order="White" style="width:14.285714285714286%">
            <b>
             White
            </b>
@@ -3034,37 +3186,35 @@
       Summary
      </h3>
      <p>
-      <p>
-       This data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         in 2016, 15% of all women arrested in England and Wales were from an ethnic minority, compared with 23% of all men arrested, a figure consistent with recent years
-        </p>
-       </li>
-       <li>
-        <p>
-         of the total number of people from ethnic minority groups arrested in 2016, 12% were women
-        </p>
-       </li>
-       <li>
-        <p>
-         of the total number of White people arrested in 2016, 17% were women
-        </p>
-       </li>
-       <li>
-        <p>
-         Black men are almost three and a half times more likely to be arrested than White men
-        </p>
-       </li>
-       <li>
-        <p>
-         Black women are 2.3 times more likely to be arrested than White women
-        </p>
-       </li>
-      </ul>
+      This data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        in 2016, 15% of all women arrested in England and Wales were from an ethnic minority, compared with 23% of all men arrested, a figure consistent with recent years
+       </p>
+      </li>
+      <li>
+       <p>
+        of the total number of people from ethnic minority groups arrested in 2016, 12% were women
+       </p>
+      </li>
+      <li>
+       <p>
+        of the total number of White people arrested in 2016, 17% were women
+       </p>
+      </li>
+      <li>
+       <p>
+        Black men are almost three and a half times more likely to be arrested than White men
+       </p>
+      </li>
+      <li>
+       <p>
+        Black women are 2.3 times more likely to be arrested than White women
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -3112,23 +3262,19 @@
          Purpose Of Data Source
         </h3>
         <p>
-         <p>
-          This data is an Annual Data Requirement (ADR). This means it is mandatory for police forces in England and Wales to provide the Home Office with the number of arrests carried out each financial year by ethnicity.
-         </p>
-         <p>
-          Data on arrests is collected by statisticians in Crime and Policing Analysis.
-         </p>
+         This data is an Annual Data Requirement (ADR). This means it is mandatory for police forces in England and Wales to provide the Home Office with the number of arrests carried out each financial year by ethnicity.
+        </p>
+        <p>
+         Data on arrests is collected by statisticians in Crime and Policing Analysis.
         </p>
         <h3 class="heading-small">
          Methodology
         </h3>
         <p>
-         <p>
-          Data presented here relates to the police power of arrest. In line with police recorded crime statistics, this data covers arrests for all notifiable offences carried out by police in England and Wales. (A notifiable offence is a crime which the police must inform the Home Office about by completing a crime report form.)
-         </p>
-         <p>
-          A person arrested for a notifiable offence is counted for each occasion on which they are arrested, provided that the offence is not connected or related to an offence for which the person has already been subject to arrest during the year. If it is connected, or if a person has been arrested for one or more notifiable offences on the same occasion, the offence with the highest maximum penalty is recorded.
-         </p>
+         Data presented here relates to the police power of arrest. In line with police recorded crime statistics, this data covers arrests for all notifiable offences carried out by police in England and Wales. (A notifiable offence is a crime which the police must inform the Home Office about by completing a crime report form.)
+        </p>
+        <p>
+         A person arrested for a notifiable offence is counted for each occasion on which they are arrested, provided that the offence is not connected or related to an offence for which the person has already been subject to arrest during the year. If it is connected, or if a person has been arrested for one or more notifiable offences on the same occasion, the offence with the highest maximum penalty is recorded.
         </p>
         <h3 class="heading-small">
          Data type
@@ -3146,80 +3292,76 @@
          Disclosure control
         </h3>
         <p>
-         <p>
-          Ethnicity of individuals arrested are collected on 16+1 self-defined ethnicity codes. A small proportion of individuals did not state their ethnicity these are recorded as 'unreported' in the data. For each financial year the proportion (%) of total arrests in the year that recorded with an ethnicity was ‘not stated’ are:
-         </p>
-         <ul>
-          <li>
-           <p>
-            2006/07 – 7%
-           </p>
-          </li>
-          <li>
-           <p>
-            2007/08 – 4%
-           </p>
-          </li>
-          <li>
-           <p>
-            2008/09 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2009/10 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2010/11 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2011/12 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2012/13 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2013/14 – 2%
-           </p>
-          </li>
-          <li>
-           <p>
-            2014/15 – 3%
-           </p>
-          </li>
-          <li>
-           <p>
-            2015/16 – 5%
-           </p>
-          </li>
-         </ul>
+         Ethnicity of individuals arrested are collected on 16+1 self-defined ethnicity codes. A small proportion of individuals did not state their ethnicity these are recorded as 'unreported' in the data. For each financial year the proportion (%) of total arrests in the year that recorded with an ethnicity was ‘not stated’ are:
         </p>
+        <ul>
+         <li>
+          <p>
+           2006/07 – 7%
+          </p>
+         </li>
+         <li>
+          <p>
+           2007/08 – 4%
+          </p>
+         </li>
+         <li>
+          <p>
+           2008/09 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2009/10 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2010/11 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2011/12 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2012/13 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2013/14 – 2%
+          </p>
+         </li>
+         <li>
+          <p>
+           2014/15 – 3%
+          </p>
+         </li>
+         <li>
+          <p>
+           2015/16 – 5%
+          </p>
+         </li>
+        </ul>
         <h3 class="heading-small">
          Further technical information
         </h3>
         <p>
-         <p>
-          Data recording
+         Data recording
 - Under the code of practice for the Statutory Powers of arrest, arresting officers are required to record details of an arrest at the time of arrest, or as soon as possible.
 -A universal code of practice (PACE code G) ensures arrests are standardised across forces, both in terms of the processes involved, and the data recorded.
 - Forces use arrest records to inform custody records which are used for a number of administrative purposes, including processing arrestees and monitoring performance. It is essential for forces’ operational needs that they keep these records up to date.
 - Police forces have their own internal auditing methods to ensure the data are accurate and up to date before sending data to the Home Office. Custody Sergeants are also employed in police stations to ensure that those brought into custody are processed in line with the code of practice.
 - The self-defined ethnicity of the person arrested is recorded according to the ethnicity stated by the arrestee at the time of arrest.
 -For some forces, an arrest will only be recorded if an individual is taken to a custody suite and a custody record is created
-         </p>
-         <p>
-          Quality assurance
+        </p>
+        <p>
+         Quality assurance
 - Forces’ use and recording of arrests are monitored by Her Majesty’s Inspectorate of Constabulary (HMIC). HMIC carries out regular inspections and produce reports on the inspections.
 - The Home Office statisticians undertake quality assurance checks which include looking for missing/incomplete data, inconsistencies in the data, extreme values. Trend analyses also look for unusual or unexpected trends in the data. Any inconsistencies or unusual trends are flagged with forces, who are requested to either explain the trends, or resubmit to amend the data. All data are then confirmed by forces during a data reconciliation to confirm they are content for the figures to be published.
-         </p>
         </p>
        </div>
       </div>
@@ -3292,11 +3434,9 @@
          </dt>
          <dd>
           <p>
-           <p>
-            <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/562977/police-powers-procedures-hosb1516.pdf">
-             Police powers and procedures, England and Wales, year ending 31 March 2016
-            </a>
-           </p>
+           <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/562977/police-powers-procedures-hosb1516.pdf">
+            Police powers and procedures, England and Wales, year ending 31 March 2016
+           </a>
           </p>
          </dd>
         </dl>
@@ -3315,6 +3455,9 @@
         </span>
        </div>
        <div class="accordion__body downloads" style="display: none;">
+        <a href="./arrests.json">
+         View this page as JSON
+        </a>
         <button class="js--print print-btn">
          Print this page
         </button>
@@ -3370,6 +3513,8 @@
   <script src="/static/javascripts/govuk-template.js?0.19.2">
   </script>
   <script src="/static/vendor/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="/static/vendor/bowser.js" type="text/javascript">
   </script>
   <script src="/static/javascripts/all.js" type="text/javascript">
   </script>

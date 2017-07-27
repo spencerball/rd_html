@@ -39,6 +39,13 @@
           ga('create', 'UA-100698377-1', 'auto');
           ga('send', 'pageview');
   </script>
+  <!--[if lte IE 8 ]>
+    <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
+  <![endif]-->
+  <script src="/static/vendor/details.polyfill.js" type="text/javascript">
+  </script>
+  <link href="./patient-experience-of-primary-care-gp-services.json" rel="alternate" title="Patient experience of primary care - GP services" type="application/json">
+  </link>
  </head>
  <body class="">
   <script>
@@ -169,25 +176,23 @@
       The main facts and figures show that:
      </p>
      <div class="bullets spaced-out">
-      <p>
-       <ul>
-        <li>
-         <p>
-          a high proportion of patients (85%) reported a positive experience of GP services in 2015/16
-         </p>
-        </li>
-        <li>
-         <p>
-          over the 5 years presented, Irish patients, along with African, Other Black/African/Caribbean background and White British have shown consistently higher rates of satisfaction than other ethnic groups
-         </p>
-        </li>
-        <li>
-         <p>
-          over the same 5 years, Bangladeshi, Pakistani, Indian and Chinese patients were consistently less likely to report a positive experience
-         </p>
-        </li>
-       </ul>
-      </p>
+      <ul>
+       <li>
+        <p>
+         a high proportion of patients (85%) reported a positive experience of GP services in 2015/16
+        </p>
+       </li>
+       <li>
+        <p>
+         over the 5 years presented, Irish patients, along with African, Other Black/African/Caribbean background and White British have shown consistently higher rates of satisfaction than other ethnic groups
+        </p>
+       </li>
+       <li>
+        <p>
+         over the same 5 years, Bangladeshi, Pakistani, Indian and Chinese patients were consistently less likely to report a positive experience
+        </p>
+       </li>
+      </ul>
      </div>
      <details class="normalize" data-event="data-reliability">
       <summary>
@@ -197,6 +202,23 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        Although the number of respondents taking part each year is relatively large (about 0.9 million), caution should still be used when comparing satisfaction levels between ethnic groups or over time. This is because the sample sizes for some ethnic groups may be small.
+       </p>
+       <p>
+        All survey estimates are subject to a degree of uncertainty as they are based on a sample of the population.
+       </p>
+       <p>
+        The degree of uncertainty is greater when the number of respondents is small, so it will be highest for minority ethnic groups.
+       </p>
+       <p>
+        This is particularly the case for Gypsy and Irish Traveller, the group found to be the least satisfied with GP services in 2015/16, with roughly 72% reporting a positive experience. This figure is based on a small number of responses, 222 in 2015/16, and has been variable year on year.
+       </p>
+       <p>
+        Where ethnic groups have consistently low or high scores over several survey years, this can somewhat offset the uncertainty around survey estimates from one year.
+       </p>
+      </div>
+      <noscript>
+       <div>
         <p>
          Although the number of respondents taking part each year is relatively large (about 0.9 million), caution should still be used when comparing satisfaction levels between ethnic groups or over time. This is because the sample sizes for some ethnic groups may be small.
         </p>
@@ -212,8 +234,8 @@
         <p>
          Where ethnic groups have consistently low or high scores over several survey years, this can somewhat offset the uncertainty around survey estimates from one year.
         </p>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="data-measured">
       <summary>
@@ -223,6 +245,42 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        This data measures the proportion of the population satisfied with the service they get when they see their GP at a GP surgery. It doesn’t include GPs in hospital or other clinical settings.
+       </p>
+       <p>
+        The data source is the GP patient survey (GPPS), commissioned by NHS England and conducted by Ipsos MORI.
+       </p>
+       <p>
+        People were asked to rate their overall experience of GP services. Those who replied ‘fairly good’ or ‘very good’ are considered to have had a positive experience.
+       </p>
+       <p>
+        Patients are eligible for the GP patient survey if they:
+       </p>
+       <ul>
+        <li>
+         <p>
+          are 18 years of age or over
+         </p>
+        </li>
+        <li>
+         <p>
+          have an NHS number
+         </p>
+        </li>
+        <li>
+         <p>
+          have been registered with a GP for 6 months
+         </p>
+        </li>
+        <li>
+         <p>
+          have not received a survey in the last 12 months
+         </p>
+        </li>
+       </ul>
+      </div>
+      <noscript>
+       <div>
         <p>
          This data measures the proportion of the population satisfied with the service they get when they see their GP at a GP surgery. It doesn’t include GPs in hospital or other clinical settings.
         </p>
@@ -257,8 +315,8 @@
           </p>
          </li>
         </ul>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
      <details class="normalize" data-event="categories-chosen">
       <summary>
@@ -268,6 +326,131 @@
       </summary>
       <div class="panel panel-border-narrow">
        <p>
+        The standardised ethnic groups based on the 2011 census were used.
+       </p>
+       <p>
+        White:
+       </p>
+       <ul>
+        <li>
+         <p>
+          English/Welsh/Scottish/Northern Irish/British
+         </p>
+        </li>
+        <li>
+         <p>
+          Irish
+         </p>
+        </li>
+        <li>
+         <p>
+          Gypsy, Traveller or Irish Traveller
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other White background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Mixed/Multiple ethnic groups:
+       </p>
+       <ul>
+        <li>
+         <p>
+          White and Black Caribbean
+         </p>
+        </li>
+        <li>
+         <p>
+          White and Black African
+         </p>
+        </li>
+        <li>
+         <p>
+          White and Asian
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Mixed/Multiple ethnic background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Asian/Asian British:
+       </p>
+       <ul>
+        <li>
+         <p>
+          Indian
+         </p>
+        </li>
+        <li>
+         <p>
+          Pakistani
+         </p>
+        </li>
+        <li>
+         <p>
+          Bangladeshi
+         </p>
+        </li>
+        <li>
+         <p>
+          Chinese
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Asian background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Black/African/Caribbean/Black British:
+       </p>
+       <ul>
+        <li>
+         <p>
+          African
+         </p>
+        </li>
+        <li>
+         <p>
+          Caribbean
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other Black/African/Caribbean background
+         </p>
+        </li>
+       </ul>
+       <p>
+        Other ethnic group:
+       </p>
+       <ul>
+        <li>
+         <p>
+          Arab
+         </p>
+        </li>
+        <li>
+         <p>
+          Any other ethnic group
+         </p>
+        </li>
+       </ul>
+       <p>
+        <a href="/ethnic-groups-and-data-collected.html">
+         Ethnic groups and how data on ethnicity is collected
+        </a>
+       </p>
+      </div>
+      <noscript>
+       <div class="section-expandable-region" id="ethnicity-definition">
         <p>
          The standardised ethnic groups based on the 2011 census were used.
         </p>
@@ -386,13 +569,8 @@
           </p>
          </li>
         </ul>
-       </p>
-       <p>
-        <a href="/ethnic-groups-and-data-collected.html">
-         Ethnic groups and how data on ethnicity is collected
-        </a>
-       </p>
-      </div>
+       </div>
+      </noscript>
      </details>
     </div>
    </div>
@@ -435,7 +613,7 @@
         View the numbers in a table
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel-border-narrow panel">
        <table class="table cropped grouped extra-wide" columns="1">
         <thead>
          <tr>
@@ -458,32 +636,32 @@
           </td>
          </tr>
          <tr>
-          <td style="width:100.0%">
+          <td class="first" style="width:16.666666666666668%">
            <button>
             Ethnicity with parent
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:16.666666666666668%">
            <button>
             (%)
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:16.666666666666668%">
            <button>
             (%)
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:16.666666666666668%">
            <button>
             (%)
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:16.666666666666668%">
            <button>
             (%)
            </button>
           </td>
-          <td style="width:100.0%">
+          <td style="width:16.666666666666668%">
            <button>
             (%)
            </button>
@@ -492,7 +670,7 @@
         </thead>
         <tbody>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="900" style="width:16.666666666666668%">
            <b>
             All
            </b>
@@ -514,7 +692,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="201" style="width:16.666666666666668%">
            <b>
             Black - African
            </b>
@@ -536,7 +714,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="109" style="width:16.666666666666668%">
            <b>
             Asian - Other
            </b>
@@ -558,7 +736,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="209" style="width:16.666666666666668%">
            <b>
             Black - Other
            </b>
@@ -580,7 +758,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="609" style="width:16.666666666666668%">
            <b>
             Other - Any other
            </b>
@@ -602,7 +780,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="309" style="width:16.666666666666668%">
            <b>
             Mixed - Other
            </b>
@@ -624,7 +802,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="409" style="width:16.666666666666668%">
            <b>
             White - other
            </b>
@@ -646,7 +824,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="601" style="width:16.666666666666668%">
            <b>
             Other - Arab
            </b>
@@ -668,7 +846,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="101" style="width:16.666666666666668%">
            <b>
             Asian - Bangladeshi
            </b>
@@ -690,7 +868,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="202" style="width:16.666666666666668%">
            <b>
             Black - Caribbean
            </b>
@@ -712,7 +890,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="102" style="width:16.666666666666668%">
            <b>
             Asian - Chinese
            </b>
@@ -734,7 +912,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="401" style="width:16.666666666666668%">
            <b>
             White - British
            </b>
@@ -756,7 +934,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="405" style="width:16.666666666666668%">
            <b>
             White - Gypsy or Irish Traveller
            </b>
@@ -778,7 +956,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="103" style="width:16.666666666666668%">
            <b>
             Asian - Indian
            </b>
@@ -800,7 +978,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="402" style="width:16.666666666666668%">
            <b>
             White - Irish
            </b>
@@ -822,7 +1000,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="104" style="width:16.666666666666668%">
            <b>
             Asian - Pakistani
            </b>
@@ -844,7 +1022,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="301" style="width:16.666666666666668%">
            <b>
             Mixed - White/Asian
            </b>
@@ -866,7 +1044,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="302" style="width:16.666666666666668%">
            <b>
             Mixed - White/Black African
            </b>
@@ -888,7 +1066,7 @@
           </td>
          </tr>
          <tr>
-          <th style="width:16.666666666666668%">
+          <th data-order="303" style="width:16.666666666666668%">
            <b>
             Mixed - Mixed White/Black Caribbean
            </b>
@@ -919,33 +1097,31 @@
       Summary
      </h3>
      <p>
-      <p>
-       The data shows that:
-      </p>
-      <ul>
-       <li>
-        <p>
-         4 ethnic groups were the most satisfied in each of the 5 years presented, though not always in the same order: Irish (with 89% reporting a positive experience in  2015/16), African (88%), Any other Black/African/Caribbean (87%) and White British (87%)
-        </p>
-       </li>
-       <li>
-        <p>
-         Bangladeshi, Pakistani, Indian and Chinese patients were consistently among the least likely to report a positive experience over the time period, with 73%, 74%, 76% and 78% respectively doing so in 2015/16
-        </p>
-       </li>
-       <li>
-        <p>
-         Gypsy or Irish travellers were the least likely in 2015/16 to report a positive experience (72%); this percentage varied year to year and caution is needed as few in this group took part in the survey, but it was always below the national average
-the percentage of patients reporting a positive experience of GP services fell over the 5 years from 88% in 2011/12 to 85% in 2015/16
-        </p>
-       </li>
-       <li>
-        <p>
-         over the same period, the difference between the most and least satisfied ethnic groups increased from 14 percentage points in 2011/12 to 17 percentage points in 2015/16
-        </p>
-       </li>
-      </ul>
+      The data shows that:
      </p>
+     <ul>
+      <li>
+       <p>
+        4 ethnic groups were the most satisfied in each of the 5 years presented, though not always in the same order: Irish (with 89% reporting a positive experience in  2015/16), African (88%), Any other Black/African/Caribbean (87%) and White British (87%)
+       </p>
+      </li>
+      <li>
+       <p>
+        Bangladeshi, Pakistani, Indian and Chinese patients were consistently among the least likely to report a positive experience over the time period, with 73%, 74%, 76% and 78% respectively doing so in 2015/16
+       </p>
+      </li>
+      <li>
+       <p>
+        Gypsy or Irish travellers were the least likely in 2015/16 to report a positive experience (72%); this percentage varied year to year and caution is needed as few in this group took part in the survey, but it was always below the national average
+the percentage of patients reporting a positive experience of GP services fell over the 5 years from 88% in 2011/12 to 85% in 2015/16
+       </p>
+      </li>
+      <li>
+       <p>
+        over the same period, the difference between the most and least satisfied ethnic groups increased from 14 percentage points in 2011/12 to 17 percentage points in 2015/16
+       </p>
+      </li>
+     </ul>
     </div>
     <div class="column-one-third" style="">
      <h3 class="heading-small">
@@ -993,35 +1169,31 @@ the percentage of patients reporting a positive experience of GP services fell o
          Purpose Of Data Source
         </h3>
         <p>
-         <p>
-          As a way of acknowledging the importance of providing a positive experience of care for patients, service users and carers, it is now standard practice in healthcare systems worldwide to ask people to provide direct feedback on the quality of their experience, treatment and care. This is used alongside additional information sources to provide local clinicians and managers with intelligence on the quality of local services from the patients’ and service users’ point of view to ultimately play a role in driving improvements in the quality of service design and delivery.
-         </p>
-         <p>
-          The GP Patient Survey has been designed to give patients the opportunity to feed back about their experiences of their GP surgery across a variety of issues. Replies to the survey are intended to help GP surgeries understand where they can improve.
-         </p>
+         As a way of acknowledging the importance of providing a positive experience of care for patients, service users and carers, it is now standard practice in healthcare systems worldwide to ask people to provide direct feedback on the quality of their experience, treatment and care. This is used alongside additional information sources to provide local clinicians and managers with intelligence on the quality of local services from the patients’ and service users’ point of view to ultimately play a role in driving improvements in the quality of service design and delivery.
+        </p>
+        <p>
+         The GP Patient Survey has been designed to give patients the opportunity to feed back about their experiences of their GP surgery across a variety of issues. Replies to the survey are intended to help GP surgeries understand where they can improve.
         </p>
         <h3 class="heading-small">
          Methodology
         </h3>
         <p>
-         <p>
-          The GP patient survey is the major survey of patient experience of GP services in England.
-         </p>
-         <p>
-          In years up to 2015/16, and over a whole year cycle, approximately 2.6 million surveys are sent out and approximately 0.9 million responses are received. The average response rate is 35%.
-         </p>
-         <p>
-          Respondents can respond either by post, online or by phone. Respondents may request a questionnaire in a different language, in braille or online using sign language.
-         </p>
-         <p>
-          All surveys carry the risk of biased results if some types of people are less likely to respond than others. To compensate for this the GP Patient Survey includes a weight to account for this non-response bias. This adjusts the data to account for potential differences between the demographic profile of all eligible patients in a practice and the patients who actually complete the questionnaire. The non-response weighting scheme has been developed by Ipsos MORI, incorporating elements such as age and gender as well as factors from the area where the respondent lives such as level of deprivation, ethnicity profile, ACORN classification and so on, which have been shown to impact on non-response bias within the GP Patient Survey
-         </p>
-         <p>
-          Further information on the GP Survey can be found at this
-          <a href="https://gp-patient.co.uk/">
-           link
-          </a>
-         </p>
+         The GP patient survey is the major survey of patient experience of GP services in England.
+        </p>
+        <p>
+         In years up to 2015/16, and over a whole year cycle, approximately 2.6 million surveys are sent out and approximately 0.9 million responses are received. The average response rate is 35%.
+        </p>
+        <p>
+         Respondents can respond either by post, online or by phone. Respondents may request a questionnaire in a different language, in braille or online using sign language.
+        </p>
+        <p>
+         All surveys carry the risk of biased results if some types of people are less likely to respond than others. To compensate for this the GP Patient Survey includes a weight to account for this non-response bias. This adjusts the data to account for potential differences between the demographic profile of all eligible patients in a practice and the patients who actually complete the questionnaire. The non-response weighting scheme has been developed by Ipsos MORI, incorporating elements such as age and gender as well as factors from the area where the respondent lives such as level of deprivation, ethnicity profile, ACORN classification and so on, which have been shown to impact on non-response bias within the GP Patient Survey
+        </p>
+        <p>
+         Further information on the GP Survey can be found at this
+         <a href="https://gp-patient.co.uk/">
+          link
+         </a>
         </p>
         <h3 class="heading-small">
          Data type
@@ -1033,37 +1205,31 @@ the percentage of patients reporting a positive experience of GP services fell o
          Suppression rules
         </h3>
         <p>
-         <p>
-          Data is suppressed if less than ten people answer the question in a particular group. This is to protect the confidentiality of respondents.
-         </p>
+         Data is suppressed if less than ten people answer the question in a particular group. This is to protect the confidentiality of respondents.
         </p>
         <h3 class="heading-small">
          Estimation
         </h3>
         <p>
-         <p>
-          Values are presented to one decimal place.
-         </p>
+         Values are presented to one decimal place.
         </p>
         <h3 class="heading-small">
          Further technical information
         </h3>
         <p>
-         <p>
-          <a href="https://indicators.hscic.gov.uk/download/Outcomes%20Framework/Specification/NHSOF_Domain_4_S.pdf">
-           Indicator specification
-          </a>
-         </p>
-         <p>
-          <a href="https://indicators.hscic.gov.uk/download/Outcomes%20Framework/Specification/NHSOF_4a.i_I00739_Q.pdf">
-           Indicator quality statement
-          </a>
-         </p>
-         <p>
-          <a href="https://gp-patient.co.uk/surveys-and-reports/July2016technicalreport">
-           GPPS technical annex 2015/16
-          </a>
-         </p>
+         <a href="https://indicators.hscic.gov.uk/download/Outcomes%20Framework/Specification/NHSOF_Domain_4_S.pdf">
+          Indicator specification
+         </a>
+        </p>
+        <p>
+         <a href="https://indicators.hscic.gov.uk/download/Outcomes%20Framework/Specification/NHSOF_4a.i_I00739_Q.pdf">
+          Indicator quality statement
+         </a>
+        </p>
+        <p>
+         <a href="https://gp-patient.co.uk/surveys-and-reports/July2016technicalreport">
+          GPPS technical annex 2015/16
+         </a>
         </p>
        </div>
       </div>
@@ -1136,12 +1302,10 @@ the percentage of patients reporting a positive experience of GP services fell o
          </dt>
          <dd>
           <p>
-           <p>
-            The release of the indicator file is accompanied by a
-            <a href="http://content.digital.nhs.uk/searchcatalogue?q=nhs+outcomes+framework&amp;area=&amp;size=10&amp;sort=Relevance">
-             statistical commentary
-            </a>
-           </p>
+           The release of the indicator file is accompanied by a
+           <a href="http://content.digital.nhs.uk/searchcatalogue?q=nhs+outcomes+framework&amp;area=&amp;size=10&amp;sort=Relevance">
+            statistical commentary
+           </a>
           </p>
          </dd>
         </dl>
@@ -1160,6 +1324,9 @@ the percentage of patients reporting a positive experience of GP services fell o
         </span>
        </div>
        <div class="accordion__body downloads" style="display: none;">
+        <a href="./patient-experience-of-primary-care-gp-services.json">
+         View this page as JSON
+        </a>
         <button class="js--print print-btn">
          Print this page
         </button>
@@ -1215,6 +1382,8 @@ the percentage of patients reporting a positive experience of GP services fell o
   <script src="/static/javascripts/govuk-template.js?0.19.2">
   </script>
   <script src="/static/vendor/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="/static/vendor/bowser.js" type="text/javascript">
   </script>
   <script src="/static/javascripts/all.js" type="text/javascript">
   </script>
