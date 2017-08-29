@@ -40,6 +40,7 @@ function drawChart(container_id, chartObject) {
 
 function barchart(container_id, chartObject) {
     adjustChartObject(chartObject);
+    adjustParents(chartObject);
     setDecimalPlaces(chartObject);
     return chart = Highcharts.chart(container_id, {
         colors: setColour(chartObject),
@@ -48,22 +49,34 @@ function barchart(container_id, chartObject) {
             height: setHeight(chartObject)
         },
         title: {
-            text: chartObject.title.text
+            text: chartObject.title.text,
+            style: {
+              color: "black"
+            }
         },
         xAxis: {
             categories: chartObject.xAxis.categories,
             title: {
                 text: chartObject.yAxis.title.text
             },
-            labels: browser && browser.msie && parseInt(browser.version) === 8  ? 
+            labels: browser && browser.msie && parseInt(browser.version) === 8  ?
             {
                 fontSize: chartObject.series.length <= 1 ? "17px" : "14px",
-                fontFamily: "nta",
-            } : { style: { textOverflow: 'none' } }
+                fontFamily: "nta"
+            } : {
+                formatter:function() {
+                    return $.inArray(this.value,chartObject.parents) < 0 ? this.value : '<b>' + this.value + '</b>';
+                },
+                style: { textOverflow: 'none', color: "black" }
+            }
         },
         yAxis: {
             title: {
                 text: chartObject.xAxis.title.text
+            },
+            labels: {
+              autoRotation: "off",
+              style: {color: "black"}
             }
         },
         credits: {
@@ -84,8 +97,18 @@ function barchart(container_id, chartObject) {
                 fontWeight: "400"
               },
               formatter: function() {
-                return this.y > 0.0001 ? formatNumberWithDecimalPlaces(this.y, chartObject.decimalPlaces) :
-                    'Not enough data'
+                if(this.y > 0.0001) {
+
+                    return chartObject.number_format.prefix +
+                        formatNumberWithDecimalPlaces(this.y, chartObject.decimalPlaces) +
+                        chartObject.number_format.suffix;
+                } else {
+                    if($.inArray(this.key, chartObject.parents) !== -1) {
+                        return '';
+                    } else {
+                       return "Not enough data";
+                    }
+                }
               },
               rotation: 0
             }
@@ -113,15 +136,9 @@ function barchart(container_id, chartObject) {
 function panelBarchart(container_id, chartObject) {
 
     var internal_divs = "<div class='small-chart-title'>" + chartObject.title.text + "</div>";
-    var max = 0;
+ 
+    var max = chartMax(chartObject);
 
-    for (var i = 0; i < chartObject.panels.length; i++) {
-        for (var j = 0; j < chartObject.panels[i].series.length; j++) {
-            for(var k = 0; k < chartObject.panels[i].series[j].data.length; k++) {
-                max = max < chartObject.panels[i].series[j].data[k] ? chartObject.panels[i].series[j].data[k] : max ;
-            }
-        }
-    }
     for(var c in chartObject.panels) {
         internal_divs = internal_divs + "<div id=\"" + container_id + "_" + c + "\" class=\"chart-container column-one-" + (chartObject.panels.length > 2 ? 'third' : 'half') + "\"></div>";
     }
@@ -135,6 +152,27 @@ function panelBarchart(container_id, chartObject) {
     }
     return charts;
 }
+
+function chartMax(panelChartObject) {
+    var max = 0;
+    for (var i=0; i<panelChartObject.panels.length; i++) {
+        var panel = panelChartObject.panels[i];
+        for (var j=0; j < panel.series.length; j++) {
+            var series = panel.series[j];
+            for (var k=0; k < series.data.length; k++) {
+                // Highcharts accepts either straight numbers or simple objects as their data points
+                // We changed part way through
+                var item = Number(series.data[k]);
+                item = isNaN(item) ? Number(series.data[k].y) : item;
+                if (!isNaN(item)) {
+                    max = item > max ? item : max;
+                }
+            }
+        }
+    }
+    return max;
+}
+
 
 function smallBarchart(container_id, chartObject, max) {
     adjustChartObject(chartObject);
@@ -212,7 +250,7 @@ function smallBarchart(container_id, chartObject, max) {
             bar: {
                 dataLabels: {
                     enabled: true,
-                    color: ['#000','#fff'],
+                    color: ['#000', '#fff'],
                     verticalAlign: 'middle',
                     y: 3,
                     style: {
@@ -221,7 +259,7 @@ function smallBarchart(container_id, chartObject, max) {
                         fontFamily: "nta",
                         fontWeight: "400"
                     },
-                    formatter: function() {
+                    formatter: function () {
                         return this.y > 0.0001 ? formatNumberWithDecimalPlaces(this.y, chartObject.decimalPlaces) + '' + (chartObject.number_format.suffix === '%' ? '%' : '') : 'Not enough data';
                     },
                     rotation: 0
@@ -336,11 +374,6 @@ function smallLinechart(container_id, chartObject, max, min) {
             title: {
                 text: chartObject.xAxis.title.text
             },
-            events : {
-                afterBreaks: function() {
-                    console.log(this);
-                }
-            },
             labels: {
                 formatter: function() {
                     this.axis.labelRotation = 0;
@@ -392,7 +425,7 @@ function linechart(container_id, chartObject) {
     adjustChartObject(chartObject);
     setDecimalPlaces(chartObject);
 
-    var yaxis = { 
+    var yaxis = {
         title: {
             text: chartObject.yAxis.title.text
         },
@@ -494,7 +527,7 @@ function componentChart(container_id, chartObject) {
                 stacking: 'normal',
                 pointPadding: chartObject.series.length > 1 ? 0 : .075,
                 groupPadding: 0.1
-            },
+            }
         },
         tooltip: barChartTooltip(chartObject),
         credits: {
@@ -518,6 +551,65 @@ function componentChart(container_id, chartObject) {
                 }
             }
         }
+    }
+
+    function adjustParents(chartObject) {
+        if(chartObject.parent_child) {
+            _.forEach(chartObject.series, function(series) {
+
+                // for all existing data points make sure we mark them include
+                _.forEach(series.data, function(item) {
+                    item['include'] = true;
+                });
+
+                // get a big list of parents
+                var presentParents = _.filter(series.data, function(item) { item.relationships.is_parent; });
+                var missingParents = getMissingCategories(chartObject.parents, series);
+
+                var parentDict = {};
+                _.forEach(presentParents, function(item) { parentDict[item.category] = item; });
+                _.forEach(missingParents, function(item) { parentDict[item.category] = item; });
+
+                var currentParent = {category:'null'};
+                var fullSeriesData = [];
+                _.forEach(series.data, function(item) {
+                    if(item.relationships.is_parent) {
+                        fullSeriesData.push(item);
+
+                        currentParent = item;
+                    } else if(currentParent.category == item.relationships.parent) {
+                        fullSeriesData.push(item);
+                    } else {
+                        fullSeriesData.push(parentDict[item.relationships.parent]);
+                        fullSeriesData.push(item);
+
+                        currentParent = parentDict[item.relationships.parent];
+                    }
+                });
+                series.data = fullSeriesData;
+
+                // WARNING Strictly speaking we need a better version for this
+                chartObject.xAxis.categories = _.map(series.data, function(item) { return item.category ;});
+            })
+        }
+    }
+
+    function getMissingCategories(categoryList, pointList) {
+        var missingCategories = [];
+        var pointCategories = _.uniq(_.map(pointList, function(item) { return item.category;}));
+        _.forEach(categoryList, function(category) {
+            if($.inArray(category, pointCategories) == -1) {
+                // WARNING - Parent colour hardcoded
+                missingCategories.push( {
+                    y: 0,
+                    relationships: {is_parent: true, is_child: false, parent: parent},
+                    category: category,
+                    color: '#2B8CC4',
+                    include: false
+                });
+            };
+        });
+        return missingCategories;
     }
 
     function setDecimalPlaces(chartObject) {

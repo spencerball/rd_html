@@ -1,0 +1,9 @@
+"Title","Assaults involving young people in custody by ethnicity"
+"Location","England and Wales"
+"Time period","2015/16"
+"Data source","Youth Justice Statistics Supplementary Table 8.15 https://www.gov.uk/government/statistics/youth-justice-statistics-2015-to-2016"
+"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+
+"Ethnic Group","Number of incidents per 100 young people in custody per month","Average population per month","Average number of assaults per month"
+"Ethnic minority","24.1","524","126.3"
+"White","16.2","766.4","124.3"
