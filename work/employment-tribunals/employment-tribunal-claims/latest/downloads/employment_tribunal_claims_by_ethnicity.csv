@@ -2,7 +2,7 @@
 "Location","England, Wales and Scotland "
 "Time period","2007 and 2012"
 "Data source","Survey of Employment Tribunals Applications (SETA), 2008 and 2013 https://www.gov.uk/government/publications/survey-of-employment-tribunal-applications-2013"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Time","time type","Ethnicity","employment tribunal jurisdiction","All","Unfair dismissal","Breach of conduct","Wages Act","Discrimination","Other"
 "2007","Year","white","all","86","91","86","82","75","91"

@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2015/2016"
 "Data source","Key stage 2 statistics https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2016-revised"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Measure","Time","Time_type","Region","Local Authority","LA Code","Ethnicity","Ethnicity type","Gender","Gender_type","FSM","FSM_type","Value"
 "% of pupils reaching the expected standard in reading, writing and mathematics","2015 to 2016","Academic year","England","All","E92000001","All","ONS 18+1","All","All/Male/Female","FSM","All/FSM/Non-FSM","35"

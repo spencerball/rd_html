@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2014/15"
 "Data source","Public Health England based on HSCIC What About YOUth (WAY) survey data http://www.whataboutyouth.com/"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","unweighted sample size"
 "Smoking prevalence at age 15 - current smokers","2014/15","Financial year","All","All ethnicity","E92000001","ONS geography code","8.2","%","8.3","8.1","116646"

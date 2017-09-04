@@ -3,7 +3,7 @@
 "
 "Time period","2015 to 2016"
 "Data source","Key stage 2 Attainment and Progress Data  https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2016-revised"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Measurement","Region","Local Authority","LA Code","Ethnicity","Ethnicity type","Gender","Value","Higher","Scaled score"
 "% of pupils reaching the expected standard in writing by ethnicity and gender","England","All","E92000001","All - England's average","ONS 18+1","Boys","68","11","-0.8"

@@ -2,7 +2,7 @@
 "Location","England, Wales and Scotland"
 "Time period","2014/15 to 2015/16"
 "Data source","Department for Work and Pensions Equality Information (Customer Data) https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/539387/dwp-equality-information-report-customer-data-2016.pdf"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Ethnicity","Race_type","Year","Year_type","Measure","Measure_type","Value","Value_type","Denominator","Numerator","Value2","Value_type2","Denominator2","Numerator2"
 "White British","ONS 5+2","2014/15","Financial year","Percentage of customers who are either 'fairly' or 'very' satisfied","Customer satisfaction (5 category)","83","Percentage","12326","10207","16","Percentage","12326","1950"

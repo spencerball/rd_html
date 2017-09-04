@@ -2,7 +2,7 @@
 "Location","England and Wales"
 "Time period"," 2010/11 to 2015/16"
 "Data source","Youth Justice Statistics Supplementary Table 8.15 https://www.gov.uk/government/statistics/youth-justice-statistics-2015-to-2016"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Year","Ethnic Group","Value","Average population per month","Average number of self harm incidents per month"
 "2015/16","Ethnic minorities","3.8","524","20.2"

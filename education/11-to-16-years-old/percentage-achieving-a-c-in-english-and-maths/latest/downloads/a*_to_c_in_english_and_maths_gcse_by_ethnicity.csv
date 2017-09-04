@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 4 attainment data https://www.gov.uk/government/statistics/revised-gcse-and-equivalent-results-in-england-2015-to-2016"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Measure","Time","Time Type","Ethnicity","Ethnicity Type","Geography","Geography type","ONS geography code","Gender","FSM","Value"," Denominator ","Lower confidence interval","Upper confidence interval","Notes"
 "Percentage achieving A*-C in English & mathematics","2016","Academic year","White","18+1 (Major)","England","Country","E92000001","All pupils","All pupils","63"," 422,763 ","NA","NA",""

@@ -2,7 +2,7 @@
 "Location","England and Wales"
 "Time period","2011 to 2015"
 "Data source","National Offender Management Service (NOMS) Offender Equalities Statistics Bulletin - supplementary table 3.3 https://www.gov.uk/government/statistics/noms-annual-offender-equalities-report-2015-to-2016"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Year","Ethnic Group","Proportion of self-harm incidents per year by ethnic group","Value"
 "2011","White","0.915395646","338.8"

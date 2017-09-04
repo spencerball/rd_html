@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey https://www.gov.uk/government/collections/english-housing-survey"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Ethnicity","Value"," Denominator "," Numerator "
 "English / Welsh / Scottish / Northern Irish / British","68","18,808,000","12,733,000"

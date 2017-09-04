@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 2 statistics https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2016-revised"
-"Source","https://ethnicity-facts-and-figures.herokuapp.com"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
 
 "Measure","Year","Year_type","Region","Local Authority","LA Code","Ethnicity","Ethnicity type","Gender","Gender_type","Value","Value_type","% Higher standard","Average scaled score"
 "% of pupils reaching the expected standard in grammar, punctuality and spelling by ethnicity and gender","2015 to 2016","Academic year","England","All","E92000001","All","ONS 18+1","Boys","All/Boys/Girls","68","%","18","103"
