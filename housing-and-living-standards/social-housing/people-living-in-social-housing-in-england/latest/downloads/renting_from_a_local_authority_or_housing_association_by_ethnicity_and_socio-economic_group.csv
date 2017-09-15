@@ -1,0 +1,13 @@
+"Title","Renting from a local authority or housing association by ethnicity and socio-economic group"
+"Location","England"
+"Time period","2014/15 and 2015/16 (combined)"
+"Data source","English Housing Survey https://www.gov.uk/government/collections/english-housing-survey"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnicity","Socio-economic group","Denominator","Numerator","Value"
+"White British","Higher managerial, administrative and professional occupations"," 7,635,539 "," 373,673 ","5"
+"White British","Intermediate occupations"," 3,857,408 "," 480,178 ","12"
+"White British","Routine and manual occupations"," 6,260,530 "," 1,886,724 ","30"
+"All other ethnic groups","Higher managerial, administrative and professional occupations"," 1,400,849 "," 138,604 ","10"
+"All other ethnic groups","Intermediate occupations"," 702,682 "," 137,349 ","20"
+"All other ethnic groups","Routine and manual occupations"," 1,311,313 "," 425,116 ","32"
