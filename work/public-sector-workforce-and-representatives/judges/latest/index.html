@@ -30,7 +30,7 @@
   <meta content="Judges and non-legal members of courts and tribunals in the workforce" property="og:title"/>
   <meta content="/static/images/opengraph-image.png?0.19.2" property="og:image"/>
   <meta content="summary" name="twitter:card"/>
-  <link href="/static/stylesheets/application-eccaf8606a.css" rel="stylesheet" type="text/css"/>
+  <link href="/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
   <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -385,9 +385,6 @@
          <td class="first" style="width:12.5%">
          </td>
          <td class="line" colspan="1" style="width:12.5%">
-          Any other
-         </td>
-         <td class="line" colspan="1" style="width:12.5%">
           Asian
          </td>
          <td class="line" colspan="1" style="width:12.5%">
@@ -397,10 +394,13 @@
           Mixed
          </td>
          <td class="line" colspan="1" style="width:12.5%">
-          Unknown
+          White
+         </td>
+         <td class="line" colspan="1" style="width:12.5%">
+          Other
          </td>
          <td class="" colspan="1" style="width:12.5%">
-          White
+          Unknown
          </td>
         </tr>
         <tr>
@@ -411,44 +411,35 @@
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
          <td class="line" style="width:12.5%">
           <button>
-           Count
           </button>
          </td>
         </tr>
        </thead>
        <tbody>
         <tr>
-         <th data-order="Court" scope="row" style="width: 14.285714285714286%">
+         <th data-order="1" scope="row" style="width: 14.285714285714286%">
           Court
          </th>
-         <td class="line" data-order="28" style="width: 14.285714285714286%">
-          28
-         </td>
          <td class="line" data-order="79" style="width: 14.285714285714286%">
           79
          </td>
@@ -458,20 +449,20 @@
          <td class="line" data-order="41" style="width: 14.285714285714286%">
           41
          </td>
-         <td class="line" data-order="522" style="width: 14.285714285714286%">
-          522
-         </td>
          <td class="line" data-order="2506" style="width: 14.285714285714286%">
           2,506
          </td>
+         <td class="line" data-order="28" style="width: 14.285714285714286%">
+          28
+         </td>
+         <td class="line" data-order="522" style="width: 14.285714285714286%">
+          522
+         </td>
         </tr>
         <tr>
-         <th data-order="Tribunal" scope="row" style="width: 14.285714285714286%">
+         <th data-order="1" scope="row" style="width: 14.285714285714286%">
           Tribunal
          </th>
-         <td class="line" data-order="90" style="width: 14.285714285714286%">
-          90
-         </td>
          <td class="line" data-order="390" style="width: 14.285714285714286%">
           390
          </td>
@@ -481,11 +472,14 @@
          <td class="line" data-order="64" style="width: 14.285714285714286%">
           64
          </td>
-         <td class="line" data-order="662" style="width: 14.285714285714286%">
-          662
-         </td>
          <td class="line" data-order="4130" style="width: 14.285714285714286%">
           4,130
+         </td>
+         <td class="line" data-order="90" style="width: 14.285714285714286%">
+          90
+         </td>
+         <td class="line" data-order="662" style="width: 14.285714285714286%">
+          662
          </td>
         </tr>
        </tbody>
@@ -714,9 +708,9 @@
 </script>
 <script src="/static/vendor/bowser.js" type="text/javascript">
 </script>
-<script src="/static/javascripts/all-46bf555512.js" type="text/javascript">
+<script src="/static/javascripts/all.js" type="text/javascript">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/highcharts.js" type="text/javascript">
+<script src="/static/vendor/highcharts/5.0.11/highcharts.js">
 </script>
 <script src="/static/vendor/jquery.dataTables.min.js" type="text/javascript">
 </script>
@@ -726,10 +720,10 @@
 </script>
 <script src="/static/javascripts/rd-graph.js">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.11/modules/exporting.js">
+<script src="/static/vendor/highcharts/5.0.11/modules/exporting.js">
 </script>
 <script type="text/javascript">
- var dimensions = [{"chart": {"chart": {"type": "panel_bar_chart"}, "panels": [{"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [{"category": "Any other", "y": 28}, {"category": "Asian", "y": 79}, {"category": "Black", "y": 26}, {"category": "Mixed", "y": 41}, {"category": "Unknown", "y": 522}, {"category": "White", "y": 2506}], "name": "Standard Ethnicity"}], "title": {"text": "Court"}, "type": "small_bar", "xAxis": {"categories": ["Any other", "Asian", "Black", "Mixed", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}, {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [{"category": "Any other", "y": 90}, {"category": "Asian", "y": 390}, {"category": "Black", "y": 106}, {"category": "Mixed", "y": 64}, {"category": "Unknown", "y": 662}, {"category": "White", "y": 4130}], "name": "Standard Ethnicity"}], "title": {"text": "Tribunal"}, "type": "small_bar", "xAxis": {"categories": ["Any other", "Asian", "Black", "Mixed", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}], "title": {"text": "Judges and judiciary members by ethnicity in April 2016"}, "type": "panel_bar_chart", "xAxis": {"categories": ["Any other", "Asian", "Black", "Mixed", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}, "chart_source_data": {"chartFormat": {"chart_title": "Judges and judiciary members by ethnicity in April 2016", "number_format": "none", "number_format_max": "", "number_format_min": "", "number_format_prefix": "", "number_format_suffix": "", "x_axis_label": "Number of judges and judiciary members", "y_axis_label": ""}, "chartOptions": {"component_bar_column": "Date", "component_component_column": "[None]", "line_series_column": "Date", "line_series_order": "[None]", "order_column": "[None]", "panel_grouping_column": "Court/Tribunal", "panel_line_series": "[None]", "panel_line_x_axis": "[None]", "panel_primary_column": "Standard Ethnicity", "parent_column": "[None]", "primary_column": "Court/Tribunal", "secondary_column": "Ethnic group", "x_axis_column": "Date"}, "data": [["Date", "Court/Tribunal", "Type", "Ethnic group", "Value"], ["01/04/16", "Court", "All", "Any other Ethnicity", "28"], ["01/04/16", "Tribunal", "All", "Any other Ethnicity", "90"], ["01/04/16", "Court", "All", "Asian or Asian British", "79"], ["01/04/16", "Tribunal", "All", "Asian or Asian British", "390"], ["01/04/16", "Court", "All", "Black or Black British", "26"], ["01/04/16", "Tribunal", "All", "Black or Black British", "106"], ["01/04/16", "Court", "All", "Mixed", "41"], ["01/04/16", "Tribunal", "All", "Mixed", "64"], ["01/04/16", "Court", "All", "Unknown", "522"], ["01/04/16", "Tribunal", "All", "Unknown", "662"], ["01/04/16", "Court", "All", "White", "2506"], ["01/04/16", "Tribunal", "All", "White", "4130"]], "type": "panel_bar_chart"}, "guid": "21d4083ff317b3fca96432e091a96bca13f03f80", "measure": "MOJ024", "static_file_name": "judges_by_ethnicity.csv", "summary": "This data shows that:\r\n \r\n* the proportion of judges and members of tribunals from an ethnic minority is twice that of judges in courts, where ethnicity is known\r\n \r\n* the largest ethnic minority  group is Asian; this group make up 6.3% of judges in courts and tribunal members combined, where the ethnicity is known\r\n\r\n", "table": {"category": "Court/Tribunal", "category_caption": "", "columns": ["Count"], "data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [28, 79, 26, 41, 522, 2506], "values": ["28", "79", "26", "41", "522", "2,506"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [90, 390, 106, 64, 662, 4130], "values": ["90", "390", "106", "64", "662", "4,130"]}], "footer": "", "group_column": "Standard Ethnicity", "group_columns": ["", "Any other", "Asian", "Black", "Mixed", "Unknown", "White"], "groups": [{"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [28], "values": ["28"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [90], "values": ["90"]}], "group": "Any other"}, {"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [79], "values": ["79"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [390], "values": ["390"]}], "group": "Asian"}, {"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [26], "values": ["26"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [106], "values": ["106"]}], "group": "Black"}, {"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [41], "values": ["41"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [64], "values": ["64"]}], "group": "Mixed"}, {"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [522], "values": ["522"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [662], "values": ["662"]}], "group": "Unknown"}, {"data": [{"category": "Court", "order": "Court", "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [2506], "values": ["2,506"]}, {"category": "Tribunal", "order": "Tribunal", "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [4130], "values": ["4,130"]}], "group": "White"}], "header": "", "parent_child": false, "subtitle": "", "type": "grouped"}, "table_source_data": {"data": [["Court/Tribunal", "Ethnic group", "Count"], ["Court", "Any other Ethnicity", "28"], ["Tribunal", "Any other Ethnicity", "90"], ["Court", "Asian or Asian British", "79"], ["Tribunal", "Asian or Asian British", "390"], ["Court", "Black or Black British", "26"], ["Tribunal", "Black or Black British", "106"], ["Court", "Mixed", "41"], ["Tribunal", "Mixed", "64"], ["Court", "Unknown", "522"], ["Tribunal", "Unknown", "662"], ["Court", "White", "2506"], ["Tribunal", "White", "4130"]], "tableOptions": {"table_category_caption": "", "table_category_column": "Court/Tribunal", "table_column_1": "Count", "table_column_1_name": "Count", "table_column_2": "none", "table_column_2_name": "Type", "table_column_3": "none", "table_column_3_name": "", "table_column_4": "none", "table_column_4_name": "", "table_column_5": "none", "table_column_5_name": "", "table_column_order_column": "[None]", "table_footer": "", "table_group_column": "Standard Ethnicity", "table_order_column": "[None]", "table_parent_column": "[None]", "table_subtitle": "", "table_title": ""}}, "time_period": "April 2016", "title": "Judges by ethnicity"}];
+ var dimensions = [{"chart": {"chart": {"type": "panel_bar_chart"}, "panels": [{"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [{"category": "Asian", "text": "number", "y": 79}, {"category": "Black", "text": "number", "y": 26}, {"category": "Mixed", "text": "number", "y": 41}, {"category": "Other", "text": "number", "y": 28}, {"category": "Unknown", "text": "number", "y": 522}, {"category": "White", "text": "number", "y": 2506}], "name": "Standard Ethnicity"}], "title": {"text": "Court"}, "type": "small_bar", "xAxis": {"categories": ["Asian", "Black", "Mixed", "Other", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}, {"number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [{"category": "Asian", "text": "number", "y": 390}, {"category": "Black", "text": "number", "y": 106}, {"category": "Mixed", "text": "number", "y": 64}, {"category": "Other", "text": "number", "y": 90}, {"category": "Unknown", "text": "number", "y": 662}, {"category": "White", "text": "number", "y": 4130}], "name": "Standard Ethnicity"}], "title": {"text": "Tribunal"}, "type": "small_bar", "xAxis": {"categories": ["Asian", "Black", "Mixed", "Other", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}], "title": {"text": "Judges and judiciary members by ethnicity in April 2016"}, "type": "panel_bar_chart", "version": "1.0", "xAxis": {"categories": ["Asian", "Black", "Mixed", "Other", "Unknown", "White"], "title": {"text": "Number of judges and judiciary members"}}, "yAxis": {"title": {"text": ""}}}, "chart_source_data": {"chartFormat": {"chart_title": "Judges and judiciary members by ethnicity in April 2016", "number_format": "none", "number_format_max": "", "number_format_min": "", "number_format_prefix": "", "number_format_suffix": "", "x_axis_label": "Number of judges and judiciary members", "y_axis_label": ""}, "chartOptions": {"component_bar_column": "Court/Tribunal", "component_component_column": "[None]", "line_series_column": "Court/Tribunal", "line_series_order": "[None]", "order_column": "[None]", "panel_grouping_column": "Court/Tribunal", "panel_line_series": "Court/Tribunal", "panel_line_x_axis": "Court/Tribunal", "panel_primary_column": "Standard Ethnicity", "parent_column": "[None]", "primary_column": "Court/Tribunal", "secondary_column": "[None]", "x_axis_column": "Court/Tribunal"}, "data": [["Court/Tribunal", "Type", "Ethnic group", "Value"], ["Court", "All", "Other", "28"], ["Tribunal", "All", "Other", "90"], ["Court", "All", "Asian or Asian British", "79"], ["Tribunal", "All", "Asian or Asian British", "390"], ["Court", "All", "Black or Black British", "26"], ["Tribunal", "All", "Black or Black British", "106"], ["Court", "All", "Mixed", "41"], ["Tribunal", "All", "Mixed", "64"], ["Court", "All", "Unknown", "522"], ["Tribunal", "All", "Unknown", "662"], ["Court", "All", "White", "2506"], ["Tribunal", "All", "White", "4130"]], "type": "panel_bar_chart"}, "guid": "21d4083ff317b3fca96432e091a96bca13f03f80", "measure": "MOJ024", "static_file_name": "judges_by_ethnicity.csv", "summary": "This data shows that:\r\n \r\n* the proportion of judges and members of tribunals from an ethnic minority is twice that of judges in courts, where ethnicity is known\r\n \r\n* the largest ethnic minority  group is Asian; this group make up 6.3% of judges in courts and tribunal members combined, where the ethnicity is known\r\n\r\n", "table": {"category": "Court/Tribunal", "category_caption": "", "columns": [""], "data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [79, 26, 41, 2506, 28, 522], "values": ["79", "26", "41", "2,506", "28", "522"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [390, 106, 64, 4130, 90, 662], "values": ["390", "106", "64", "4,130", "90", "662"]}], "footer": "", "group_column": "Standard Ethnicity", "group_columns": ["", "Asian", "Black", "Mixed", "White", "Other", "Unknown"], "groups": [{"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [79], "values": ["79"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [390], "values": ["390"]}], "group": "Asian"}, {"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [26], "values": ["26"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [106], "values": ["106"]}], "group": "Black"}, {"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [41], "values": ["41"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [64], "values": ["64"]}], "group": "Mixed"}, {"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [2506], "values": ["2,506"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [4130], "values": ["4,130"]}], "group": "White"}, {"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [28], "values": ["28"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [90], "values": ["90"]}], "group": "Other"}, {"data": [{"category": "Court", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Court"}, "sort_values": [522], "values": ["522"]}, {"category": "Tribunal", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Tribunal"}, "sort_values": [662], "values": ["662"]}], "group": "Unknown"}], "header": "", "parent_child": false, "subtitle": "", "type": "grouped"}, "table_source_data": {"data": [["Court/Tribunal", "Ethnic group", "Count"], ["Court", "Other", "28"], ["Tribunal", "Other", "90"], ["Court", "Asian or Asian British", "79"], ["Tribunal", "Asian or Asian British", "390"], ["Court", "Black or Black British", "26"], ["Tribunal", "Black or Black British", "106"], ["Court", "Mixed", "41"], ["Tribunal", "Mixed", "64"], ["Court", "Unknown", "522"], ["Tribunal", "Unknown", "662"], ["Court", "White", "2506"], ["Tribunal", "White", "4130"]], "tableOptions": {"table_category_caption": "", "table_category_column": "Court/Tribunal", "table_column_1": "Count", "table_column_1_name": "", "table_column_2": "none", "table_column_2_name": "Type", "table_column_3": "none", "table_column_3_name": "", "table_column_4": "none", "table_column_4_name": "", "table_column_5": "none", "table_column_5_name": "", "table_column_order_column": "Parent-child order", "table_footer": "", "table_group_column": "Standard Ethnicity", "table_order_column": "[None]", "table_parent_column": "[None]", "table_subtitle": "", "table_title": ""}}, "time_period": "April 2016", "title": "Judges by ethnicity"}];
 
   $(document).ready(function () {
     for (d in dimensions) {
@@ -749,7 +743,7 @@
       }
     };
 
-
+    
 
         var sendToAnalytics = function (event) {
             var eventLabel = $(event.currentTarget).data('event');
@@ -778,7 +772,7 @@
             sendToAnalytics(event);
         });
 
-
+    
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
