@@ -1,0 +1,13 @@
+"Title","Home ownership by ethnicity and socio-economic group "
+"Location","England"
+"Time period","2014/15 and 2015/16 (combined)"
+"Data source","English Housing Survey https://www.gov.uk/government/collections/english-housing-survey"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnicity","Socio-economic group","Value","Denominator","Numerator"
+"White British","Higher managerial, administrative and professional occupations","82","7,635,539","6,225,042"
+"White British","Intermediate occupations","71","3,857,408","2,752,630"
+"White British","Routine and manual occupations","52","6,260,530","3,259,537"
+"All other ethnic groups","Higher managerial, administrative and professional occupations","55","1,400,849","771,276"
+"All other ethnic groups","Intermediate occupations","46","702,682","321,335"
+"All other ethnic groups","Routine and manual occupations","28","1,311,313","372,500  "
