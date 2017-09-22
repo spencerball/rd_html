@@ -1,0 +1,10 @@
+"Title","Unemployment by White and Other ethnicities"
+"Location","England, Wales and Scotland"
+"Time period","2016"
+"Data source","Annual Population Survey https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/qmis/annualpopulationsurveyapsqmi"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"DATE","ECON_STATUS","REGION","ETHNICITY","SEX","AGE_BAND","AGE_GROUP","NUMERATOR","DENOMINATOR","SAMP_SIZE","Value"
+"Jan16-Dec16","Unemployed","All","All","All","All","16+","1,551,000","32,188,986","6,250","5"
+"Jan16-Dec16","Unemployed","All","White","All","All","16+","1,212,000","28,112,896","5,152","4"
+"Jan16-Dec16","Unemployed","All","Other","All","All","16+","338,000","4,050,288","1,093","8"
