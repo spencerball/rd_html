@@ -1,0 +1,10 @@
+"Title","Employed people from White and Other ethnicities"
+"Location","England, Wales and Scotland"
+"Time period","2016"
+"Data source","Annual Population Survey https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/qmis/annualpopulationsurveyapsqmi"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnicity","SEX","AGE_BAND","AGE_GROUP","NUMERATOR","DENOMINATOR","SAMP_SIZE","Value"
+"All","All","All","16-64","29,478,000","39,846,431","165,840","74"
+"White","All","All","16-64","25,790,000","34,072,371","145,616","76"
+"Other","All","All","16-64","3,664,000","5,737,827","20,089","64"
