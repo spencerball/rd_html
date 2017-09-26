@@ -7,3 +7,6 @@ The repository also contains and file downloads linked to from pages within the 
 
 The main application css and javascript is versioned to allow site to be served
 behind a CDN.
+
+*Note*
+The index.php in this repo is only required for hosting this as a static site on heroku.
