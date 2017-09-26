@@ -1,0 +1,13 @@
+"Title","Average deposit paid by first-time buyers by ethnicity and socio-economic group"
+"Location","England"
+"Time period","2014/15 and 2015/16 (combined)"
+"Data source","English Housing Survey https://www.gov.uk/government/collections/english-housing-survey"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnicity","NS-SEC group","Mean","Standard Deviation","Sample size"
+"White British","Higher managerial, administrative and professional occupations","50205","72669.4","271"
+"White British","Intermediate occupations","34233","43126.2","69"
+"White British","Routine and manual occupations","34935","67167.6","117"
+"All other ethnic groups","Higher managerial, administrative and professional occupations","72209","100368.1","87"
+"All other ethnic groups","Intermediate occupations","?","?","?"
+"All other ethnic groups","Routine and manual occupations","17230","9313.7","40"
