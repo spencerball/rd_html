@@ -6355,10 +6355,11 @@ The 6 broad categories used are as follows:
             chart = $(chartId),
             dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
 
-        var subtitle = 'Location: ' + 'England'
-                                    + '. Time period: '  + dimension.time_covered
-                                    + '. Source:  Key stage 2 statistics'
-                                    + '| Ethnicity Facts and Figures GOV.UK';
+        var subtitle = 'Title:' +  dimension.title
+                                + '. Location: ' + 'England'
+                                + '. Time period: '  + dimension.time_period
+                                + '. Source:  Key stage 2 statistics'
+                                + '| Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();

@@ -3999,10 +3999,11 @@ the police or courts, but they underestimate the true level of reoffending. This
             chart = $(chartId),
             dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
 
-        var subtitle = 'Location: ' + 'England and Wales'
-                                    + '. Time period: '  + dimension.time_covered
-                                    + '. Source:  NOMS Offender Equalities Statistics Bulletin - supplementary table 15.2'
-                                    + '| Ethnicity Facts and Figures GOV.UK';
+        var subtitle = 'Title:' +  dimension.title
+                                + '. Location: ' + 'England and Wales'
+                                + '. Time period: '  + dimension.time_period
+                                + '. Source:  NOMS Offender Equalities Statistics Bulletin - supplementary table 15.2'
+                                + '| Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();

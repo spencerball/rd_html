@@ -1505,10 +1505,11 @@ OR-1/OR-2 to OR-9 refer to ranks below officer, where OR-9 is the highest rank
             chart = $(chartId),
             dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
 
-        var subtitle = 'Location: ' + 'Other'
-                                    + '. Time period: '  + dimension.time_covered
-                                    + '. Source:  UK armed forces biannual diversity statistics'
-                                    + '| Ethnicity Facts and Figures GOV.UK';
+        var subtitle = 'Title:' +  dimension.title
+                                + '. Location: ' + 'Other'
+                                + '. Time period: '  + dimension.time_period
+                                + '. Source:  UK armed forces biannual diversity statistics'
+                                + '| Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();

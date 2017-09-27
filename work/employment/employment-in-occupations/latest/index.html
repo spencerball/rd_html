@@ -1114,10 +1114,11 @@ Due to rounding, percentages may not add up to 100%.
             chart = $(chartId),
             dimension = dimensions.find(function(d){return d.guid == dimensionGuid});
 
-        var subtitle = 'Location: ' + 'United Kingdom'
-                                    + '. Time period: '  + dimension.time_covered
-                                    + '. Source:  Annual Population Survey'
-                                    + '| Ethnicity Facts and Figures GOV.UK';
+        var subtitle = 'Title:' +  dimension.title
+                                + '. Location: ' + 'United Kingdom'
+                                + '. Time period: '  + dimension.time_period
+                                + '. Source:  Annual Population Survey'
+                                + '| Ethnicity Facts and Figures GOV.UK';
 
         chart.highcharts().options.subtitle.text = subtitle;
         chart.highcharts().exportChart();
