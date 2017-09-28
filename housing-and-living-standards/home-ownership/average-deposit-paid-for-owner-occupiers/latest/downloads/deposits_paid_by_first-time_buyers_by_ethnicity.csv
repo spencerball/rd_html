@@ -1,0 +1,9 @@
+"Title","Deposits paid by first-time buyers by ethnicity"
+"Location","England"
+"Time period","2014/15 and 2015/16 (combined)"
+"Data source","English Housing Survey https://www.gov.uk/government/collections/english-housing-survey"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnicity","Mean","Standard Deviation","Sample size"
+"White British","44410","68025.4","466"
+"All other ethnic groups","49423","79739.1","158"
