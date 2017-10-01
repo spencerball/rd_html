@@ -1,0 +1,10 @@
+"Title","People claiming Employment and Support Allowance by ethnicity"
+"Location","England and Wales"
+"Time period","2015"
+"Data source","Nomis https://www.nomisweb.co.uk/"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Date","Date type","Region","Region type","Ethnicity","Ethnicity type","Numerator","Numerator type","Denominator","Denominator type","Value","Rate type"
+"2015","Calendar Year","All","England and Wales","All","All","2083785","Average number of claimants a month matching geographic and ethnicity status","36588665","Number of people in the population matching geographic and ethnicity status","5.7","Percentage of Numerator / Denominator"
+"2015","Calendar Year","All","England and Wales","Other","ONS 2","187400","Average number of claimants a month matching geographic and ethnicity status","5700195.05","Number of people in the population matching geographic and ethnicity status","3.3","Percentage of Numerator / Denominator"
+"2015","Calendar Year","All","England and Wales","White","ONS 2","1337560","Average number of claimants a month matching geographic and ethnicity status","30888469.95","Number of people in the population matching geographic and ethnicity status","4.3","Percentage of Numerator / Denominator"
