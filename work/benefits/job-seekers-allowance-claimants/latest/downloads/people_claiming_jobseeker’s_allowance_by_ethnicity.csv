@@ -1,0 +1,10 @@
+"Title","People claiming Jobseeker’s Allowance by ethnicity"
+"Location","England and Wales"
+"Time period","2015"
+"Data source","DWP administrative data https://www.nomisweb.co.uk/"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Date","Date type","Region","Region type","Ethnicity","Ethnicity type","Numerator","Numerator type","Denominator","Denominator type","Value"
+"2015","Calendar Year","All","England and Wales","All","All","622,840","Average number of claimants a month matching geographic and ethnicity status","36,588,665","Number of people in the population matching geographic and ethnicity status","1.7"
+"2015","Calendar Year","All","England and Wales","Other","ONS 2","129,245","Average number of claimants a month matching geographic and ethnicity status","5,700,195","Number of people in the population matching geographic and ethnicity status","2.3"
+"2015","Calendar Year","All","England and Wales","White","ONS 2","458,605","Average number of claimants a month matching geographic and ethnicity status","30,888,470","Number of people in the population matching geographic and ethnicity status","1.5"
