@@ -1,0 +1,13 @@
+"Title","Percentage of civil service staff by ethnicity"
+"Location","United Kingdom"
+"Time period","2016"
+"Data source","Annual Civil Service Employment Survey https://www.ons.gov.uk/releases/civilservicestatistics2016"
+"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+
+"Ethnic group","Number","Value","Order"
+"White","284,140","88.8","5"
+"Mixed","4,460","1.4","4"
+"Asian or Asian British","18,690","5.8","1"
+"Black or Black British","9,950","3.1","2"
+"Chinese","880","0.3","3"
+"Other ethnic group","1,710","0.5","6"
