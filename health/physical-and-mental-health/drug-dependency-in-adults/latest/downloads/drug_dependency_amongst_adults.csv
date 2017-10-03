@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2014"
 "Data source","Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014 http://content.digital.nhs.uk/catalogue/PUB21748"
-"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 
 "Measure","Time","Time_type","Ethnicity","Gender","Drug","Value","Denominator"
 "Drug dependency","2014","Year","White - British","All","Any drug dependence ","3","5,889"

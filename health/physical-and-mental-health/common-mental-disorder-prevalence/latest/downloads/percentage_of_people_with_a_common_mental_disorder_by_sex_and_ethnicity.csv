@@ -2,7 +2,7 @@
 "Location","England"
 "Time period","2014"
 "Data source","Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014 http://content.digital.nhs.uk/pubs/apmsurvey14"
-"Source","https://www.ethnicityfactsandfigures.digitalbeta.org.uk"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 
 "Measure","Time","Geography","Ethnicity","Gender","Value","Lower confidence intervals (%)","Upper confidence intervals (%)"
 "Common Mental Disorder Prevalence","2014","England","White British","All","17.3","16.20","18.50"
