@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary" />
 
     
-    <link rel="stylesheet" type="text/css" href="/static/stylesheets/application-0bbd7772f8.css" />
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/application-d70b9df3cc.css" />
     
       <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -38,9 +38,14 @@
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
           ga('create', 'UA-100698377-1', 'auto');
+          ga('require', 'eventTracker', {
+            attributePrefix: 'data-'
+          });
+          ga('set','contentGroup1','Ethnicity in the UK')
           ga('send', 'pageview');
 
         </script>
+        <script src="/static/vendor/autotrack/autotrack.js"></script>
     
   <!--[if lte IE 8 ]>
     <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
@@ -113,7 +118,7 @@
   <div class="phase-banner">
     <p>
         <strong class="phase-tag">BETA</strong>
-        <span>This is a new service – please send your feedback to <a href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a></span>
+        <span>This is a new service – please send your feedback to <a data-on="click" data-event-category="E-mail link clicked" data-event-action="Contact e-mail" data-event-label="Header" href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a></span>
     </p>
 </div>
   <div class="breadcrumbs">
@@ -140,16 +145,16 @@
       <div class="accordion">
 
         <div class="accordion-section">
-          <div class="accordion-section-header">
+          <div class="accordion-section-header" data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Ethnicity and race">
             <h2 class="heading-medium">Ethnicity and race</h2>
           </div>
           <div class="accordion-section-body">
 
             <p>There is no single agreed international definition of ethnicity and race or of the distinction between the two.</p>
 
-            <p>Race is <a href="https://unstats.un.org/unsd/demographic/sconcerns/popchar/morning.pdf">often defined</a> as being related to notions of intrinsic physical differences between groups of people.</p>
+            <p>Race is <a href="https://unstats.un.org/unsd/demographic/sconcerns/popchar/morning.pdf" data-on="click" data-event-category="External link clicked" data-event-action="Ethnicity link" data-event-label="Ethnic classification in global perspective">often defined</a> as being related to notions of intrinsic physical differences between groups of people.</p>
 
-            <p>The <a href="https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion">Office of National Statistics (ONS)</a> and the <a href="https://unstats.un.org/unsd/demographic/sconcerns/popchar/popcharmethods.htm">United Nations Statistics Division</a> both describe ethnicity as a broader concept which includes or combines nationality, citizenship, race, colour, language, religion, and customs of dress or eating.</p>
+            <p>The <a href="https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion" data-on="click" data-event-category="External link clicked" data-event-action="Ethnicity link" data-event-label="ONS: Measuring ethnicity">Office of National Statistics (ONS)</a> and the <a href="https://unstats.un.org/unsd/demographic/sconcerns/popchar/popcharmethods.htm" data-on="click" data-event-category="External link clicked" data-event-action="Ethnicity link" data-event-label="UN: Ethnocultural characteristics">United Nations Statistics Division</a> both describe ethnicity as a broader concept which includes or combines nationality, citizenship, race, colour, language, religion, and customs of dress or eating.</p>
 
             <p>In the context of the UK’s <a href="http://www.legislation.gov.uk/ukpga/2010/15/section/9">Equality Act 2010</a>, race includes a person’s skin colour, nationality and ethnic or national origins. Race and ethnicity are seen more as interchangeable concepts than distinct categories.</p>
 
@@ -166,7 +171,7 @@
         </div>
 
         <div class="accordion-section">
-          <div class="accordion-section-header">
+          <div class="accordion-section-header" data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Describing ethnicity">
             <h2 class="heading-medium">Describing ethnicity</h2>
           </div>
           <div class="accordion-section-body">
@@ -177,7 +182,7 @@
 
             <p>As well as Black, Asian, Mixed/Multiple and other more specific categories of ethnicity, the ethnic minorities in the UK include members of White minorities, such as those from either an Irish or a Gypsy background.</p>
 
-            <p>Terms such as ethnic minority, BME (Black and minority ethnic) and BAME (Black, Asian, and minority ethnic) are often used interchangeably. In line with the <a href="http://style.ons.gov.uk">ONS style guide</a>, we use the term ethnic minorities rather than BME or BAME.</p>
+            <p>Terms such as ethnic minority, BME (Black and minority ethnic) and BAME (Black, Asian, and minority ethnic) are often used interchangeably. In line with the <a href="http://style.ons.gov.uk" data-on="click" data-event-category="External link clicked" data-event-action="Ethnicity link" data-event-label="ONS style guide">ONS style guide</a>, we use the term ethnic minorities rather than BME or BAME.</p>
 
             <p>The Ethnicity facts and figures style guide covers the way that we describe ethnicity and statistical concepts in more detail.</p>
 
@@ -185,7 +190,7 @@
         </div>
 
         <div class="accordion-section">
-          <div class="accordion-section-header">
+          <div class="accordion-section-header" data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Collecting ethnicity data">
             <h2 class="heading-medium">Collecting ethnicity data</h2>
           </div>
           <div class="accordion-section-body">
@@ -199,7 +204,7 @@
         </div>
 
         <div class="accordion-section">
-          <div class="accordion-section-header">
+          <div class="accordion-section-header" data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Presenting ethnicity data">
             <h2 class="heading-medium">Presenting ethnicity data</h2>
           </div>
           <div class="accordion-section-body">
@@ -241,7 +246,7 @@
         </div>
 
         <div class="accordion-section">
-          <div class="accordion-section-header">
+          <div class="accordion-section-header" data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Ethnicity across the population">
             <h2 class="heading-medium">Ethnicity across the population</h2>
           </div>
           <div class="accordion-section-body">
@@ -305,11 +310,11 @@
       <h2>Further information</h2>
       <ul>
           <li>
-              <a href="/static/race-disparity-audit-summary-findings.pdf">Race Disparity Audit report Oct 2017 (PDF)</a>
+              <a href="/static/race-disparity-audit-summary-findings.pdf" data-on="click" data-event-category="PDF downloaded" data-event-action="Race Disparity Audit report">Race Disparity Audit report Oct 2017 (PDF)</a>
           </li>
 
           <li>
-              <a href="/static/statement-of-compliance.pdf">Statement of compliance (PDF)</a>
+              <a href="/static/statement-of-compliance.pdf" data-on="click" data-event-category="PDF downloaded" data-event-action="Statement of compliance">Statement of compliance (PDF)</a>
           </li>
       </ul>
   </div>
@@ -318,7 +323,7 @@
       <ul>
 
           <li>
-              <a href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a>
+              <a data-on="click" data-event-category="E-mail link clicked" data-event-action="Contact e-mail" data-event-label="Footer" href="mailto:ethnicity@cabinetoffice.gov.uk">ethnicity@cabinetoffice.gov.uk</a>
           </li>
 
           
@@ -353,7 +358,7 @@
     
   <script type="text/javascript" src="/static/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="/static/vendor/bowser.js"></script>
-  <script type="text/javascript" src="/static/javascripts/all-434aa831d1.js"></script>
+  <script type="text/javascript" src="/static/javascripts/all-416364046c.js"></script>
 
   
 

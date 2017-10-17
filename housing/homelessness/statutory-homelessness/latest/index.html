@@ -30,7 +30,7 @@
   <meta content="Statutory homelessness" property="og:title"/>
   <meta content="/static/images/opengraph-image.png?0.19.2" property="og:image"/>
   <meta content="summary" name="twitter:card"/>
-  <link href="/static/stylesheets/application-0bbd7772f8.css" rel="stylesheet" type="text/css"/>
+  <link href="/static/stylesheets/application-d70b9df3cc.css" rel="stylesheet" type="text/css"/>
   <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,7 +38,13 @@
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
           ga('create', 'UA-100698377-1', 'auto');
+          ga('require', 'eventTracker', {
+            attributePrefix: 'data-'
+          });
+          ga('set','contentGroup1','Measure')
           ga('send', 'pageview');
+  </script>
+  <script src="/static/vendor/autotrack/autotrack.js">
   </script>
   <!--[if lte IE 8 ]>
     <link href="/static/stylesheets/ie8-fixes.css" media="screen" rel="stylesheet" />
@@ -110,7 +116,7 @@
      </strong>
      <span>
       This is a new service – please send your feedback to
-      <a href="mailto:ethnicity@cabinetoffice.gov.uk">
+      <a data-event-action="Contact e-mail" data-event-category="E-mail link clicked" data-event-label="Header" data-on="click" href="mailto:ethnicity@cabinetoffice.gov.uk">
        ethnicity@cabinetoffice.gov.uk
       </a>
      </span>
@@ -166,7 +172,7 @@
         Source:
        </dt>
        <dd>
-        <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/collections/homelessness-statistics">
+        <a data-event-action="Data Source (page header)" data-event-category="External link clicked" data-event-label="Homelessness statistics" data-on="click" href="https://www.gov.uk/government/collections/homelessness-statistics">
          Homelessness statistics
         </a>
        </dd>
@@ -225,7 +231,7 @@
        </li>
       </ul>
      </div>
-     <details class="normalize" data-event="data-reliability">
+     <details class="normalize" data-event-action="Opened" data-event-category="Disclosure" data-event-label="Things you need to know" data-on="click">
       <summary>
        <span class="summary">
         Things you need to know
@@ -262,7 +268,7 @@
        </div>
       </noscript>
      </details>
-     <details class="normalize" data-event="data-measured">
+     <details class="normalize" data-event-action="Opened" data-event-category="Disclosure" data-event-label="What the data measures" data-on="click">
       <summary>
        <span class="summary">
         What the data measures
@@ -311,7 +317,7 @@
        </div>
       </noscript>
      </details>
-     <details class="normalize" data-event="categories-chosen">
+     <details class="normalize" data-event-action="Opened" data-event-category="Disclosure" data-event-label="The ethnic categories used in this data" data-on="click">
       <summary>
        <span class="summary">
         The ethnic categories used in this data
@@ -406,7 +412,7 @@
         Source:
        </dt>
        <dd>
-        <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/collections/homelessness-statistics">
+        <a data-event-action="Data Source (section header)" data-event-category="External link clicked" data-event-label="Homelessness statistics" data-on="click" href="https://www.gov.uk/government/collections/homelessness-statistics">
          Homelessness statistics
         </a>
        </dd>
@@ -415,8 +421,7 @@
     </div>
     <div class="chart-and-footer">
      <div class="rd_chart" id="chart_14b19190cffc277efaddf257b2149eb3be5c5c64" style="clear: both; overflow: hidden">
-      <img alt="Number of homeless households by ethnicity" src="charts/14b19190cffc277efaddf257b2149eb3be5c5c64.png">
-      </img>
+      <img alt="Number of homeless households by ethnicity" src="charts/14b19190cffc277efaddf257b2149eb3be5c5c64.png"/>
      </div>
      <div class="column-full chart-footer">
       <!-- TODO: flatten text values into a single array -->
@@ -849,12 +854,12 @@
      </h3>
      <ul class="no-bullets font-size-small">
       <li>
-       <a download="number-of-homeless-households-by-ethnicity-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/number-of-homeless-households-by-ethnicity-table.csv">
+       <a data-event-action="Table as spreadsheet" data-event-category="CSV downloaded" data-event-label="Number of homeless households by ethnicity" data-on="click" download="number-of-homeless-households-by-ethnicity-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/number-of-homeless-households-by-ethnicity-table.csv">
         Table as spreadsheet (CSV)
        </a>
       </li>
       <li>
-       <a download="number-of-homeless-households-by-ethnicity.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/number-of-homeless-households-by-ethnicity.csv">
+       <a data-event-action="Table source data" data-event-category="CSV downloaded" data-event-label="Number of homeless households by ethnicity" data-on="click" href="/housing/homelessness/statutory-homelessness/latest/downloads/number-of-homeless-households-by-ethnicity.csv">
         Source data (CSV)
        </a>
       </li>
@@ -882,7 +887,7 @@
         Source:
        </dt>
        <dd>
-        <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/collections/homelessness-statistics">
+        <a data-event-action="Data Source (section header)" data-event-category="External link clicked" data-event-label="Homelessness statistics" data-on="click" href="https://www.gov.uk/government/collections/homelessness-statistics">
          Homelessness statistics
         </a>
        </dd>
@@ -891,8 +896,7 @@
     </div>
     <div class="chart-and-footer">
      <div class="rd_chart" id="chart_00819b6c8088cccbdc7b78087f721c2fc36d3e3e" style="clear: both; overflow: hidden">
-      <img alt="Percentage of homeless households by ethnicity" src="charts/00819b6c8088cccbdc7b78087f721c2fc36d3e3e.png">
-      </img>
+      <img alt="Percentage of homeless households by ethnicity" src="charts/00819b6c8088cccbdc7b78087f721c2fc36d3e3e.png"/>
      </div>
      <div class="column-full chart-footer">
       <!-- TODO: flatten text values into a single array -->
@@ -1264,12 +1268,12 @@
      </h3>
      <ul class="no-bullets font-size-small">
       <li>
-       <a download="percentage-of-homeless-households-by-ethnicity-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-table.csv">
+       <a data-event-action="Table as spreadsheet" data-event-category="CSV downloaded" data-event-label="Percentage of homeless households by ethnicity" data-on="click" download="percentage-of-homeless-households-by-ethnicity-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-table.csv">
         Table as spreadsheet (CSV)
        </a>
       </li>
       <li>
-       <a download="percentage-of-homeless-households-by-ethnicity.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity.csv">
+       <a data-event-action="Table source data" data-event-category="CSV downloaded" data-event-label="Percentage of homeless households by ethnicity" data-on="click" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity.csv">
         Source data (CSV)
        </a>
       </li>
@@ -1297,7 +1301,7 @@
         Source:
        </dt>
        <dd>
-        <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/collections/homelessness-statistics">
+        <a data-event-action="Data Source (section header)" data-event-category="External link clicked" data-event-label="Homelessness statistics" data-on="click" href="https://www.gov.uk/government/collections/homelessness-statistics">
          Homelessness statistics
         </a>
        </dd>
@@ -1306,8 +1310,7 @@
     </div>
     <div class="chart-and-footer">
      <div class="rd_chart" id="chart_805814759501c356347475da769bdfe236dfa218" style="clear: both; overflow: hidden">
-      <img alt="Percentage of homeless households by ethnicity and area" src="charts/805814759501c356347475da769bdfe236dfa218.png">
-      </img>
+      <img alt="Percentage of homeless households by ethnicity and area" src="charts/805814759501c356347475da769bdfe236dfa218.png"/>
      </div>
      <div class="column-full chart-footer">
       <!-- TODO: flatten text values into a single array -->
@@ -24179,12 +24182,12 @@
      </h3>
      <ul class="no-bullets font-size-small">
       <li>
-       <a download="percentage-of-homeless-households-by-ethnicity-and-area-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-and-area-table.csv">
+       <a data-event-action="Table as spreadsheet" data-event-category="CSV downloaded" data-event-label="Percentage and number of homeless households by ethnicity and area" data-on="click" download="percentage-of-homeless-households-by-ethnicity-and-area-table.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-and-area-table.csv">
         Table as spreadsheet (CSV)
        </a>
       </li>
       <li>
-       <a download="percentage-of-homeless-households-by-ethnicity-and-area.csv" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-and-area.csv">
+       <a data-event-action="Table source data" data-event-category="CSV downloaded" data-event-label="Percentage and number of homeless households by ethnicity and area" data-on="click" href="/housing/homelessness/statutory-homelessness/latest/downloads/percentage-of-homeless-households-by-ethnicity-and-area.csv">
         Source data (CSV)
        </a>
       </li>
@@ -24195,7 +24198,7 @@
     <div class="column-two-thirds">
      <div class="accordion">
       <div class="accordion-section">
-       <div class="accordion-section-header" data-event="methodology">
+       <div class="accordion-section-header" data-event-action="Section opened" data-event-category="Accordion" data-event-label="Methodology" data-on="click">
         <h2 class="heading-medium">
          Methodology and type of data
         </h2>
@@ -24245,7 +24248,7 @@
        </div>
       </div>
       <div class="accordion-section">
-       <div class="accordion-section-header" data-event="publishing-details">
+       <div class="accordion-section-header" data-event-action="Section opened" data-event-category="Accordion" data-event-label="Data source details" data-on="click">
         <h2 class="heading-medium">
          Data source details
         </h2>
@@ -24255,7 +24258,7 @@
          Source
         </h3>
         <p>
-         <a data-event="metadata-measure-page-source-url" href="https://www.gov.uk/government/collections/homelessness-statistics">
+         <a data-event-action="Data Source (Source Details section)" data-event-category="External link clicked" data-event-label="Homelessness statistics" data-on="click" href="https://www.gov.uk/government/collections/homelessness-statistics">
           Homelessness statistics
          </a>
         </p>
@@ -24292,7 +24295,7 @@
        </div>
       </div>
       <div class="accordion-section">
-       <div class="accordion-section-header" data-event="download-data">
+       <div class="accordion-section-header" data-event-action="Section opened" data-event-category="Accordion" data-event-label="Download the data" data-on="click">
         <h2 class="heading-medium">
          Download the data
         </h2>
@@ -24304,7 +24307,7 @@
         <p>
          This file contains the following: ethnicity, year, region, local authority, value, denominator, numerator and rate
         </p>
-        <button class="js--print print-btn">
+        <button class="js--print print-btn" data-event-action="Link clicked" data-event-category="Page printed" data-on="click">
          Print this page
         </button>
        </div>
@@ -24328,7 +24331,7 @@
       </span>
      </p>
      <div class="change-notes">
-      <details class="full-page-history">
+      <details class="full-page-history" data-event-action="Opened" data-event-category="Disclosure" data-event-label="Full page history" data-on="click">
        <summary>
         full page history
        </summary>
@@ -24372,12 +24375,12 @@
       </h2>
       <ul>
        <li>
-        <a href="/static/race-disparity-audit-summary-findings.pdf">
+        <a data-event-action="Race Disparity Audit report" data-event-category="PDF downloaded" data-on="click" href="/static/race-disparity-audit-summary-findings.pdf">
          Race Disparity Audit report Oct 2017 (PDF)
         </a>
        </li>
        <li>
-        <a href="/static/statement-of-compliance.pdf">
+        <a data-event-action="Statement of compliance" data-event-category="PDF downloaded" data-on="click" href="/static/statement-of-compliance.pdf">
          Statement of compliance (PDF)
         </a>
        </li>
@@ -24389,7 +24392,7 @@
       </h2>
       <ul>
        <li>
-        <a href="mailto:ethnicity@cabinetoffice.gov.uk">
+        <a data-event-action="Contact e-mail" data-event-category="E-mail link clicked" data-event-label="Footer" data-on="click" href="mailto:ethnicity@cabinetoffice.gov.uk">
          ethnicity@cabinetoffice.gov.uk
         </a>
        </li>
@@ -24429,7 +24432,7 @@
   </script>
   <script src="/static/vendor/bowser.js" type="text/javascript">
   </script>
-  <script src="/static/javascripts/all-434aa831d1.js" type="text/javascript">
+  <script src="/static/javascripts/all-416364046c.js" type="text/javascript">
   </script>
   <script src="/static/vendor/highcharts/5.0.11/highcharts.js">
   </script>
@@ -24464,36 +24467,6 @@
       }
     };
 
-    
-
-        var sendToAnalytics = function (event) {
-            var eventLabel = $(event.currentTarget).data('event');
-
-            if (!eventLabel && $(event.currentTarget).attr('href')){
-                eventLabel = $(event.currentTarget).attr('href');
-            }
-
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'Action',
-              eventAction: 'click',
-              eventLabel: eventLabel
-            });
-        };
-
-        $('details.normalize').click(function(event) {
-            sendToAnalytics(event);
-        });
-
-        $('.accordion__header').click(function(event) {
-             sendToAnalytics(event);
-        });
-
-        $('a').click(function(event){
-            sendToAnalytics(event);
-        });
-
-    
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
