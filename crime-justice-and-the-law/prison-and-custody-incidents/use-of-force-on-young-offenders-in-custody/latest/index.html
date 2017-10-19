@@ -21,8 +21,9 @@
   <link href="/static/images/apple-touch-icon-76x76.png?0.19.2" rel="apple-touch-icon" sizes="76x76"/>
   <link href="/static/images/apple-touch-icon-60x60.png?0.19.2" rel="apple-touch-icon"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="article" property="og:type"/>
   <meta content="Use of force on young offenders in custody" property="og:title"/>
-  <meta content="/static/images/opengraph-image.png?0.19.2" property="og:image"/>
+  <meta content="https://www.ethnicity-facts-figures.service.gov.uk/static/images/opengraph-image.png" property="og:image"/>
   <meta content="summary" name="twitter:card"/>
   <link href="/static/stylesheets/application-b824192121.css" rel="stylesheet" type="text/css"/>
   <script>
@@ -100,7 +101,9 @@
   </header>
   <div id="global-header-bar">
   </div>
-  <main id="content">
+  <main id="content" itemscope="" itemtype="http://schema.org/NewsArticle">
+   <meta content="https://www.ethnicity-facts-figures.service.gov.uk/static/images/opengraph-image.png" itemprop="image"/>
+   <meta itemid="https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/prison-and-custody-incidents/use-of-force-on-young-offenders-in-custody/latest" itemprop="mainEntityOfPage" itemscope="" itemtype="https://schema.org/WebPage"/>
    <div class="phase-banner">
     <p>
      <strong class="phase-tag">
@@ -130,7 +133,7 @@
    </div>
    <div class="grid-row">
     <div class="column-two-thirds">
-     <h1 class="heading-large">
+     <h1 class="heading-large" itemprop="headline">
       Use of force on young offenders in custody
      </h1>
     </div>
@@ -142,19 +145,21 @@
        <dt>
         Department:
        </dt>
-       <dd>
-        Ministry of Justice
+       <dd itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+        <span itemprop="name">
+         Ministry of Justice
+        </span>
        </dd>
        <dt>
         Published:
        </dt>
-       <dd>
+       <dd itemprop="datePublished">
         10 October 2017
        </dd>
        <dt>
         Last updated:
        </dt>
-       <dd>
+       <dd itemprop="dateModified">
         11 October 2017,
         <a href="#history">
          see all updates
@@ -240,7 +245,7 @@
         What the data measures
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel panel-border-narrow" itemprop="description">
        <p>
         This data measures the rate of incidents in which staff at young offender institutions use force with young offenders, broken down by the ethnicity of young offenders.
        </p>
@@ -781,19 +786,9 @@
   </footer>
   <div class="app-error hidden" id="global-app-error">
   </div>
-  <script src="/static/javascripts/all-143659db63.js" type="text/javascript">
+  <script src="/static/javascripts/all-b8f19ab34d.js" type="text/javascript">
   </script>
-  <script src="/static/vendor/highcharts/5.0.11/highcharts.js">
-  </script>
-  <script src="/static/vendor/jquery.dataTables.min.js" type="text/javascript">
-  </script>
-  <script src="/static/vendor/underscore-min.js" type="text/javascript">
-  </script>
-  <script src="/static/javascripts/rd-data-tools.js">
-  </script>
-  <script src="/static/javascripts/rd-graph.js">
-  </script>
-  <script src="/static/vendor/highcharts/5.0.11/modules/exporting.js">
+  <script src="/static/javascripts/charts-a31df2a62d.js" type="text/javascript">
   </script>
   <script type="text/javascript">
    var dimensions = [{"chart": {"chart": {"type": "bar"}, "number_format": {"max": "", "min": "", "multiplier": 1, "prefix": "", "suffix": ""}, "series": [{"data": [{"category": "Cookham Wood YOI", "text": "number", "y": 30.5}, {"category": "Medway STC", "text": "number", "y": 24.5}, {"category": "Oakhill STC", "text": "number", "y": 38.8}, {"category": "Rainsbrook STC", "text": "number", "y": 26.8}, {"category": "Werrington YOI", "text": "number", "y": 18.4}, {"category": "Wetherby YOI", "text": "number", "y": 20.8}], "name": "White"}, {"data": [{"category": "Cookham Wood YOI", "text": "number", "y": 58.2}, {"category": "Medway STC", "text": "number", "y": 31.2}, {"category": "Oakhill STC", "text": "number", "y": 52.1}, {"category": "Rainsbrook STC", "text": "number", "y": 30.9}, {"category": "Werrington YOI", "text": "number", "y": 38.7}, {"category": "Wetherby YOI", "text": "number", "y": 24.4}], "name": "Other"}], "title": {"text": "Number of use of force incidents per 100 young people in custody (average per month)"}, "type": "bar", "version": "1.0", "xAxis": {"categories": ["Cookham Wood YOI", "Medway STC", "Oakhill STC", "Rainsbrook STC", "Werrington YOI", "Wetherby YOI"], "title": {"text": ""}}, "yAxis": {"title": {"text": ""}}}, "chart_source_data": {"chartFormat": {"chart_title": "Number of use of force incidents per 100 young people in custody (average per month)", "number_format": "none", "number_format_max": "", "number_format_min": "", "number_format_prefix": "", "number_format_suffix": "", "x_axis_label": "", "y_axis_label": ""}, "chartOptions": {"component_bar_column": "Establishment", "component_component_column": "[None]", "line_series_column": "Establishment", "line_series_order": "[None]", "order_column": "[None]", "panel_grouping_column": "Establishment", "panel_line_series": "Establishment", "panel_line_x_axis": "Establishment", "panel_primary_column": "Establishment", "parent_column": "[None]", "primary_column": "Establishment", "secondary_column": "Ethnic Group", "x_axis_column": "Establishment"}, "data": [["Establishment", "Ethnic Group", "Value"], ["Cookham Wood YOI", "White", "30.5"], ["Cookham Wood YOI", "Other", "58.2"], ["Medway STC", "White", "24.5"], ["Medway STC", "Other", "31.2"], ["Oakhill STC", "White", "38.8"], ["Oakhill STC", "Other", "52.1"], ["Rainsbrook STC", "White", "26.8"], ["Rainsbrook STC", "Other", "30.9"], ["Werrington YOI", "White", "18.4"], ["Werrington YOI", "Other", "38.7"], ["Wetherby YOI", "White", "20.8"], ["Wetherby YOI", "Other", "24.4"]], "type": "bar_chart"}, "guid": "472f8b25b2920731546e378a1cab315372d8c156", "measure": "MoJ 020", "static_file_name": "use-of-force-by-ethnicity.csv", "static_table_file_name": "use-of-force-by-ethnicity-table.csv", "summary": "This data shows that: \r\n\r\n* force is used with young White people less frequently than with young people from Other ethnic groups\r\n\r\n* the difference between how often force is used with young White people and how often it\u2019s used with Other ethnic groups varies according to youth offending institute (YOI)\r\n\r\n* in Werrington YOI and Cookham Wood YOI, young people from Other ethnic groups were involved in about twice the number of use of force incidents as young White people; in other YOIs they were no more than a third more likely to be involved than young White people", "table": {"category": "Establishment", "category_caption": "", "columns": ["Number of incidents per 100 young people", "Number of incidents"], "data": [{"category": "Cookham Wood YOI", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Cookham Wood YOI"}, "sort_values": [30.5, 25.6, 58.2, 60.2], "values": ["30.5", "25.6", "58.2", "60.2"]}, {"category": "Medway STC", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Medway STC"}, "sort_values": [24.5, 7.5, 31.2, 12.2], "values": ["24.5", "7.5", "31.2", "12.2"]}, {"category": "Oakhill STC", "order": 2, "relationships": {"is_child": false, "is_parent": false, "parent": "Oakhill STC"}, "sort_values": [38.8, 20.9, 52.1, 20.3], "values": ["38.8", "20.9", "52.1", "20.3"]}, {"category": "Rainsbrook STC", "order": 3, "relationships": {"is_child": false, "is_parent": false, "parent": "Rainsbrook STC"}, "sort_values": [26.8, 16.9, 30.9, 8.2], "values": ["26.8", "16.9", "30.9", "8.2"]}, {"category": "Werrington YOI", "order": 4, "relationships": {"is_child": false, "is_parent": false, "parent": "Werrington YOI"}, "sort_values": [18.4, 13.2, 38.7, 26.3], "values": ["18.4", "13.2", "38.7", "26.3"]}, {"category": "Wetherby YOI", "order": 5, "relationships": {"is_child": false, "is_parent": false, "parent": "Wetherby YOI"}, "sort_values": [20.8, 51.5, 24.4, 20.5], "values": ["20.8", "51.5", "24.4", "20.5"]}], "footer": "", "group_column": "Ethnic Group", "group_columns": ["", "White", "Other"], "groups": [{"data": [{"category": "Cookham Wood YOI", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Cookham Wood YOI"}, "sort_values": [30.5, 25.6], "values": ["30.5", "25.6"]}, {"category": "Medway STC", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Medway STC"}, "sort_values": [24.5, 7.5], "values": ["24.5", "7.5"]}, {"category": "Oakhill STC", "order": 2, "relationships": {"is_child": false, "is_parent": false, "parent": "Oakhill STC"}, "sort_values": [38.8, 20.9], "values": ["38.8", "20.9"]}, {"category": "Rainsbrook STC", "order": 3, "relationships": {"is_child": false, "is_parent": false, "parent": "Rainsbrook STC"}, "sort_values": [26.8, 16.9], "values": ["26.8", "16.9"]}, {"category": "Werrington YOI", "order": 4, "relationships": {"is_child": false, "is_parent": false, "parent": "Werrington YOI"}, "sort_values": [18.4, 13.2], "values": ["18.4", "13.2"]}, {"category": "Wetherby YOI", "order": 5, "relationships": {"is_child": false, "is_parent": false, "parent": "Wetherby YOI"}, "sort_values": [20.8, 51.5], "values": ["20.8", "51.5"]}], "group": "White"}, {"data": [{"category": "Cookham Wood YOI", "order": 0, "relationships": {"is_child": false, "is_parent": false, "parent": "Cookham Wood YOI"}, "sort_values": [58.2, 60.2], "values": ["58.2", "60.2"]}, {"category": "Medway STC", "order": 1, "relationships": {"is_child": false, "is_parent": false, "parent": "Medway STC"}, "sort_values": [31.2, 12.2], "values": ["31.2", "12.2"]}, {"category": "Oakhill STC", "order": 2, "relationships": {"is_child": false, "is_parent": false, "parent": "Oakhill STC"}, "sort_values": [52.1, 20.3], "values": ["52.1", "20.3"]}, {"category": "Rainsbrook STC", "order": 3, "relationships": {"is_child": false, "is_parent": false, "parent": "Rainsbrook STC"}, "sort_values": [30.9, 8.2], "values": ["30.9", "8.2"]}, {"category": "Werrington YOI", "order": 4, "relationships": {"is_child": false, "is_parent": false, "parent": "Werrington YOI"}, "sort_values": [38.7, 26.3], "values": ["38.7", "26.3"]}, {"category": "Wetherby YOI", "order": 5, "relationships": {"is_child": false, "is_parent": false, "parent": "Wetherby YOI"}, "sort_values": [24.4, 20.5], "values": ["24.4", "20.5"]}], "group": "Other"}], "header": "Number of use of force incidents per 100 young people (average per month) and average incidents per month in custody ", "parent_child": false, "subtitle": "", "type": "grouped"}, "table_source_data": {"data": [["Establishment", "Ethnic Group", "Number of Incidents per 100 in custody (avg per month)", "Number of Incidents (avg per month)"], ["Cookham Wood YOI", "Other", "58.2", "60.2"], ["Cookham Wood YOI", "White", "30.5", "25.6"], ["Medway STC", "Other", "31.2", "12.2"], ["Medway STC", "White", "24.5", "7.5"], ["Oakhill STC", "Other", "52.1", "20.3"], ["Oakhill STC", "White", "38.8", "20.9"], ["Rainsbrook STC", "Other", "30.9", "8.2"], ["Rainsbrook STC", "White", "26.8", "16.9"], ["Werrington YOI", "Other", "38.7", "26.3"], ["Werrington YOI", "White", "18.4", "13.2"], ["Wetherby YOI", "Other", "24.4", "20.5"], ["Wetherby YOI", "White", "20.8", "51.5"]], "tableOptions": {"table_category_caption": "", "table_category_column": "Establishment", "table_column_1": "Number of Incidents per 100 in custody (avg per month)", "table_column_1_name": "Number of incidents per 100 young people", "table_column_2": "Number of Incidents (avg per month)", "table_column_2_name": "Number of incidents", "table_column_3": "none", "table_column_3_name": "Proportion of custody population", "table_column_4": "none", "table_column_4_name": "Proportion of incidents", "table_column_5": "none", "table_column_5_name": "", "table_column_order_column": "Parent-child order", "table_footer": "", "table_group_column": "Ethnic Group", "table_order_column": "[None]", "table_parent_column": "[None]", "table_subtitle": "", "table_title": "Number of use of force incidents per 100 young people (average per month) and average incidents per month in custody "}}, "time_period": "2015/16", "title": "Use of force by ethnicity"}];

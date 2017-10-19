@@ -21,8 +21,9 @@
   <link href="/static/images/apple-touch-icon-76x76.png?0.19.2" rel="apple-touch-icon" sizes="76x76"/>
   <link href="/static/images/apple-touch-icon-60x60.png?0.19.2" rel="apple-touch-icon"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="article" property="og:type"/>
   <meta content="Prevalence of ADHD among adults" property="og:title"/>
-  <meta content="/static/images/opengraph-image.png?0.19.2" property="og:image"/>
+  <meta content="https://www.ethnicity-facts-figures.service.gov.uk/static/images/opengraph-image.png" property="og:image"/>
   <meta content="summary" name="twitter:card"/>
   <link href="/static/stylesheets/application-b824192121.css" rel="stylesheet" type="text/css"/>
   <script>
@@ -100,7 +101,9 @@
   </header>
   <div id="global-header-bar">
   </div>
-  <main id="content">
+  <main id="content" itemscope="" itemtype="http://schema.org/NewsArticle">
+   <meta content="https://www.ethnicity-facts-figures.service.gov.uk/static/images/opengraph-image.png" itemprop="image"/>
+   <meta itemid="https://www.ethnicity-facts-figures.service.gov.uk/health/physical-and-mental-health/prevalence-of-adhd-among-adults/latest" itemprop="mainEntityOfPage" itemscope="" itemtype="https://schema.org/WebPage"/>
    <div class="phase-banner">
     <p>
      <strong class="phase-tag">
@@ -130,7 +133,7 @@
    </div>
    <div class="grid-row">
     <div class="column-two-thirds">
-     <h1 class="heading-large">
+     <h1 class="heading-large" itemprop="headline">
       Prevalence of ADHD among adults
      </h1>
     </div>
@@ -142,19 +145,21 @@
        <dt>
         Department:
        </dt>
-       <dd>
-        NHS Digital
+       <dd itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+        <span itemprop="name">
+         NHS Digital
+        </span>
        </dd>
        <dt>
         Published:
        </dt>
-       <dd>
+       <dd itemprop="datePublished">
         10 October 2017
        </dd>
        <dt>
         Last updated:
        </dt>
-       <dd>
+       <dd itemprop="dateModified">
         11 October 2017,
         <a href="#history">
          see all updates
@@ -258,7 +263,7 @@
         What the data measures
        </span>
       </summary>
-      <div class="panel panel-border-narrow">
+      <div class="panel panel-border-narrow" itemprop="description">
        <p>
         This data measures the percentage of adults (aged 16 or older) in England who screened positive for attention deficit hyperactivity disorder (ADHD) in the 6 months prior to being surveyed. The data source is the Adult Psychiatric Morbidity Survey (APMS) that was conducted in private households across England in 2014.
        </p>
@@ -790,19 +795,9 @@
   </footer>
   <div class="app-error hidden" id="global-app-error">
   </div>
-  <script src="/static/javascripts/all-143659db63.js" type="text/javascript">
+  <script src="/static/javascripts/all-b8f19ab34d.js" type="text/javascript">
   </script>
-  <script src="/static/vendor/highcharts/5.0.11/highcharts.js">
-  </script>
-  <script src="/static/vendor/jquery.dataTables.min.js" type="text/javascript">
-  </script>
-  <script src="/static/vendor/underscore-min.js" type="text/javascript">
-  </script>
-  <script src="/static/javascripts/rd-data-tools.js">
-  </script>
-  <script src="/static/javascripts/rd-graph.js">
-  </script>
-  <script src="/static/vendor/highcharts/5.0.11/modules/exporting.js">
+  <script src="/static/javascripts/charts-a31df2a62d.js" type="text/javascript">
   </script>
   <script type="text/javascript">
    var dimensions = [{"chart": null, "chart_source_data": null, "guid": "9f560bd9dfc5bd6c07609fc644023928fbc2474f", "measure": "DH 026", "static_file_name": "prevalence-of-screening-positive-for-attention-deficit-hyperactivity-disorder-adhd-in-the-six-months-prior-to-the-survey-in-adults-england-2014.csv", "static_table_file_name": "prevalence-of-screening-positive-for-attention-deficit-hyperactivity-disorder-adhd-in-the-six-months-prior-to-the-survey-in-adults-england-2014-table.csv", "summary": "This data shows that:\r\n\r\n* no significant difference between ethnic groups has been observed in terms of the likelihood of screening positive for ADHD \r\n", "table": {"category": "Standard Ethnicity", "category_caption": "Ethnicity", "columns": [""], "data": [{"category": "Asian", "order": 100, "relationships": {"is_child": false, "is_parent": false, "parent": "Asian"}, "sort_values": [8.9, 7.9, 10.2], "values": ["8.9", "7.9", "10.2"]}, {"category": "Black", "order": 200, "relationships": {"is_child": false, "is_parent": false, "parent": "Black"}, "sort_values": [13, 4.8, 19.3], "values": ["13.0", "4.8", "19.3"]}, {"category": "Mixed other", "order": 309, "relationships": {"is_child": false, "is_parent": false, "parent": "Mixed other"}, "sort_values": [7.2, 6.5, 7.9], "values": ["7.2", "6.5", "7.9"]}, {"category": "White British", "order": 401, "relationships": {"is_child": false, "is_parent": false, "parent": "White British"}, "sort_values": [10.2, 11, 9.4], "values": ["10.2", "11.0", "9.4"]}, {"category": "White other", "order": 409, "relationships": {"is_child": false, "is_parent": false, "parent": "White other"}, "sort_values": [6.7, 3.3, 9.7], "values": ["6.7", "3.3", "9.7"]}], "footer": "", "group_column": "Gender", "group_columns": ["", "All", "Men", "Women"], "groups": [{"data": [{"category": "Asian", "order": 100, "relationships": {"is_child": false, "is_parent": false, "parent": "Asian"}, "sort_values": [8.9], "values": ["8.9"]}, {"category": "Black", "order": 200, "relationships": {"is_child": false, "is_parent": false, "parent": "Black"}, "sort_values": [13], "values": ["13.0"]}, {"category": "Mixed other", "order": 309, "relationships": {"is_child": false, "is_parent": false, "parent": "Mixed other"}, "sort_values": [7.2], "values": ["7.2"]}, {"category": "White British", "order": 401, "relationships": {"is_child": false, "is_parent": false, "parent": "White British"}, "sort_values": [10.2], "values": ["10.2"]}, {"category": "White other", "order": 409, "relationships": {"is_child": false, "is_parent": false, "parent": "White other"}, "sort_values": [6.7], "values": ["6.7"]}], "group": "All"}, {"data": [{"category": "Asian", "order": 100, "relationships": {"is_child": false, "is_parent": false, "parent": "Asian"}, "sort_values": [7.9], "values": ["7.9"]}, {"category": "Black", "order": 200, "relationships": {"is_child": false, "is_parent": false, "parent": "Black"}, "sort_values": [4.8], "values": ["4.8"]}, {"category": "Mixed other", "order": 309, "relationships": {"is_child": false, "is_parent": false, "parent": "Mixed other"}, "sort_values": [6.5], "values": ["6.5"]}, {"category": "White British", "order": 401, "relationships": {"is_child": false, "is_parent": false, "parent": "White British"}, "sort_values": [11], "values": ["11.0"]}, {"category": "White other", "order": 409, "relationships": {"is_child": false, "is_parent": false, "parent": "White other"}, "sort_values": [3.3], "values": ["3.3"]}], "group": "Men"}, {"data": [{"category": "Asian", "order": 100, "relationships": {"is_child": false, "is_parent": false, "parent": "Asian"}, "sort_values": [10.2], "values": ["10.2"]}, {"category": "Black", "order": 200, "relationships": {"is_child": false, "is_parent": false, "parent": "Black"}, "sort_values": [19.3], "values": ["19.3"]}, {"category": "Mixed other", "order": 309, "relationships": {"is_child": false, "is_parent": false, "parent": "Mixed other"}, "sort_values": [7.9], "values": ["7.9"]}, {"category": "White British", "order": 401, "relationships": {"is_child": false, "is_parent": false, "parent": "White British"}, "sort_values": [9.4], "values": ["9.4"]}, {"category": "White other", "order": 409, "relationships": {"is_child": false, "is_parent": false, "parent": "White other"}, "sort_values": [9.7], "values": ["9.7"]}], "group": "Women"}], "header": "Screen positive for ADHD in the six months prior to the survey, by ethnic group and sex", "parent_child": false, "subtitle": "", "type": "grouped"}, "table_source_data": {"data": [["Measure", "Time", "Time_type", "Ethnicity", "Gender", "Score", "Value"], ["Screen positive for ADHD", "2014", "Year", "White - British", "All", "4 or more", "10.2"], ["Screen positive for ADHD", "2014", "Year", "White - Other", "All", "4 or more", "6.7"], ["Screen positive for ADHD", "2014", "Year", "Black", "All", "4 or more", "13"], ["Screen positive for ADHD", "2014", "Year", "Asian", "All", "4 or more", "8.9"], ["Screen positive for ADHD", "2014", "Year", "Mixed/Other", "All", "4 or more", "7.2"], ["Screen positive for ADHD", "2014", "Year", "White - British", "Men", "4 or more", "11"], ["Screen positive for ADHD", "2014", "Year", "White - Other", "Men", "4 or more", "3.3"], ["Screen positive for ADHD", "2014", "Year", "Black", "Men", "4 or more", "4.8"], ["Screen positive for ADHD", "2014", "Year", "Asian", "Men", "4 or more", "7.9"], ["Screen positive for ADHD", "2014", "Year", "Mixed/Other", "Men", "4 or more", "6.5"], ["Screen positive for ADHD", "2014", "Year", "White - British", "Women", "4 or more", "9.4"], ["Screen positive for ADHD", "2014", "Year", "White - Other", "Women", "4 or more", "9.7"], ["Screen positive for ADHD", "2014", "Year", "Black", "Women", "4 or more", "19.3"], ["Screen positive for ADHD", "2014", "Year", "Asian", "Women", "4 or more", "10.2"], ["Screen positive for ADHD", "2014", "Year", "Mixed/Other", "Women", "4 or more", "7.9"]], "tableOptions": {"table_category_caption": "Ethnicity", "table_category_column": "Standard Ethnicity", "table_column_1": "Value", "table_column_1_name": "", "table_column_2": "none", "table_column_2_name": "", "table_column_3": "none", "table_column_3_name": "", "table_column_4": "none", "table_column_4_name": "", "table_column_5": "none", "table_column_5_name": "", "table_column_order_column": "[None]", "table_footer": "", "table_group_column": "Gender", "table_order_column": "Parent-child order", "table_parent_column": "[None]", "table_subtitle": "", "table_title": "Screen positive for ADHD in the six months prior to the survey, by ethnic group and sex"}}, "time_period": "2014", "title": "Prevalence of screening positive for attention-deficit/hyperactivity disorder (ADHD) in the six months prior to the survey in adults, England, 2014"}];
