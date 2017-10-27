@@ -1,0 +1,16 @@
+"Title","Volunteering"
+"Location","England"
+"Time period","August 2016 to March 2017"
+"Data source","Department for Digital, Culture, Media & Sport"
+"Data source link","https://www.gov.uk/government/collections/community-life-survey--2"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Last updated","July 2017"
+"
+"
+Measure,Time,Time_type,Ethnicity,Ethnicity_type,Geography,Value,Number of respondents
+Formal volunteering at least once a month,2016-17,Year,All,5+1,England,22.4,"10,256"
+Formal volunteering at least once a month,2016-17,Year,Asian,5+1,England,16.5,"1,111"
+Formal volunteering at least once a month,2016-17,Year,Black,5+1,England,24.7,360
+Formal volunteering at least once a month,2016-17,Year,Mixed,5+1,England,16.3,467
+Formal volunteering at least once a month,2016-17,Year,Other,5+1,England,23.3,163
+Formal volunteering at least once a month,2016-17,Year,White,5+1,England,23.0,"8,022"
