@@ -4,7 +4,7 @@
 "Data source","Department for Business, Energy & Industrial Strategy"
 "Data source link","https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt%3D3%26theme%3D%26subgrp%3D&sa=D&ust=1505757273319000&usg=AFQjCNFnS64ZDSibYXaOTf54ZPpw97wNXg"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","n/a"
+"Last updated","20 February 2018"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Industry","Value","Value"," Denominator "," Numerator ","Conf","Note"
 "Proportion of ethnic group who are employed, split by industry","2004","Year","All","ONS defined grouping (NOMIS)","A:agriculture & fishing (SIC 2007)","1.0",""," 28,156,000 "," 271,600 ","0.0",""
 "Proportion of ethnic group who are employed, split by industry","2004","Year","All","ONS defined grouping (NOMIS)","B,D,E:energy & water (SIC 2007)","1.4",""," 28,156,000 "," 396,700 ","0.0",""
