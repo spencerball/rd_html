@@ -1,4 +1,4 @@
-"Title","Home ownership by ethnicity and age"
+"Title","Home ownership by ethnicity and age group"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7 March 2017"
 
-"","White British","","","All other ethnic groups","",""
+"","White British","","","Other","",""
 "Age group","%","Homeowners","All households","%","Homeowners","All households"
 " 16 - 24 yrs old","11"," 61,204 "," 547,604 ","4"," 9,175 "," 209,064 "
 " 25 - 34 yrs old","43"," 1,037,801 "," 2,400,150 ","22"," 194,540 "," 888,814 "
