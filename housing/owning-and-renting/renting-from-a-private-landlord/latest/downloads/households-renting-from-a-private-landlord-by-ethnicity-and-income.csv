@@ -1,4 +1,4 @@
-"Title","Renting from a private landlord by ethnicity and income"
+"Title","Households renting from a private landlord by ethnicity and income"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Weekly income","%","Private renters","All households"
+"Ethnicity","[None]","%","Private renters","All households"
 "White British","Up to £99","33"," 59,711 "," 183,039 "
 "White British","£100 to £199","18"," 294,709 "," 1,623,813 "
 "White British","£200 to £299","18"," 413,386 "," 2,290,104 "

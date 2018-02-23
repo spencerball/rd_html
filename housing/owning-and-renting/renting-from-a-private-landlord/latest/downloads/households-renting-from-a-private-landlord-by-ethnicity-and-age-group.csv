@@ -1,4 +1,4 @@
-"Title","Renting from a private landlord by ethnicity and age"
+"Title","Households renting from a private landlord by ethnicity and age group"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Age group","%","Private renters","All households"
+"Ethnicity","Age group","%","Private renters","All households"
 "White British"," 16 - 24 yrs old","64"," 349,592 "," 547,604 "
 "White British"," 25 - 34 yrs old","40"," 959,728 "," 2,400,150 "
 "White British"," 35 - 44 yrs old","21"," 613,464 "," 2,909,500 "

@@ -1,4 +1,4 @@
-"Title","Renting from a private landlord by ethnicity and area"
+"Title","Households renting from a private landlord by ethnicity and area"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Region","%","Private renters","All households"
+"Ethnicity","Region","%","Private renters","All households"
 "White British","North East","15"," 166,112 "," 1,082,079 "
 "White British","North West","16"," 448,408 "," 2,726,087 "
 "White British","Yorkshire and the Humber","18"," 358,938 "," 1,993,215 "
