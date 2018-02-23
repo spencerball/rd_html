@@ -1,10 +1,10 @@
 "Title","Confidence in the local police by ethnicity and gender"
 "Location","England and Wales"
-"Time period","2013/14 to 2015/16 (3 years combined)"
+"Time period","2013/14, 2014/15 and 2015/16 (3 years combined)"
 "Data source","Crime Survey for England and Wales"
-"Data source link","https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeinenglandandwalesannualtrendanddemographictables"
+"Data source link","https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","21 July 2016"
+"Last updated","July 2017"
 
 "Gender","Ethnicity","%","Number"
 "All","Asian","79","5,201"
