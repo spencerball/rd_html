@@ -1,4 +1,4 @@
-"Title","Renting from a local authority or housing association by ethnicity and age"
+"Title","Households renting social housing by ethnicity and age group"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Age group","%","Social housing households","All households"
+"Ethnicity","Age group","%","Social housing households","All households"
 "White British"," 16 - 24 yrs old","25"," 136,808 "," 547,604 "
 "White British"," 25 - 34 yrs old","17"," 402,620 "," 2,400,150 "
 "White British"," 35 - 44 yrs old","16"," 456,426 "," 2,909,500 "

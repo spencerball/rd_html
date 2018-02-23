@@ -1,4 +1,4 @@
-"Title","Renting from a local authority or housing association by ethnicity and area"
+"Title","Households renting social housing by ethnicity and area"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Region","%","Social housing households","All households"
+"Ethnicity","Region","%","Social housing households","All households"
 "White British","North East","23"," 246,001 "," 1,082,079 "
 "White British","North West","17"," 476,902 "," 2,726,087 "
 "White British","Yorkshire and The Humber","18"," 356,670 "," 1,993,215 "

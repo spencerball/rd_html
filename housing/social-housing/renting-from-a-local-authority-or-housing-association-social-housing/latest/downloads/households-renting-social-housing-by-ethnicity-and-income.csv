@@ -1,4 +1,4 @@
-"Title","Renting from a local authority or housing association by ethnicity and income"
+"Title","Households renting social housing by ethnicity and income"
 "Location","England"
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7th March 2017"
 
-"","Weekly income ","%","Social housing households","All households"
+"Ethnicity","Weekly income ","%","Social housing households","All households"
 "White British","Up to £99","60"," 110,302 "," 183,039 "
 "White British","£100 to £199","46"," 740,427 "," 1,623,813 "
 "White British","£200 to £299","32"," 728,441 "," 2,290,104 "
