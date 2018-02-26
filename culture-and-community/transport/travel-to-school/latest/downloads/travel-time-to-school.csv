@@ -4,7 +4,7 @@
 "Data source","Department for Transport"
 "Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","19/10/2017"
+"Last updated","27 July 2017"
 "Measure","Time","Time_Type","Ethnicity","Ethnicity_Type","Value","Denominator","Unweighted_Sample_Trips","Numerator","Unweighted_Sample_Trip_Time_mins","Weighted_Sample_Individuals_aged_5-16","Unweighted_Sample_Individuals_aged_5-16"
 "Average trip time to school in minutes of children aged 5-16","2002-2006","5-year rolling average","All ethnic groups","National Travel Survey broad ethnicity classification","18.7","80431","81224","1504800","1506745","12626","12996"
 "Average trip time to school in minutes of children aged 5-16","2002-2006","5-year rolling average","Asian ","National Travel Survey broad ethnicity classification","18.3","5272","4975","96738","88085","790","765"
