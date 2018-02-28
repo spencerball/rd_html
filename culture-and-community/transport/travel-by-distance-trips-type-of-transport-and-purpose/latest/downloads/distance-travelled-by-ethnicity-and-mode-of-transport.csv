@@ -1,10 +1,10 @@
 "Title","Distance travelled by ethnicity and mode of transport"
 "Location","England"
-"Time period","2011/15 "
+"Time period","2011/15 (5-year average)"
 "Data source","National Travel Survey"
 "Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","-"
+"Last updated","27 July 2017"
 
 "Ethnicity","Type of Transport","%","Miles"
 "All ethnic groups","Bicycle","1","53"
