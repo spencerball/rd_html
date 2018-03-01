@@ -1,10 +1,10 @@
-"Title"," Percentage of apprenticeship starts by ethnicity"
+"Title"," Percentage of apprenticeship starts by ethnicity over time"
 "Location","England"
 "Time period","2002/03 to 2015/16"
-"Data source","Apprenticeship statistics"
+"Data source","FE data library: apprenticeships"
 "Data source link","https://www.gov.uk/government/statistical-data-sets/fe-data-library-apprenticeships"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","November 2016 (final full year data); March for provisional 2016/17 in year data (forms part of source above)."
+"Last updated","21/12/16"
 
 "Standard Ethnicity","Year","Value"
 "Asian","2002/03","2.1"
