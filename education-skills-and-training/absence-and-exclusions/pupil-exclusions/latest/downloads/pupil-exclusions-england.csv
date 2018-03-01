@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/permanent-and-fixed-period-exclusions-in-england-2015-to-2016"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","20/07/2017"
+"Last updated","23 March 2017"
 "Measure","Measure name","year","level","country_code","country_name","school_type","characteristic_desc","characteristic_1","Ethnicity","characteristic_2","headcount","num_excl","Value"
 "Permanent exclusion","Permanent exclusion","201516","National","E92000001","England","Total","Ethnicity","Ethnicity_Any_other_Asian_background","Asian - Any other","Total","120350","40","0.03"
 "Permanent exclusion","Permanent exclusion","201516","National","E92000001","England","Total","Ethnicity","Ethnicity_Any_other_black_background","Black - Any other","Total","49820","65","0.13"
