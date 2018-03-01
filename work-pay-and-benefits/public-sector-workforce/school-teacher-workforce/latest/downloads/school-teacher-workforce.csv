@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/school-workforce-in-england-november-2016"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","20/07/2017"
+"Last updated","20 July 2017"
 "Measure","Year","Time_type","Ethnicity","Ethnicity_type","Geography","Broad ethnicity","Gender","Gender_type","Teacher","Teacher_type","School","School_type","Value","Value_type","Value_note","Headcount"
 "Number of teachers","2016","Year","White - British","16+1","England","White","All","All/Men/Women","All","All/Heads/deputies and assistants/Classroom and others","All","All/Nursery and Primary/Secondary/Special/Centrally employed","86.5","%","","408800"
 "Number of teachers","2016","Year","White - Irish","16+1","England","White","All","All/Men/Women","All","All/Heads/deputies and assistants/Classroom and others","All","All/Nursery and Primary/Secondary/Special/Centrally employed","1.7","%","","7900"
