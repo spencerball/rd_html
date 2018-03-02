@@ -1,4 +1,4 @@
-"Title","Overcrowded households by ethnicity and housing tenure"
+"Title","Overcrowded households by ethnicity and type of occupancy"
 "Location","England"
 "Time period","2013/14, 2014/15 and 2015/16 (combined)"
 "Data source","English Housing Survey"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","7 March 2017"
 
-"","Housing tenure","%","Overcrowded households","All households"
+"Ethnicity","Housing tenure","%","Overcrowded households","All households"
 "White British","Owner occupiers","1"," 102,116 "," 12,733,724 "
 "White British","Social rented housing","5"," 143,673 "," 3,109,053 "
 "White British","Private rented housing","2"," 69,685 "," 2,984,994 "
