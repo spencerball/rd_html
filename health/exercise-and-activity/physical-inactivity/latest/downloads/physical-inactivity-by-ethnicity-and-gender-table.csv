@@ -4,10 +4,10 @@
 "Data source","Active Lives Survey"
 "Data source link","https://www.sportengland.org/research/active-lives-survey"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","-"
+"Last updated","12/10/17"
 
 "","All","","Female","","Male",""
-"","%","Number of respondents","%","Number of respondents","%","Number of respondents"
+"Ethnicity","%","Number of respondents","%","Number of respondents","%","Number of respondents"
 "All","25","192,623","27","107,612","24","84,660"
 "Asian","31","7,984","34","4,183","28","3,787"
 "Chinese","31","1,057","33","617","29","437"

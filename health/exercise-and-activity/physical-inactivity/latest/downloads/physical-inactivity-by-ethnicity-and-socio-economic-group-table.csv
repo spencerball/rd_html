@@ -4,10 +4,10 @@
 "Data source","Active Lives Survey"
 "Data source link","https://www.sportengland.org/research/active-lives-survey"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","-"
+"Last updated","12/10/17"
 
 "","Managerial and professional occupations ","","Intermediate occupations and lower supervisory ","","Routine and manual occupations ","","Long-term unemployed ","","Full-time student or unclassified ",""
-"","%","number of respondents","%","number of respondents","%","number of respondents","%","number of respondents","%","number of respondents"
+"Ethnicity","%","number of respondents","%","number of respondents","%","number of respondents","%","number of respondents","%","number of respondents"
 "All","16","92,714","25","43,975","32","18,318","36","3,830","18","13,663"
 "Asian","26","3,782","33","1,421","39","776","40","546","24","1,186"
 "Chinese","21","578","40","188","47","77","?","24","28","172"
