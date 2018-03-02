@@ -4,9 +4,9 @@
 "Data source","Community Life Survey"
 "Data source link","https://www.gov.uk/government/collections/community-life-survey--2"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","July 2017"
+"Last updated","25/07/17"
 
-"Ethnicity","%","Respondents"
+"Ethnicity","%","Number of respondents"
 "All","22","10,256"
 "Asian","17","1,111"
 "Black","25","360"
