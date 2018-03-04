@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2016"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","19 December 2016 (updated with disadvantaged data)"
+"Last updated","14/12/16"
 "Measurement","Region","Local Authority","LA Code","Ethnicity","Ethnicity type","Gender","Value","Value_type","Denominator"
 "Percentage of year 1 pupils reaching the expected standard of phonic decoding by ethnicity and gender","North East","County Durham","E06000047","White","White/Asian/Black/Mixed/Chinese","All","82","%","5545"
 "Percentage of year 1 pupils reaching the expected standard of phonic decoding by ethnicity and gender","North East","Darlington","E06000005","White","White/Asian/Black/Mixed/Chinese","All","86","%","1209"

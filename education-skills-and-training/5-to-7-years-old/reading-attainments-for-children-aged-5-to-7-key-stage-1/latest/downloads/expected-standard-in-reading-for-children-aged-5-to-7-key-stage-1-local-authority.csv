@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2016"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","19/12/2016"
+"Last updated","14/12/16"
 "Measure","Time","Time_type","Region","Local Authority","LA Code","Ethnicity","Ethnicity type","Gender","Gender_type","Value","Value_type","Denominator"
 "% of pupils reaching the key stage 1 expected standard in reading by ethnicity and gender","2015 - 2016","Academic year","North East","County Durham","E06000047","White","White/Asian/Black/Mixed/Chinese","All","All/Boys/Girls","75","%","5271"
 "% of pupils reaching the key stage 1 expected standard in reading by ethnicity and gender","2015 - 2016","Academic year","North East","Darlington","E06000005","White","White/Asian/Black/Mixed/Chinese","All","All/Boys/Girls","75","%","1212"
