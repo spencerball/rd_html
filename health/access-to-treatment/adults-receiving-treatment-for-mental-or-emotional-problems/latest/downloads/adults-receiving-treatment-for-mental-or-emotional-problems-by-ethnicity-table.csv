@@ -1,4 +1,4 @@
-"Title","The percentage of adults receiving treatment for mental or emotional problems by ethnicity"
+"Title","Adults receiving treatment for mental or emotional problems by ethnicity"
 "Location","England"
 "Time period","2014"
 "Data source","Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014"
@@ -7,7 +7,7 @@
 "Last updated","2014"
 
 "","No treatment","Medication only","Counselling or therapy only","Both medication and counselling","Any treatment "
-"","%","%","%","%","%"
+"[None]","%","%","%","%","%"
 "Asian","92.9","4.2","2.6","0.4","7.1"
 "Black","93.5","5.0","","1.5","6.5"
 "Mixed/Other","92.6","3.5","3.2","0.7","7.4"

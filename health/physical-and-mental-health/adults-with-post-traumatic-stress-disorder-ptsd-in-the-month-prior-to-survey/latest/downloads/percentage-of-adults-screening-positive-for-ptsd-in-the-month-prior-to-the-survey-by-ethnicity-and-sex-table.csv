@@ -1,4 +1,4 @@
-"Title","Percentage of adults who screened positive for PTSD in the month prior to the survey by ethnicity group and sex. "
+"Title","Percentage of adults screening positive for PTSD in the month prior to the survey by ethnicity and sex"
 "Location","England"
 "Time period","2014"
 "Data source","Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014"
@@ -7,7 +7,7 @@
 "Last updated","2014"
 
 "","All","Men","Women"
-"","","",""
+"Ethnicity","","",""
 "Asian","5.8","6.1","5.3"
 "Black","8.3","5.1","10.9"
 "Mixed/Other","5.8","5.4","6.2"
