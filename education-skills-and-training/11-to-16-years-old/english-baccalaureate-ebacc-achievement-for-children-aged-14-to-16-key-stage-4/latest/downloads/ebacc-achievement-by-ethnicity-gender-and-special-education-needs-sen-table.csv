@@ -1,4 +1,4 @@
-"Title","EBacc achievement by ethnicity, special education needs (SEN) and gender"
+"Title","EBacc achievement by ethnicity, gender and special education needs (SEN)"
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 4 statistics"
@@ -7,7 +7,7 @@
 "Last updated","19 January 2017 (revised)"
 
 "","All","","","Asian","","","Black","","","Chinese","","","Mixed","","","White","",""
-"","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls"
+"SEN","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls"
 "All SEN","5","4","7","7","5","8","5","3","7","12","10","15","6","5","8","5","4","7"
 "No identified SEN","28","23","33","35","28","41","26","20","33","55","47","63","31","26","35","27","22","32"
 "SEN Support","6","5","8","8","6","10","6","!","!","12","!","!","7","6","9","6","4","8"
