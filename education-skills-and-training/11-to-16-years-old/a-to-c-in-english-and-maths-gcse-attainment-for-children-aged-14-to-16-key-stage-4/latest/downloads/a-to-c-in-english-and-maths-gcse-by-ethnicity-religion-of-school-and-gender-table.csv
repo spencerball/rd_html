@@ -1,4 +1,4 @@
-"Title","A* to C in English and Maths GCSE by ethnicity, type of faith school and gender"
+"Title","A* to C in English and Maths GCSE by ethnicity, religion of school and gender"
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 4 statistics"
@@ -7,7 +7,7 @@
 "Last updated","19 January 2017 (revised)"
 
 "","All","","","Asian","","","Black","","","Chinese","","","Mixed","","","White","",""
-"","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls"
+"Religion of school","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls","All","Boys","Girls"
 "All state-funded mainstream schools","64","61","68","68","65","71","60","55","66","84","79","89","64","60","67","64","61","68"
 "Church of England schools","66","63","70","71","68","74","62","56","67","88","88","88","66","65","68","66","63","69"
 "Jewish schools","82","82","82","87","!","!","69","!","!","!","!","!","78","75","80","82","83","80"

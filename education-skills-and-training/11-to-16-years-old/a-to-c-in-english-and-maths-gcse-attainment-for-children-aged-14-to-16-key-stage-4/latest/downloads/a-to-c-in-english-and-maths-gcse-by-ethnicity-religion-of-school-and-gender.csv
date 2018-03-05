@@ -1,4 +1,4 @@
-"Title","A* to C in English and Maths GCSE by ethnicity, type of faith school and gender"
+"Title","A* to C in English and Maths GCSE by ethnicity, religion of school and gender"
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 4 statistics"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","19 January 2017 (revised)"
 
-"Standard Ethnicity","Religious character","All","Boys","Girls"
+"Standard Ethnicity","Religion of school","All","Boys","Girls"
 "All","All state-funded mainstream schools","64","61","68"
 "All","Church of England schools","66","63","70"
 "All","Jewish schools","82","82","82"
