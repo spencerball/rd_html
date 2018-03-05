@@ -1,4 +1,4 @@
-"Title","Reading, writing and maths attainments for children aged 7 to 11 by ethnicity and area"
+"Title","Reading, writing and maths attainment for children aged 7 to 11 by ethnicity and area"
 "Location","England"
 "Time period","2015/16"
 "Data source","Key stage 2 statistics"
@@ -6,7 +6,7 @@
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
 "Last updated","12/01/2017 (revised)"
 
-"","Local Authority","%"
+"Ethnicity","Local authority","%"
 "All","Barking and Dagenham","58"
 "All","Barnet","59"
 "All","Barnsley","53"
