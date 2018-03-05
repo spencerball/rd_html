@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/publications/a-level-attainment-by-pupil-characteristics"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","16 March 2017"
+"Last updated","16/03/2017"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Numerator ","Denominator","Value","","",""
 "16-18: Percentage of students achieving 3 A grades or better at A level","2016","Year","All students","All students","!","!","13.2","","",""
 "16-18: Percentage of students achieving 3 A grades or better at A level","2016","Year","Unmatched","Unmatched","10,273","40,203","25.6","","",""
