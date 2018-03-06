@@ -305,13 +305,14 @@ function validateData(data, categoryColumn, groupColumn) {
     var errors = [];
     var dataRows = _.clone(data);
     var headerRow = dataRows.shift();
+    var lowerHeaderRow = _.map(headerRow, function(m) { return m.trim().toLowerCase()})
 
-    var categoryIndex = getColumnIndex(headerRow, categoryColumn);
+    var categoryIndex = index_of_column_named(lowerHeaderRow, categoryColumn);
     if(categoryIndex === null) {
         return [{'error': 'could not find data column', 'column': categoryColumn, 'errorType': DATA_ERROR_SETTINGS_ERROR}]
     }
     if(groupColumn !== null) {
-        var groupIndex = getColumnIndex(headerRow, groupColumn);
+        var groupIndex = index_of_column_named(lowerHeaderRow, groupColumn);
         if(groupIndex === null) {
             return [{'error': 'could not find data column', 'column': groupColumn, 'errorType': DATA_ERROR_SETTINGS_ERROR}]
         } else {
@@ -326,12 +327,14 @@ function validateDataDuplicatesOnly(data, categoryColumn, groupColumn) {
     var errors = [];
     var dataRows = _.clone(data);
     var headerRow = dataRows.shift();
-    var categoryIndex = getColumnIndex(headerRow, categoryColumn);
+    var lowerHeaderRow = _.map(headerRow, function(m) { return m.trim().toLowerCase(); });
+    var categoryIndex = index_of_column_named(lowerHeaderRow, categoryColumn);
+
     if(categoryIndex === null) {
         return [{'error': 'could not find data column', 'column': categoryColumn}]
     }
     if(groupColumn !== null) {
-        var groupIndex = getColumnIndex(headerRow, groupColumn);
+        var groupIndex = index_of_column_named(lowerHeaderRow, groupColumn);
 
         if(groupIndex === null) {
             return [{'error': 'could not find data column', 'column': groupColumn}]
@@ -455,24 +458,15 @@ function errorResolutionHint(error) {
     }
 }
 
-function getColumnIndex(headerRow, column_name) {
-    var index = headerRow.indexOf(column_name);
-    if(index >= 0) {
-        return index;
-    } else {
-        return null;
-    }
-}
-
 // If we're running under Node - required for testing
 if(typeof exports !== 'undefined') {
     var _ = require('../charts/vendor/underscore-min');
     var dataTools = require('../charts/rd-data-tools');
+    var index_of_column_named = dataTools.index_of_column_named;
 
     exports.validateSimpleData = validateSimpleData;
     exports.validateGroupedData = validateGroupedData;
     exports.validateData = validateData;
-    exports.getColumnIndex = getColumnIndex;
     exports.DATA_ERROR_DUPLICATION = DATA_ERROR_DUPLICATION;
     exports.DATA_ERROR_MISSING_DATA = DATA_ERROR_MISSING_DATA;
     exports.DATA_ERROR_SETTINGS_ERROR = DATA_ERROR_SETTINGS_ERROR;
@@ -807,19 +801,19 @@ function isUndefinedOrNull(value) {
 }
 
 function getIndices(headerRow, category_column, secondary_column, parent_column, order_column, custom_column) {
-    var headersLower = _.map(headerRow, function(item) { return item.toLowerCase();});
+    var headersLower = _.map(headerRow, function(item) { return item.trim().toLowerCase();});
 
-    var category = isUndefinedOrNull(category_column) ? null: headersLower.indexOf(category_column.toLowerCase());
-    var order = isUndefinedOrNull(order_column) ? category : headersLower.indexOf(order_column.toLowerCase());
-    var parent = isUndefinedOrNull(parent_column) ? null: headersLower.indexOf(parent_column.toLowerCase());
-    var secondary = isUndefinedOrNull(secondary_column) ? null: headersLower.indexOf(secondary_column.toLowerCase());
-    var custom = isUndefinedOrNull(custom_column) ? null: headersLower.indexOf(custom_column.toLowerCase());
+    var category = isUndefinedOrNull(category_column) ? null: index_of_column_named(headersLower, category_column);
+    var order = isUndefinedOrNull(order_column) ? category : index_of_column_named(headersLower, order_column);
+    var parent = isUndefinedOrNull(parent_column) ? null: index_of_column_named(headersLower, parent_column);
+    var secondary = isUndefinedOrNull(secondary_column) ? null: index_of_column_named(headersLower, secondary_column);
+    var custom = isUndefinedOrNull(custom_column) ? null: index_of_column_named(headersLower, custom_column);
 
     return {
         'category': category >= 0 ? category : null,
         'order': order >= 0 ? order : null,
         'secondary': secondary >= 0 ? secondary : null,
-        'value': headersLower.indexOf('value'),
+        'value': index_of_column_named(headersLower, 'value'),
         'parent': parent >= 0 ? parent : null,
         'custom': custom >= 0 ? custom : null
     };
@@ -831,6 +825,7 @@ if(typeof exports !== 'undefined') {
     var dataTools = require('../charts/rd-data-tools');
     var builderTools = require('../cms/rd-builder');
 
+    var index_of_column_named = dataTools.index_of_column_named;
     var uniqueDataInColumnMaintainOrder = dataTools.uniqueDataInColumnMaintainOrder;
     var getColumnIndex = builderTools.getColumnIndex;
 
@@ -859,19 +854,21 @@ function buildTableObject(data, title, subtitle, footer, row_column, parent_colu
 function simpleTable(data, title, subtitle, footer, category_column, parent_column, data_columns, order_column, column_captions, first_column_caption) {
     var dataRows = _.clone(data);
     var headerRow = dataRows.shift();
+    var lowHeaders = _.map(headerRow, function(m) { return m.trim().toLowerCase(); })
 
-    var columnIndex = headerRow.indexOf(category_column);
-    var data_column_indices = _.map(data_columns, function(data_column) { return headerRow.indexOf(data_column); });
+    // var columnIndex = headerRow.indexOf(category_column);
+    var columnIndex = index_of_column_named(lowHeaders, category_column);
+    var data_column_indices = _.map(data_columns, function(data_column) { return index_of_column_named(lowHeaders, data_column); });
 
     var parentIndex = columnIndex;
     var hasParentChild = false;
     if(parent_column && parent_column !== NONE_VALUE) {
-        parentIndex = headerRow.indexOf(parent_column);
+        parentIndex = index_of_column_named(lowHeaders, parent_column);
         hasParentChild = true;
     }
 
     if(order_column && order_column !== NONE_VALUE) {
-        var sortIndex = headerRow.indexOf(order_column);
+        var sortIndex = index_of_column_named(lowHeaders, order_column);
     }
 
     var tableData = _.map(dataRows, function(item, index) {
@@ -932,6 +929,7 @@ function simpleTable(data, title, subtitle, footer, category_column, parent_colu
         'category_caption': first_column
     };
 }
+
 
 function buildDataObjects(group_values, dataRows, group_column_index, columnIndex, hasParentChild, parentIndex, sortIndex, DEFAULT_SORT, data_column_indices) {
     return _.map(group_values, function (group) {
@@ -1006,26 +1004,27 @@ function groupedTable(data, title, subtitle, footer,  category_column, parent_co
     var DEFAULT_SORT = -2;
     var data_by_row = _.clone(data);
     var headerRow = data_by_row.shift();
+    var lowHeaders = _.map(headerRow, function(m) { return m.trim().toLowerCase(); })
 
 
     // ------------------- FIND INDICES FOR THE COLUMNS --------------------------
 
-    var columnIndex = headerRow.indexOf(category_column);
-    var data_column_indices = _.map(data_columns, function(data_column) { return headerRow.indexOf(data_column); });
+    var columnIndex = index_of_column_named(lowHeaders, category_column);
+    var data_column_indices = _.map(data_columns, function(data_column) { return index_of_column_named(lowHeaders, data_column); });
 
-    var group_column_index = headerRow.indexOf(group_column);
+    var group_column_index = index_of_column_named(lowHeaders, group_column);
 
     var sortIndex = DEFAULT_SORT;
     if (order_column === null) {
         sortIndex = columnIndex;
     } else if(order_column !== NONE_VALUE) {
-        sortIndex = headerRow.indexOf(order_column);
+        sortIndex = index_of_column_named(lowHeaders, order_column);
     }
 
     var parentIndex = columnIndex;
     var hasParentChild = false;
     if(parent_column && parent_column !== NONE_VALUE) {
-        parentIndex = headerRow.indexOf(parent_column);
+        parentIndex = index_of_column_named(lowHeaders, parent_column);
         hasParentChild = true;
     }
 
@@ -1433,7 +1432,8 @@ if(typeof exports !== 'undefined') {
     var seriesCouldBeYear = dataTools.seriesCouldBeYear;
     var formatNumberWithDecimalPlaces = dataTools.formatNumberWithDecimalPlaces;
     var getColumnIndex = builderTools.getColumnIndex;
-
+    var index_of_column_named = dataTools.index_of_column_named;
+    
     exports.buildTableObject = buildTableObject;
     exports.simpleTable = simpleTable;
     exports.groupedTable = groupedTable;
