@@ -1,0 +1,13 @@
+"Title","NHS trust board members by ethnicity and area"
+"Location","England"
+"Time period","2017"
+"Data source","Workforce Race Equality Standard (WRES) data reporting"
+"Data source link","https://www.england.nhs.uk/publication/workforce-race-equality-standard-data-reporting-december-2017/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Last updated","12/2017"
+
+"","All","London","Midlands & East","North","South"
+"Ethnicity","%","%","%","%","%"
+"White","88","84","88","90","90"
+"Other","7","14","7","6","4"
+"Unknown","5","3","5","4","6"
