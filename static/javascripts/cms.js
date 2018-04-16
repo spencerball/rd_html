@@ -1457,7 +1457,7 @@ function simpleHtmlTable(container_id, tableObject) {
 
     var table_html = "";
     table_html = appendTableTitle(table_html, tableObject);
-    table_html = appendTableSubtitle(table_html, tableObject);
+    table_html = appendTableSubtitle(table_html, tableObject, true);
 
     table_html = table_html + "<table class='table table-sm'>";
     table_html = appendSimpleTableHeader(table_html, tableObject);
@@ -1473,7 +1473,7 @@ function groupedHtmlTable(container_id, tableObject) {
 
     var table_html = "";
     table_html = appendTableTitle(table_html, tableObject);
-    table_html = appendTableSubtitle(table_html, tableObject);
+    table_html = appendTableSubtitle(table_html, tableObject, true);
 
     table_html = table_html + "<table class='table table-sm'>";
     table_html = appendGroupTableHeader(table_html, tableObject);
@@ -1559,8 +1559,8 @@ function insertTableFooter(table_html, tableObject) {
     }
 }
 
-function appendTableSubtitle(table_html, tableObject) {
-    if(tableObject.subtitle && tableObject.subtitle !== '') {
+function appendTableSubtitle(table_html, tableObject, hidden) {
+    if(tableObject.subtitle && tableObject.subtitle !== '' && hidden !== true) {
         return table_html + "<div class='table-subtitle'>" + tableObject.subtitle + "</div>";
     } else {
         return table_html;
