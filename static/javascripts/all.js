@@ -75,6 +75,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     }
   }
 })();
+
 // Function.prototype.bind
 //
 // A polyfill for Function.prototype.bind. Which lets you bind a defined
@@ -356,6 +357,7 @@ if (objCtr.defineProperty) {
 }());
 
 }
+
 // <details> polyfill
 // http://caniuse.com/#feat=details
 
@@ -596,6 +598,7 @@ if (Object.defineProperty
    );
   })();
 }
+
 (function () {
   "use strict"
   var root = this;
@@ -854,6 +857,7 @@ if (
 
 }
 
+
 /* Second contact details
 
   This hides a set of 'second contact' fields behind
@@ -926,6 +930,7 @@ if (
 
 }
 
+
 function showDeleteForm(measure) {
     document.getElementById('measure-action-section-' + measure).style.display = 'none';
     document.getElementById('measure-action-section__delete-' + measure).style.display = 'block';
@@ -949,6 +954,7 @@ function hideDeleteForm(measure) {
     document.getElementById('measure-action-section-' + measure).style.display = 'block';
     return false;
 }
+
 document.addEventListener('DOMContentLoaded', function() {
 
   var detailsElements = document.getElementsByTagName('DETAILS');
@@ -971,6 +977,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 })
+
 // Function for making table rows reorerable.
 //
 // Initialise with a reference to a table element, eg
@@ -1276,6 +1283,7 @@ if (
   })
 
 }
+
 function SortableTable(table, header_table, options) {
 
   // First do feature detection for required API methods
@@ -1605,6 +1613,7 @@ SortableTable.prototype.getCellValue = function(cell) {
 
   return cellValue
 }
+
 function TableWithFixedHeader(outerTableElement) {
 
   var outerTableElement = outerTableElement
@@ -1712,6 +1721,7 @@ function TableWithFixedHeader(outerTableElement) {
 
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
 
   var printLinks = document.querySelectorAll('.js--print');
@@ -1726,6 +1736,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 })
+
 
 if ('addEventListener' in document &&
     document.querySelectorAll
@@ -1765,4 +1776,5 @@ if ('addEventListener' in document &&
   })
 
 }
+
 //# sourceMappingURL=all.js.map
