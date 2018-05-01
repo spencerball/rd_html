@@ -1091,7 +1091,7 @@ function adjustChartObjectForMissingData(chartObject) {
 }
 
 function htmlContentForMissingDataSymbol(symbol) {
-    switch (symbol.strip()) {
+    switch (symbol.trim()) {
         case 'N/A':
             return 'N/A<sup>*</sup>';
         default:
@@ -1101,7 +1101,7 @@ function htmlContentForMissingDataSymbol(symbol) {
 
 function classNameForMissingDataSymbol(symbol) {
 
-    switch (symbol.strip()) {
+    switch (symbol.trim()) {
         case '!':
             return 'missing-data confidential';
         case '?':
