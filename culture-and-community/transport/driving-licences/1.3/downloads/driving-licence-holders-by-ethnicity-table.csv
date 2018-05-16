@@ -1,10 +1,10 @@
 "Title","Driving licence holders by ethnicity"
 "Location","England"
-"Time period","2002/06 to 2012/16 (5-year rolling average)"
+"Time period","2002/06 to 2011/15 (5-year rolling average)"
 "Data source","National Travel Survey"
 "Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","18 January 2018"
+"Last updated",""
 
 "","All","Asian","Black","Mixed","White","Other"
 "Time","%","%","%","%","%","%"
@@ -18,4 +18,3 @@
 "2009/13","73","60","50","56","75","56"
 "2010/14","73","60","51","56","75","59"
 "2011/15","73","60","52","57","75","58"
-"2012/16","73","61","53","60","75","59"
