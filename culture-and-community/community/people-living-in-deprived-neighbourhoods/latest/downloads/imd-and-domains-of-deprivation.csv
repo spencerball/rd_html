@@ -4,7 +4,7 @@
 "Data source","Ministry of Housing, Communities and Local Government"
 "Data source link","https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","2018-03-16"
+"Last updated","2018-05-30"
 "Measure","Domain","decile_label","Ethnicity","Ethnicity_type","Value","Value_type","Numerator","Denominator"
 "Percentage of people living in these neighbourhoods","Index of Multiple Deprivation","10% most deprived","White: All","ONS 2011 18+1","8.70","%","3940359","45281142"
 "Percentage of people living in these neighbourhoods","Index of Multiple Deprivation","10% most deprived","White: British","ONS 2011 18+1","8.63","%","3648558","42279236"
