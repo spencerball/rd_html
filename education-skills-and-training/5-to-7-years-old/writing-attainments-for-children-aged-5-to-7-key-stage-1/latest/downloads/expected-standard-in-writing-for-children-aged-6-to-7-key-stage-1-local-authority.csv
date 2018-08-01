@@ -4,7 +4,7 @@
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2017"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk/"
-"Last updated","2018-05-04"
+"Last updated","2018-08-01"
 "Measure","Ethnicity","Ethnicity_Type","Time","Time_Type","Region","Local_Authority","Local_Authority_Code","Gender","Value","Value_Type","Denominator"
 "Percentage of pupils reaching the key stage 1 expected standard in writing","All","ONS 2001 5+1","2015/2016","Academic year","East","Essex","E10000012","All","68","%","16466"
 "Percentage of pupils reaching the key stage 1 expected standard in writing","All","ONS 2001 5+1","2015/2016","Academic year","East","Thurrock","E06000034","All","68","%","2397"
