@@ -3,7 +3,7 @@
 "Time period","2015/16"
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/graduate-outcomes-2015-to-2016"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-06-28"
 "Measure","tax_year","academic_year","years after graduation","ethnicity","ethnicity_type","destination","value","value_type"
 "Percentage of graduates by destination after higher education","2015/2016","2013/2014","1","Asian or Asian British - Bangladeshi","LEO","activity not captured","4.5","%"

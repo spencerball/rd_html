@@ -3,7 +3,7 @@
 "Time period","2004 to 2016"
 "Data source","Department for Work and Pensions"
 "Data source link","https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/qmis/annualpopulationsurveyapsqmi"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-01-26"
 "DATE","ECON_STATUS","LOCAL_AUTHORITY","ETHNICITY","AGE_GROUP","NUMERATOR","DENOMINATOR","SAMP_SIZE","RATE","CONFIDENCE_INTERVAL","SUPRESS"
 "Jan04-Dec04","Employed","All","All","16-64","27,057,872","37,248,303","315,222","72.6","0.2",""

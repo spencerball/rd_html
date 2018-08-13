@@ -3,7 +3,7 @@
 "Time period","2011/12 to 2016/17"
 "Data source","NHS Digital"
 "Data source link","https://indicators.hscic.gov.uk/webview/index.jsp?v=2&submode=ddi&study=http%3A%2F%2F192.168.229.23%3A80%2Fobj%2FfStudy%2FP01771&mode=documentation&top=yes"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-04"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Value","Value type","Denominator","Numerator","Lower bound","Upper bound","Unweighted Respondents","Note"
 "Patient experience of primary care - GP services","2016/17","January 2017 to March 2017","All","ONS 18+1","England","84.8","%","794943.5","673978","84.7","84.9","794417",""

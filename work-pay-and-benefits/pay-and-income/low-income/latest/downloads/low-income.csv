@@ -3,7 +3,7 @@
 "Time period","2011/12 to 2014/15"
 "Data source","Department for Work and Pensions"
 "Data source link","https://www.gov.uk/government/statistics/income-dynamics-experimental"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-04"
 "Measure","Time","Time_type","Ethnicity of household reference person","Ethnicity_type","Geography","Geography_type","Gender","Gender_type","Age Bracket","Age Bracket Type","Value","Denominator","Numerator","Upper bound","Lower bound","Note"
 "Percentage in persistent low income (based on 60% of median income, Before Housing Costs)","2011-2015","Four survey periods","Cases available for analysis by Ethnicity","ONS 5+2","K02000001","ONS geography code","All","All","All","All/Children/Working-age adults/pensioners","9","40,724","","","",""

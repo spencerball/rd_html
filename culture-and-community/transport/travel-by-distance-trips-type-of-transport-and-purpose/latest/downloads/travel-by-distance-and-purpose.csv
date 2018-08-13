@@ -3,7 +3,7 @@
 "Time period","2002/06 to 2011/15 (5-year rolling average)"
 "Data source","Department for Transport"
 "Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-01"
 "Measure","Time","Time_Type","Ethnicity","Ethnicity_Type","Trip_Purpose","Value","Weighted_Sample_Trips","Unweighted_Sample_Trips","Weighted_Sample_Individuals","Unweighted_Sample_Individuals","Weighted_Sample_Distance","Unweighted_Sample_Distance"
 "Average distance per year by trip purpose","2002-2006","5-year rolling average","All ethnic groups","National Travel Survey broad ethnicity classification","All Purposes","7141","1655375","1551557","82950","81145","11360966","10590311"

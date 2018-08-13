@@ -3,7 +3,7 @@
 "Time period","2014 and 2015"
 "Data source","Public Health England"
 "Data source link","http://www.phoutcomes.info/public-health-outcomes-framework#page/7/gid/1000042/pat/15/par/E92000001/ati/6/are/E12000004/iid/91477/age/164/sex/4"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-01-15"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","Unweighted sample size"
 "Percentage of the population meeting the recommended '5-a-day' on a 'usual day' (adults)","2014","Calendar year","All","All ethnicity","E92000001","ONS geography code","53.5","%","53.73741978","53.2443846","159206"

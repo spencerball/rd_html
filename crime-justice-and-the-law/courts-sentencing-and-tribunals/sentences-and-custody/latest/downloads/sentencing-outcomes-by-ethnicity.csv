@@ -3,7 +3,7 @@
 "Time period","2009 to 2016"
 "Data source","Ministry of Justice"
 "Data source link","https://www.gov.uk/government/collections/criminal-justice-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-02"
 "Measure","Time","Time_type","Ethnicity","Outcome","Number sentenced","Denominator","Value"
 "Sentencing outcomes by ethnicity","2016","Year","White","Immediate custody","48902","157600","31%"

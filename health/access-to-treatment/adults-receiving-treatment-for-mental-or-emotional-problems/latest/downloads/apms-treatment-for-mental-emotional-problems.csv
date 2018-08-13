@@ -3,7 +3,7 @@
 "Time period","2014"
 "Data source","NHS Digital"
 "Data source link","http://content.digital.nhs.uk/catalogue/PUB21748"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-04"
 "Measure","Time","Time_type","Geography","Ethnicity","Ethnicity_type","Treatment","Treatment_type","Value","Value type","Value Note","Lower CI","Upper CI","unweighted sample size"
 "Treatment for mental or emotional problem","2014","Year","England","Asian","5","No treatment","No treatment","92.9","%","","88.9","95.5","357"

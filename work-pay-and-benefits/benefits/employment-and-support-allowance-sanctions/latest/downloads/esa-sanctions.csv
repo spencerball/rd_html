@@ -3,7 +3,7 @@
 "Time period","February 2013 to November 2016"
 "Data source","Department for Work and Pensions"
 "Data source link","https://stat-xplore.dwp.gov.uk/webapi/jsf/login.xhtml"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-05"
 "Date","Date type","Region","Region type","Age","Age type","Ethnicity","Ethnicity type","Numerator","Numerator type","Denominator","Denominator type","Rate","Rate type","Suppression","Suppression type"
 "February 2010","Month","All","Great Britain","18-24","Age range of individuals sanctioned","All","All","697","Number of adverse sanction decisions applied to individuals matching geographic, ethnicity and age status","9,820","Number of ESA claimants matching geographic, ethnicity and age status ","7.1","Sanctions per 100 people ( (Numerator / Denominator) x 100) )","","Disclosure control has been applied to this  to avoid the release of confidential data."

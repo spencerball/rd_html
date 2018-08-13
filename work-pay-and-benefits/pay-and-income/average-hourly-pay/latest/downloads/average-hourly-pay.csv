@@ -3,7 +3,7 @@
 "Time period","2013 to 2016"
 "Data source","Department for Business, Energy & Industrial Strategy"
 "Data source link","https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=59"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-02-20"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Value","Denominator (weighted)","Denominator (unweighted)","","Numerator","Upper bound","Lower bound","Notes"
 "Average Hourly Pay","Apr-Jun 2013","Quarter","All","ONS defined grouping (consistent with NOMIS)","£13.09","25183315","10010","","NA","NA","NA",""

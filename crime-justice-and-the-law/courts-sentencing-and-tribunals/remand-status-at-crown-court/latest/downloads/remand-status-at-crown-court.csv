@@ -3,7 +3,7 @@
 "Time period","2012 to 2016"
 "Data source","Ministry of Justice"
 "Data source link","https://www.gov.uk/government/statistics/criminal-justice-system-statistics-quarterly-september-2016"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2017-10-10"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Gender","Gender_type","Age Group","Age Group Type","Remand status","Value","Denominator","Numerator"
 "Percentage of defendants with each remand status at the Crown Court","2012","Year","White","ONS 5+1 2001","Male","Male/Female/Not stated/All","Juveniles","Juveniles/Young Adults/Adults/All","Not remanded","3.5","1284","45"

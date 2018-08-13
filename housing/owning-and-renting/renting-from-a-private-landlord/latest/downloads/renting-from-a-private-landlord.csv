@@ -3,7 +3,7 @@
 "Time period","2014/15 and 2015/16 (combined)"
 "Data source","Ministry of Housing, Communities and Local Government"
 "Data source link","https://www.gov.uk/government/collections/english-housing-survey"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-02-23"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Age group","Age group type","NS-SEC group","Income band","Region","Value"," Denominator "," Numerator ","Sample size"
 "% of households in England who privately rent their own home","2014-15 and 2015-16","Two years","White - British","ONS 18 + 1","England","England as a whole","All","All","All","All","All","15.9","18808000","2995000","22463"

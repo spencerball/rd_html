@@ -3,7 +3,7 @@
 "Time period","2006 to 2017"
 "Data source","Department for Education"
 "Data source link","https://www.ucas.com/corporate/data-and-analysis/ucas-undergraduate-releases/ucas-undergraduate-analysis-reports/2017-end-cycle-report"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-05-11"
 "measure","time","time_type","ethnicity","ethnicity_type","geography","value","value_type"
 "Percentage of 18-year-old state school pupils getting a higher education place","2006","Year","Other","ONS 2001 5+1","England","27","%"

@@ -3,7 +3,7 @@
 "Time period","2006/07 to 2016/17"
 "Data source","Ministry of Housing, Communities and Local Government"
 "Data source link","https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness#homelessness-summary-local-authority-level-tables"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-04-26"
 "Measure","Time","Time_Type","Ethnicity","Ethnicity_type","Geography","Geography_type","Geography_name","Value","Denominator","Numerator"
 "Percentage of people who were accepted as being statutorily homeless","2006/07","Financial Year","Other","White, Other","E92000001","Country","England","21","73360","15120"

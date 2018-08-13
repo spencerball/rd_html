@@ -3,7 +3,7 @@
 "Time period","2014/15"
 "Data source","Public Health England"
 "Data source link","http://www.phoutcomes.info/"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-01-17"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","Unweighted sample size"
 "Proportion of the population meeting the recommended ""5-a-day"" at age 15 ","2014/15","Financial year","White","Other","E92000001","ONS geography code","51.1","%","51.3","50.8","90626"

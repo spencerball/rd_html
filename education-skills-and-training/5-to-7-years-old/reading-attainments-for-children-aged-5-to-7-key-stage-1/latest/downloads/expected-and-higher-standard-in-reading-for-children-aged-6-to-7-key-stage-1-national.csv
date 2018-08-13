@@ -3,7 +3,7 @@
 "Time period","2016/17"
 "Data source","Department for Education"
 "Data source link","https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2017"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-08-01"
 "Measure","Ethnicity","Ethnicity_Type","Time","Time_Type","Geography","Geography_Code","Gender","FSM","Value","Value_Type","Denominator"
 "Percentage of pupils reaching the key stage 1 expected standard in reading","All","ONS 2001 16+1 plus Irish Traveller and Gypsy/Roma","2015/2016","Academic year","England","E92000001","All","All","74","%","641593"

@@ -3,7 +3,7 @@
 "Time period","2012 to 2015"
 "Data source","Public Health England"
 "Data source link","http://www.phoutcomes.info/"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-02"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Lower confidence interval (%)","Upper confidence interval (%)","Unweighted sample size"
 "Percentage of adults who smoke - current smokers","2012","Calendar year","White","White/Mixed/Asian/Black/Chinese/Other/Unknown","E92000001","ONS geography code","20.1","%","19.9","20.3","154514"

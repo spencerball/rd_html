@@ -3,7 +3,7 @@
 "Time period","2012 to 2016"
 "Data source","Office for National Statistics"
 "Data source link","https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/datasets/measuringnationalwellbeinghappiness"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-02"
 "Measure","Year","Ethnicity","Sex","NS-SEC","Threshold","Mean","Percentage","Upper Confidence Interval","Lower Confidence Interval","Sample Size"
 "Happiness","2012","Arab","All","All","All","6.88","N/A","7.21","6.55","350"

@@ -3,7 +3,7 @@
 "Time period","2014, 2015 and 2016 (combined)"
 "Data source","Office for National Statistics"
 "Data source link","https://www.ons.gov.uk/aboutus/whatwedo/paidservices/virtualmicrodatalaboratoryvml"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-15"
 "Measure","Ethnicity","Ethnicity_type","Time","Time_type","Geography_type","Age","Employment Status","Sex","Value","Upper 95% C.I.","Lower 95% C.I.","Value_type","Unknown Note"
 "% of 16-24 year olds not in Employment, Education or Training, for interviews carried out at any time during the three-year period 2014-2016","All","ONS 2011 18+1","2014-2016","3 years","United Kingdom","16-24","All","All","12.8","13.1","12.5","%","This data includes people with unknown ethnicity, they have been included in the numerator and denominator and the value reflects a proportion or percentage of the total 16-24 population"

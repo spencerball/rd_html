@@ -3,7 +3,7 @@
 "Time period","2012 to 2014 and 2013 to 2015 (combined)"
 "Data source","Public Health England"
 "Data source link","http://www.phoutcomes.info/"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-01-17"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","Unweighted sample size"
 "Percentage of adults who were overweight","2012 - 14","3 year aggregated","White","White/Mixed/Asian/Black/Chinese/Other","E92000001","ONS geography code","65.7","%","65.9","65.6","396645"

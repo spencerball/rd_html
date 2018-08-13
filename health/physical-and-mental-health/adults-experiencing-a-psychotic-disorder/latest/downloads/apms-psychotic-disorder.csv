@@ -3,7 +3,7 @@
 "Time period","2007 and 2014"
 "Data source","NHS Digital"
 "Data source link","http://content.digital.nhs.uk/catalogue/PUB21748"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-04"
 "Measure","Time","Time_type","Geography","Ethnicity","Ethnicity_type","Sex","Sex_type","Value","Value type","Value Note","Lower CI","Upper CI","unweighted sample size"
 "Psychotic Disorder","2007 and 2014 combined","Year","England","White","4","All","Men/Women/All","0.5","%","","0.40%","0.70%","13,290"

@@ -3,7 +3,7 @@
 "Time period","2002/06 to 2011/15 (5-year rolling average)"
 "Data source","Department for Transport"
 "Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-01"
 "Measure","Time","Time_Type","Ethnicity","Ethnicity_Type","Main_Mode_of_Transport","Value","Weighted_Sample_Trips","Unweighted_Sample_Trips",""
 "Mode of travel to school (% of trips by children aged 5 to 16 using each mode)","2002-2006","5-year rolling average","All ethnic groups","National Travel Survey broad ethnicity classification","All modes","100","80431","81224",""

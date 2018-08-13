@@ -3,7 +3,7 @@
 "Time period","2009 to 2016"
 "Data source","Ministry of Justice"
 "Data source link","https://www.gov.uk/government/collections/criminal-justice-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-02"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Gender","Gender_type","Age Group","Age Group Type","Value","Denominator","Numerator"
 "Percentage of defendants convicted","2009","Year","Asian","ONS 5+1 2001","All","Male/Female/Not known/All","Adults","Juveniles/Adults/All","72","16856","12130"

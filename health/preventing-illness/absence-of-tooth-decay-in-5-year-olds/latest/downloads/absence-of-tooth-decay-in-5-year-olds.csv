@@ -3,7 +3,7 @@
 "Time period","2014/15"
 "Data source","Public Health England"
 "Data source link","https://fingertips.phe.org.uk/profile/public-health-outcomes-framework"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-01-10"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value type","Denominator","Numerator","Upper bound","Lower bound","Note"
 "Proportion of five year old children free from dental decay ","2014/15","Academic year","White","ONS 2001 6+1","E92000001","ONS geography code","78.1","%","82162","64134","78.3","77.8",""

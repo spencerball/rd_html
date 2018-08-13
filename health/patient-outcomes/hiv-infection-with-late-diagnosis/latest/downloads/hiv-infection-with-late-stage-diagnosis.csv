@@ -3,7 +3,7 @@
 "Time period","2009 to 2016"
 "Data source","Public Health England"
 "Data source link","https://fingertips.phe.org.uk/profile/public-health-outcomes-framework"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-07-05"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography_code","Geography_name","Geography_type","Value","Value_type","Numerator","Denominator","Lower confidence interval","Upper confidence interval"
 "Percentage of people aged 15 or older newly diagnosed with HIV who were diagnosed at a late stage","2009 - 11","3 year aggregated","All","All","E92000001","England","ONS geography code","50.14933298","%","7556","15067","49.02","51.29"

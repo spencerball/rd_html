@@ -3,7 +3,7 @@
 "Time period","2016"
 "Data source","Department for Education"
 "Data source link","https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt%3D3%26theme%3D%26subgrp%3D&sa=D&ust=1505757273319000&usg=AFQjCNFnS64ZDSibYXaOTf54ZPpw97wNXg"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-04"
 "Measure","Time","Time_type","Georgraphy","Geography_type","Gender","Gender_type","Age Bracket","Age Bracket Type","Highest qualification held","Qualification_type","Ethnicity","Ethnicity_type","Value","Numerator","Denominator","Unweighted sample base","upper 95%","lower 95%"
 "Unemployment","2012","Year","K03000001","ONS geography code","Male","Male/Female/All","16-64","Labour force age brackets","Level 4 and above","National Qualifications Framework (NQF) level","White","ONS 5+1","3%","178787","5258672","23895","3.60%","3.20%"

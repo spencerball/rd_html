@@ -3,7 +3,7 @@
 "Time period","2014/15"
 "Data source","NHS Digital"
 "Data source link","http://content.digital.nhs.uk/mhldsreports"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk/"
+"Source","https://www.ethnicity-facts-figures.service.gov.uk"
 "Last updated","2018-03-08"
 "Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Value","Value type","Lower CI","Upper CI","Numerator"
 "Number of people (per 100000) in contact with NHS funded adult secondary mental health and learning disability services","2014/15","April 2014 to March 2015","All","16+1","England","3616.6","per 100,000","3611","3622.2","1,507,250"
