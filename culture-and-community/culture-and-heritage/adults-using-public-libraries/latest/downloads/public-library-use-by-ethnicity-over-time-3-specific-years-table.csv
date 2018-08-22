@@ -1,4 +1,4 @@
-"Title","People visiting a heritage site in the past year, by ethnicity over time (3 specific years)"
+"Title","Public library use by ethnicity over time (3 specific years)"
 "Location","England"
 "Time period","2005/06, 2010/11 and 2015/16"
 "Data source","Taking Part survey"
@@ -8,6 +8,6 @@
 
 "","All","","Asian","","Black","","White","","Other",""
 "Year","%","Number of respondents","%","Number of respondents","%","Number of respondents","%","Number of respondents","%","Number of respondents"
-"2005/06","70","28,117","51","2,080","41","1,322","72","24,038","60","645"
-"2010/11","71","14,102","55","796","45","423","73","12,617","64","238"
-"2015/16","73","10,171","60","434","52","242","75","9,312","57","174"
+"2005/06","48","28,117","59","2,080","57","1,322","47","24,038","55","645"
+"2010/11","40","14,102","50","796","51","423","38","12,617","48","238"
+"2015/16","33","10,171","47","434","48","242","32","9,312","40","174"
