@@ -1,6 +1,8 @@
 {
   "all.js": "all-ae502aa6ae.js",
-  "charts.js": "charts-4da3e82dc0.js",
-  "cms.js": "cms-3f4a2b65ae.js",
-  "cms_autosave.js": "cms_autosave-a61eb6e653.js"
+  "chartbuilder2.js": "chartbuilder2-fdd5735c67.js",
+  "charts.js": "charts-cf9ae4920f.js",
+  "cms.js": "cms-7a0e1216ea.js",
+  "cms_autosave.js": "cms_autosave-a61eb6e653.js",
+  "tablebuilder2.js": "tablebuilder2-f678f43d49.js"
 }
