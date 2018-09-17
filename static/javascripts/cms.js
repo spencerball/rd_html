@@ -35,27 +35,6 @@ if ('addEventListener' in document) {
   });
 }
 
-
-function collapsibleTableBodies(table) {
-
-  var headers = table.querySelectorAll('.header');
-
-  for (var i = 0; i < headers.length; i++) {
-
-    var header = headers[i];
-
-    if (!header.classList.contains('empty')) {
-      header.addEventListener('click', function(event) {
-        var tbody = event.target.parentElement.parentElement
-        tbody.classList.toggle('collapsed')
-      })
-    }
-  }
-
-}
-
-
-
 function ethnicityDataValueFields(fieldset) {
 
   var fieldset = fieldset;
@@ -1141,12 +1120,12 @@ var NONE_VALUE = '[None]';
 // PUBLIC
 // ---------------------------------------------------------------------------
 
-function buildTableObject(data, title, subtitle, footer, row_column, parent_column, group_column, order_column, data_columns, column_captions, first_column_caption, group_order_column) {
+function buildTableObject(data, title, subtitle, footer, row_column, parent_column, group_column, order_column, data_columns, column_captions, index_column_caption, group_order_column) {
     var table = null;
     if(!group_column || group_column === NONE_VALUE) {
-        table = simpleTable(data, title, subtitle, footer, row_column, parent_column, data_columns, order_column, column_captions, first_column_caption);
+        table = simpleTable(data, title, subtitle, footer, row_column, parent_column, data_columns, order_column, column_captions, index_column_caption);
     } else {
-        table = groupedTable(data, title, subtitle, footer, row_column, parent_column, group_column, data_columns, order_column, column_captions, first_column_caption, group_order_column);
+        table = groupedTable(data, title, subtitle, footer, row_column, parent_column, group_column, data_columns, order_column, column_captions, index_column_caption, group_order_column);
     }
     return preProcessTableObject(table);
 }
@@ -1170,12 +1149,11 @@ function preProcessTableObject(tableObject) {
 // SIMPLE TABLE
 // ---------------------------------------------------------------------------
 
-function simpleTable(data, title, subtitle, footer, category_column, parent_column, data_columns, order_column, column_captions, first_column_caption) {
+function simpleTable(data, title, subtitle, footer, category_column, parent_column, data_columns, order_column, column_captions, index_column_caption) {
     var dataRows = _.clone(data);
     var headerRow = dataRows.shift();
     var lowHeaders = _.map(headerRow, function(m) { return m.trim().toLowerCase(); })
 
-    // var columnIndex = headerRow.indexOf(category_column);
     var columnIndex = index_of_column_named(lowHeaders, category_column);
     var data_column_indices = _.map(data_columns, function(data_column) { return index_of_column_named(lowHeaders, data_column); });
 
@@ -1234,7 +1212,7 @@ function simpleTable(data, title, subtitle, footer, category_column, parent_colu
         tableData = adjustSimpleTableDataForParents(tableData);
     }
 
-    var first_column = first_column_caption == null ? category_column : first_column_caption;
+    var index_column = index_column_caption == null ? category_column : index_column_caption;
 
     return {
         'type':'simple',
@@ -1245,7 +1223,7 @@ function simpleTable(data, title, subtitle, footer, category_column, parent_colu
         'category':category_column,
         'columns': column_captions,
         'data': tableData,
-        'category_caption': first_column
+        'category_caption': index_column
     };
 }
 
@@ -1372,7 +1350,7 @@ function reorderSimpleTableDataForParentChild(tableData) {
 // GROUPED TABLE
 // ---------------------------------------------------------------------------
 
-function groupedTable(data, title, subtitle, footer,  category_column, parent_column, group_column, data_columns, order_column, column_captions, first_column_caption, group_order_column) {
+function groupedTable(data, title, subtitle, footer,  category_column, parent_column, group_column, data_columns, order_column, column_captions, index_column_caption, group_order_column) {
     var DEFAULT_SORT = -2;
     var data_by_row = _.clone(data);
     var headerRow = data_by_row.shift();
@@ -1425,7 +1403,7 @@ function groupedTable(data, title, subtitle, footer,  category_column, parent_co
 
 
     // --------------------- COMPLETE THE TABLE OBJECT --------------------------
-    var first_column = first_column_caption == null ? category_column : first_column_caption;
+    var index_column = index_column_caption == null ? category_column : index_column_caption;
 
     return {
         'group_columns': group_columns,
@@ -1439,7 +1417,7 @@ function groupedTable(data, title, subtitle, footer,  category_column, parent_co
         'footer':footer,
         'groups': data_items_by_group,
         'parent_child': hasParentChild,
-        'category_caption': first_column
+        'category_caption': index_column
     };
 }
 

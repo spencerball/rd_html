@@ -919,6 +919,26 @@ if (
 
 }
 ;
+
+function collapsibleTableBodies(table) {
+
+  var headers = table.querySelectorAll('.header');
+
+  for (var i = 0; i < headers.length; i++) {
+
+    var header = headers[i];
+
+    if (!header.classList.contains('empty')) {
+      header.addEventListener('click', function(event) {
+        var tbody = event.target.parentElement.parentElement
+        tbody.classList.toggle('collapsed')
+      })
+    }
+  }
+
+}
+
+;
 function showDeleteForm(measure) {
     document.getElementById('measure-action-section-' + measure).style.display = 'none';
     document.getElementById('measure-action-section__delete-' + measure).style.display = 'block';
@@ -1323,11 +1343,12 @@ SecondarySource.prototype.addSourceButtonClicked = function(event) {
 
 SecondarySource.prototype.removeSourceButtonClicked = function(event) {
 
-  var fields = this.fieldset.querySelectorAll('input, textarea')
+  var fields = this.fieldset.querySelectorAll('input, textarea, option')
 
   for (var i = 0; i < fields.length; i++) {
     fields[i].value = ""
-    fields[i].checked = false
+    fields[i].removeAttribute('checked')
+    fields[i].removeAttribute('selected')
   };
 
   this.setHidden(true)
