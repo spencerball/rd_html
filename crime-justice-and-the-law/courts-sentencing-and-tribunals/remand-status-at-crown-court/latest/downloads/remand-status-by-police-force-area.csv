@@ -4,7 +4,7 @@
 "Data source","Ministry of Justice"
 "Data source link","https://www.gov.uk/government/collections/criminal-justice-statistics"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","2018-10-02"
+"Last updated","2018-10-08"
 "Measure","Year","Sex","Age Group","Ethnicity","Remand Status","Police Force Area","Count","Denominator","Value"
 "percentage of people on remand by status and police force area","2009","All","All","Asian","Bail","Avon and Somerset","19","47","40.4"
 "percentage of people on remand by status and police force area","2009","All","All","Asian","Custody","Avon and Somerset","25","47","53.2"
