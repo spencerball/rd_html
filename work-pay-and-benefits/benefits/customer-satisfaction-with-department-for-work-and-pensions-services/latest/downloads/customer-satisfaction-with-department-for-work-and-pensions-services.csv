@@ -4,7 +4,7 @@
 "Data source","Department for Work and Pensions"
 "Data source link","https://www.gov.uk/government/publications/dwp-claimant-service-and-experience-survey-2015-to-2016"
 "Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","2018-02-13"
+"Last updated","2018-10-10"
 "Ethnicity","Ethnicity_type","Year","Year_type","Measure","Measure_type","Value","Value_type","Denominator","Numerator"
 "White","ONS 5+2","14/15","Financial year","Percentage of customers who are either 'fairly' or 'very' satisfied","Customer satisfaction (5 category)","83","Percentage","12326","10207"
 "White Other","ONS 5+2","14/15","Financial year","Percentage of customers who are either 'fairly' or 'very' satisfied","Customer satisfaction (5 category)","82","Percentage","365","299"
