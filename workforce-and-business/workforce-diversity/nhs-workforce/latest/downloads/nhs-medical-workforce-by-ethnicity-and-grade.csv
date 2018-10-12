@@ -1,11 +1,3 @@
-"Title","NHS medical workforce by ethnicity and grade"
-"Location","England"
-"Time period","2017"
-"Data source","NHS Workforce Statistics"
-"Data source link","https://digital.nhs.uk/catalogue/PUB30165"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "Ethnicity","Grade","%","Headcount"
 "Asian","Senior doctors (Career grade)","",""
 "Asian","Consultant (including Directors of Public Health)","27.9","12,775"

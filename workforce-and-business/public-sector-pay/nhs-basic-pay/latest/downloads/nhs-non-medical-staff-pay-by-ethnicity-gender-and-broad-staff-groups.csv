@@ -1,11 +1,3 @@
-"Title","NHS non-medical staff pay by ethnicity, gender, and broad staff groups"
-"Location","England"
-"Time period","January 2018"
-"Data source","NHS Workforce Statistics"
-"Data source link","https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","24/04/2018"
-
 "Variable","Ethnicity","Female","Male"
 "Professionally qualified non-medical","Average (mean) monthly basic pay per FTE (£)","",""
 "Professionally qualified non-medical","All","2,709","2,759"

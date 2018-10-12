@@ -1,11 +1,3 @@
-"Title","Gender pay gap among NHS non-medical staff in each ethnic group, by broad staff group"
-"Location","England"
-"Time period","January 2018"
-"Data source","NHS Workforce Statistics"
-"Data source link","https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","24/04/2018"
-
 "Broad staff group","Ethnicity","Female (£)","Male (£)","Gender pay gap (%)"
 "Professionally qualified non-medical","All","2,709","2,759","2"
 "Professionally qualified non-medical","Asian","2,540","2,634","4"

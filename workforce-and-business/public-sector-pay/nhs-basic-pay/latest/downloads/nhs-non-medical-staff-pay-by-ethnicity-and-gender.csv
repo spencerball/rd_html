@@ -1,11 +1,3 @@
-"Title","NHS non-medical staff pay by ethnicity and gender"
-"Location","England"
-"Time period","January 2018"
-"Data source","NHS Workforce Statistics"
-"Data source link","https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","24/04/2018"
-
 "Variable","Ethnicity","Female","Male"
 "Average (mean) monthly basic pay per FTE (£)","All","2,276","2,429"
 "Average (mean) monthly basic pay per FTE (£)","Asian","2,209","2,251"

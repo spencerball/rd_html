@@ -1,11 +1,3 @@
-"Title","Percentage of homeless households by ethnicity and area"
-"Location","England"
-"Time period","2017/18"
-"Data source","Live tables on homelessness (table 784)"
-"Data source link","https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness#homelessness-summary-local-authority-level-tables"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","29/06/2018"
-
 "Ethnicity","Local authority ","%","Number"
 "Asian","England","9","5,310"
 "Asian","London","16","2,410"

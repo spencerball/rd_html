@@ -1,11 +1,3 @@
-"Title","Distance travelled by ethnicity over time"
-"Location","England"
-"Time period","2002/06 to 2011/15 (5-year rolling average)"
-"Data source","National Travel Survey"
-"Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","All","","Asian","","Black","","Mixed","","White","","Other",""
 "Time","Miles","Trips","Miles","Trips","Miles","Trips","Miles","Trips","Miles","Trips","Miles","Trips"
 "2002/06","7,141","1,041","4,558","851","4,697","805","4,954","914","7,424","1,063","4,465","818"

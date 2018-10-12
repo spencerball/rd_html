@@ -1,11 +1,3 @@
-"Title","Households under-occupying their home by ethnicity and age group"
-"Location","England"
-"Time period","2014/15, 2015/16 and 2016/17 (combined)"
-"Data source","English Housing Survey"
-"Data source link","https://www.gov.uk/government/collections/english-housing-survey"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","12/07/2018"
-
 "Ethnicity","Age group","%","Under-occupying households ('000s)","All households ('000s)"
 "White British"," 16 - 24","12","70","562"
 "White British"," 25 - 34","20","471","2,364"

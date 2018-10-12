@@ -1,11 +1,3 @@
-"Title","Custody rate by ethnicity and age group"
-"Location","England and Wales"
-"Time period","2009 to 2017"
-"Data source","Criminal justice statistics"
-"Data source link","https://www.gov.uk/government/collections/criminal-justice-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","May"
-
 "Ethnicity","Year","Value","Immediate Custody","all sentenced"
 "Asian Adults","2009","32.5","3,316","10,202"
 "Asian Adults","2010","32.2","3,809","11,834"

@@ -1,11 +1,3 @@
-"Title","Economic inactivity by ethnicity and age group"
-"Location","England, Wales and Scotland"
-"Time period","2017"
-"Data source","Annual Population Survey"
-"Data source link","https://www.nomisweb.co.uk/home/release_group.asp?g=16"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","December 2017"
-
 "age_band","Ethnicity","%","Total economically inactive"
 "16-24","All","38","2,634,000"
 "16-24","Asian","57","370,000"

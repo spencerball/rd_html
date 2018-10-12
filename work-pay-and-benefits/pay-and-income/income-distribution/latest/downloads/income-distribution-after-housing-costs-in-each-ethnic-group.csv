@@ -1,11 +1,3 @@
-"Title","Income distribution after housing costs in each ethnic group"
-"Location","UK"
-"Time period","2014/15, 2015/16 and 2016/17 (combined)"
-"Data source","Households Below Average Income: 1994/95 to 2016/17"
-"Data source link","https://www.gov.uk/government/statistics/households-below-average-income-199495-to-201617"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","22/03/2018"
-
 "incomequintiledisitribution","Ethnicity","%"
 " Bottom quintile (lowest income) ","Asian","33"
 " Bottom quintile (lowest income) ","Black","40"

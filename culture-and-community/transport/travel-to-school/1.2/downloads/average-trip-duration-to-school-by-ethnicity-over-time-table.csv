@@ -1,11 +1,3 @@
-"Title","Average trip duration to school by ethnicity over time"
-"Location","England"
-"Time period","2002/06 to 2011/15 (5-year rolling average)"
-"Data source","National Travel Survey"
-"Data source link","https://www.gov.uk/government/collections/national-travel-survey-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","All ethnic groups","Asian ","Black","Mixed ","White","Other"
 "Time","Minutes","Minutes","Minutes","Minutes","Minutes","Minutes"
 "2002/06","19","18","27","21","18","22"

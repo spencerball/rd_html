@@ -1,11 +1,3 @@
-"Title","Routes into social housing by ethnicity"
-"Location","England"
-"Time period","2015/16"
-"Data source","Social housing lettings in England: April 2015 to March 2016"
-"Data source link","https://www.gov.uk/government/statistics/social-housing-lettings-in-england-april-2015-to-march-2016"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","Internal transfer","Nominated by local housing authority","Other","Other social landlord","Police, probation, prison","Referred by local authority housing department","Social services","Tenant applied direct","Voluntary agency"
 "Ethnicity","%","%","%","%","%","%","%","%","%"
 "All","13","26","6","1","1","5","3","44","2"

@@ -1,11 +1,3 @@
-"Title","Average hourly pay by ethnicity"
-"Location","UK"
-"Time period","2013 to 2016"
-"Data source","Labour Force Survey"
-"Data source link","https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=59"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","Jan-Mar 2013","Apr-Jun 2013","Jul-Sep 2013","Oct-Dec 2013","Jan-Mar 2014","Apr-Jun 2014","Jul-Sep 2014","Oct-Dec 2014","Jan-Mar 2015","Apr-Jun 2015","Jul-Sep 2015","Oct-Dec 2015","Jan-Mar 2016","Apr-Jun 2016","Jul-Sep 2016","Oct-Dec 2016"
 "Ethnicity","£","£","£","£","£","£","£","£","£","£","£","£","£","£","£","£"
 "All","13.00","13.09","13.13","12.95","13.15","13.08","13.29","13.22","13.33","13.49","13.36","13.50","13.56","13.80","13.82","13.69"

@@ -1,11 +1,3 @@
-"Title","Gender pay gap among NHS staff in each ethnic group, by type of role"
-"Location","England"
-"Time period","January 2018"
-"Data source","NHS Workforce Statistics"
-"Data source link","https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","24/04/2018"
-
 "Type of role","Ethnicity","Female (£)","Male (£)","Gender pay gap (%)"
 "All staff average monthly basic pay","All","2,423","3,157","23"
 "All staff average monthly basic pay","Asian","2,637","3,764","30"

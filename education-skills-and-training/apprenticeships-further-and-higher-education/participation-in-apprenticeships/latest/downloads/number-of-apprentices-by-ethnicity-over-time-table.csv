@@ -1,11 +1,3 @@
-"Title","Number of apprentices by ethnicity over time"
-"Location","England"
-"Time period","2008/09 to 2016/17"
-"Data source","FE data library: apprenticeships"
-"Data source link","https://www.gov.uk/government/statistical-data-sets/fe-data-library-apprenticeships"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","All","Asian","Black","Mixed","White","Other","Unknown"
 "Year","Apprentices","Apprentices","Apprentices","Apprentices","Apprentices","Apprentices","Apprentices"
 "2008/09","444,770","13,720","7,840","6,430","410,960","1,990","3,830"

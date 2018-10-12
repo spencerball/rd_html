@@ -1,11 +1,3 @@
-"Title","Employment and Support Allowance claimants sanctioned, by ethnicity and age group"
-"Location","England, Wales and Scotland"
-"Time period","November 2016"
-"Data source","Department for Work and Pensions administrative data"
-"Data source link","https://stat-xplore.dwp.gov.uk/webapi/jsf/login.xhtml"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated","-"
-
 "Ethnicity","Age group","%","Number of sanctions"
 "White","18-24","1.1","204"
 "White","25-49","0.4","651"

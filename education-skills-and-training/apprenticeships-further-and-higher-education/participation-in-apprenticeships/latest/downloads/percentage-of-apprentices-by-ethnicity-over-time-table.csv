@@ -1,11 +1,3 @@
-"Title","Percentage of apprentices by ethnicity over time"
-"Location","England"
-"Time period","2008/09 to 2016/17"
-"Data source","FE data library: apprenticeships"
-"Data source link","https://www.gov.uk/government/statistical-data-sets/fe-data-library-apprenticeships"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "","Asian","Black","Mixed","White","Other","Unknown"
 "Year","%","%","%","%","%","%"
 "2008/09","3.1","1.8","1.4","92.4","0.4","0.9"

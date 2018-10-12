@@ -1,11 +1,3 @@
-"Title","NHS trust board membership by ethnicity and trust"
-"Location","England"
-"Time period","2017"
-"Data source","Workforce Race Equality Standard (WRES) data reporting"
-"Data source link","https://www.england.nhs.uk/publication/workforce-race-equality-standard-data-reporting-december-2017/"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "Ethnicity","NHS trust board","Headcount","%"
 "White","2Gether NHS Foundation Trust","14","100%"
 "White","Aintree University Hospital NHS Foundation Trust","12","100%"

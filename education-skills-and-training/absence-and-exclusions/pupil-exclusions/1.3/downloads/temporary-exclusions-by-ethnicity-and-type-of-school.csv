@@ -1,11 +1,3 @@
-"Title","Temporary exclusions by ethnicity and type of school"
-"Location","England"
-"Time period","2015/16"
-"Data source","Permanent and fixed-period exclusions in England: 2015 to 2016"
-"Data source link","https://www.gov.uk/government/statistics/permanent-and-fixed-period-exclusions-in-england-2015-to-2016"
-"Source","https://www.ethnicity-facts-figures.service.gov.uk"
-"Last updated",""
-
 "school_type","Ethnicity","Exclusions","%"
 "Primary","Asian","1,115","0.29"
 "Primary","Bangladeshi","125","0.21"
